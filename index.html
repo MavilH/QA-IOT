@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>100 Câu Hỏi Trắc Nghiệm Arduino Uno</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #f9faff;
+        color: #333;
+        margin: 20px;
+        line-height: 1.6;
+      }
+      h1 {
+        text-align: center;
+        color: #2a5d9f;
+        margin-bottom: 30px;
+        text-shadow: 0 1px 2px #a2b4d3;
+      }
+      .question {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px 25px;
+        margin-bottom: 20px;
+        transition: box-shadow 0.3s ease;
+      }
+      .question:hover {
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      }
+      .question b {
+        font-size: 1.1rem;
+        color: #1a3b6f;
+      }
+      .options {
+        margin-top: 10px;
+        padding-left: 15px;
+      }
+      .options div {
+        margin: 6px 0;
+        cursor: default;
+        font-size: 0.95rem;
+      }
+      button {
+        margin-top: 12px;
+        background: #2a5d9f;
+        border: none;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        background: #1f4675;
+      }
+      .answer-text {
+        margin-top: 12px;
+        background: #e7f0ff;
+        border-left: 5px solid #2a5d9f;
+        padding: 10px 15px;
+        border-radius: 4px;
+        display: none;
+        font-style: italic;
+        color: #124175;
+      }
+      @media (max-width: 600px) {
+        body {
+          margin: 10px;
+        }
+        .question {
+          padding: 15px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>100 Câu Hỏi Trắc Nghiệm Arduino Uno</h1>
+
+    <script>
+      function toggleAnswer(id) {
+        const el = document.getElementById(id);
+        if (el.style.display === "block") {
+          el.style.display = "none";
+        } else {
+          el.style.display = "block";
+        }
+      }
+    </script>
+
+    <!-- Arduino Uno Questions -->
+    <div class="question">
+      <b>1. Arduino Uno uses which microcontroller?</b>
+      <div class="options">
+        <div>A. ATmega16</div>
+        <div>B. ATmega328P</div>
+        <div>C. ATmega2560</div>
+        <div>D. ATtiny85</div>
+      </div>
+      <button onclick="toggleAnswer('ans1')">Hiện đáp án</button>
+      <div id="ans1" class="answer-text">Đáp án: B. ATmega328P</div>
+    </div>
+
+    <div class="question">
+      <b>2. What is the clock speed of Arduino Uno?</b>
+      <div class="options">
+        <div>A. 4 MHz</div>
+        <div>B. 8 MHz</div>
+        <div>C. 12 MHz</div>
+        <div>D. 16 MHz</div>
+      </div>
+      <button onclick="toggleAnswer('ans2')">Hiện đáp án</button>
+      <div id="ans2" class="answer-text">Đáp án: D. 16 MHz</div>
+    </div>
+
+    <div class="question">
+      <b>3. How many digital I/O pins are there on Arduino Uno?</b>
+      <div class="options">
+        <div>A. 10</div>
+        <div>B. 14</div>
+        <div>C. 20</div>
+        <div>D. 28</div>
+      </div>
+      <button onclick="toggleAnswer('ans3')">Hiện đáp án</button>
+      <div id="ans3" class="answer-text">Đáp án: B. 14</div>
+    </div>
+
+    <div class="question">
+      <b>4. How many PWM pins does Arduino Uno have?</b>
+      <div class="options">
+        <div>A. 4</div>
+        <div>B. 5</div>
+        <div>C. 6</div>
+        <div>D. 8</div>
+      </div>
+      <button onclick="toggleAnswer('ans4')">Hiện đáp án</button>
+      <div id="ans4" class="answer-text">Đáp án: C. 6</div>
+    </div>
+
+    <div class="question">
+      <b>5. What language is used to program Arduino Uno?</b>
+      <div class="options">
+        <div>A. Python</div>
+        <div>B. Java</div>
+        <div>C. C/C++</div>
+        <div>D. Assembly</div>
+      </div>
+      <button onclick="toggleAnswer('ans5')">Hiện đáp án</button>
+      <div id="ans5" class="answer-text">Đáp án: C. C/C++</div>
+    </div>
+
+    <div class="question">
+      <b>6. What is the purpose of the AREF pin?</b>
+      <div class="options">
+        <div>A. Ground</div>
+        <div>B. Power supply</div>
+        <div>C. ADC reference voltage</div>
+        <div>D. Reset</div>
+      </div>
+      <button onclick="toggleAnswer('ans6')">Hiện đáp án</button>
+      <div id="ans6" class="answer-text">Đáp án: C. ADC reference voltage</div>
+    </div>
+
+    <div class="question">
+      <b>7. How many analog input pins are on Arduino Uno?</b>
+      <div class="options">
+        <div>A. 4</div>
+        <div>B. 6</div>
+        <div>C. 8</div>
+        <div>D. 10</div>
+      </div>
+      <button onclick="toggleAnswer('ans7')">Hiện đáp án</button>
+      <div id="ans7" class="answer-text">Đáp án: B. 6</div>
+    </div>
+
+    <div class="question">
+      <b>8. Operating voltage of Arduino Uno?</b>
+      <div class="options">
+        <div>A. 3.3V</div>
+        <div>B. 5V</div>
+        <div>C. 9V</div>
+        <div>D. 12V</div>
+      </div>
+      <button onclick="toggleAnswer('ans8')">Hiện đáp án</button>
+      <div id="ans8" class="answer-text">Đáp án: B. 5V</div>
+    </div>
+
+    <div class="question">
+      <b>9. Which pins are used for hardware serial communication?</b>
+      <div class="options">
+        <div>A. D0 and D1</div>
+        <div>B. D2 and D3</div>
+        <div>C. A0 and A1</div>
+        <div>D. D9 and D10</div>
+      </div>
+      <button onclick="toggleAnswer('ans9')">Hiện đáp án</button>
+      <div id="ans9" class="answer-text">Đáp án: A. D0 and D1</div>
+    </div>
+
+    <div class="question">
+      <b>10. Which memory stores the program on Uno?</b>
+      <div class="options">
+        <div>A. SRAM</div>
+        <div>B. EEPROM</div>
+        <div>C. Flash</div>
+        <div>D. DRAM</div>
+      </div>
+      <button onclick="toggleAnswer('ans10')">Hiện đáp án</button>
+      <div id="ans10" class="answer-text">Đáp án: C. Flash</div>
+    </div>
+
+    <div class="question">
+      <b>11. Purpose of RESET pin?</b>
+      <div class="options">
+        <div>A. Turn off</div>
+        <div>B. Restart the program</div>
+        <div>C. Voltage input</div>
+        <div>D. Format memory</div>
+      </div>
+      <button onclick="toggleAnswer('ans11')">Hiện đáp án</button>
+      <div id="ans11" class="answer-text">Đáp án: B. Restart the program</div>
+    </div>
+
+    <div class="question">
+      <b>12. How is Arduino Uno typically programmed?</b>
+      <div class="options">
+        <div>A. HDMI</div>
+        <div>B. USB</div>
+        <div>C. Ethernet</div>
+        <div>D. Serial over VGA</div>
+      </div>
+      <button onclick="toggleAnswer('ans12')">Hiện đáp án</button>
+      <div id="ans12" class="answer-text">Đáp án: B. USB</div>
+    </div>
+
+    <div class="question">
+      <b>13. Function of Serial.begin()?</b>
+      <div class="options">
+        <div>A. Initialize serial communication</div>
+        <div>B. Print to Serial Monitor</div>
+        <div>C. Read analog</div>
+        <div>D. Send data</div>
+      </div>
+      <button onclick="toggleAnswer('ans13')">Hiện đáp án</button>
+      <div id="ans13" class="answer-text">Đáp án: A. Initialize serial communication</div>
+    </div>
+
+    <div class="question">
+      <b>14. Bootloader used in Uno?</b>
+      <div class="options">
+        <div>A. TinyBoot</div>
+        <div>B. Optiboot</div>
+        <div>C. AVRDude</div>
+        <div>D. UnoBoot</div>
+      </div>
+      <button onclick="toggleAnswer('ans14')">Hiện đáp án</button>
+      <div id="ans14" class="answer-text">Đáp án: B. Optiboot</div>
+    </div>
+
+    <div class="question">
+      <b>15. pinMode() function is used to?</b>
+      <div class="options">
+        <div>A. Set PWM frequency</div>
+        <div>B. Set pin as input or output</div>
+        <div>C. Enable ADC</div>
+        <div>D. Initialize Serial</div>
+      </div>
+      <button onclick="toggleAnswer('ans15')">Hiện đáp án</button>
+      <div id="ans15" class="answer-text">Đáp án: B. Set pin as input or output</div>
+    </div>
+
+    <div class="question">
+      <b>16. EEPROM size of Arduino Uno?</b>
+      <div class="options">
+        <div>A. 512 Bytes</div>
+        <div>B. 1 KB</div>
+        <div>C. 2 KB</div>
+        <div>D. 256 Bytes</div>
+      </div>
+      <button onclick="toggleAnswer('ans16')">Hiện đáp án</button>
+      <div id="ans16" class="answer-text">Đáp án: B. 1 KB</div>
+    </div>
+
+    <div class="question">
+      <b>17. I2C communication pins?</b>
+      <div class="options">
+        <div>A. A4 (SDA), A5 (SCL)</div>
+        <div>B. D0 and D1</div>
+        <div>C. D2 and D3</div>
+        <div>D. A0 and A1</div>
+      </div>
+      <button onclick="toggleAnswer('ans17')">Hiện đáp án</button>
+      <div id="ans17" class="answer-text">Đáp án: A. A4 (SDA), A5 (SCL)</div>
+    </div>
+
+    <div class="question">
+      <b>18. Voltage input range for Uno board?</b>
+      <div class="options">
+        <div>A. 2-5V</div>
+        <div>B. 6-12V</div>
+        <div>C. 3.3-6V</div>
+        <div>D. 10-20V</div>
+      </div>
+      <button onclick="toggleAnswer('ans18')">Hiện đáp án</button>
+      <div id="ans18" class="answer-text">Đáp án: B. 6-12V</div>
+    </div>
+
+    <div class="question">
+      <b>19. Unit of analogRead result on Uno?</b>
+      <div class="options">
+        <div>A. Volt</div>
+        <div>B. Bit value (0-1023)</div>
+        <div>C. Celsius</div>
+        <div>D. Byte</div>
+      </div>
+      <button onclick="toggleAnswer('ans19')">Hiện đáp án</button>
+      <div id="ans19" class="answer-text">Đáp án: B. Bit value (0-1023)</div>
+    </div>
+
+    <div class="question">
+      <b>20. Function of delay(1000)?</b>
+      <div class="options">
+        <div>A. Delay 1 ms</div>
+        <div>B. Delay 10 sec</div>
+        <div>C. Delay 100 sec</div>
+        <div>D. Delay 1 sec</div>
+      </div>
+      <button onclick="toggleAnswer('ans20')">Hiện đáp án</button>
+      <div id="ans20" class="answer-text">Đáp án: D. Delay 1 sec</div>
+    </div>
+
+    <!-- LM35 Temperature Sensor Questions -->
+    <div class="question">
+      <b>21. What type of output does LM35 provide?</b>
+      <div class="options">
+        <div>A. Digital</div>
+        <div>B. Analog</div>
+        <div>C. PWM</div>
+        <div>D. UART</div>
+      </div>
+      <button onclick="toggleAnswer('ans21')">Hiện đáp án</button>
+      <div id="ans21" class="answer-text">Đáp án: B. Analog</div>
+    </div>
+
+    <div class="question">
+      <b>22. How much voltage change per °C?</b>
+      <div class="options">
+        <div>A. 1 mV</div>
+        <div>B. 5 mV</div>
+        <div>C. 10 mV</div>
+        <div>D. 100 mV</div>
+      </div>
+      <button onclick="toggleAnswer('ans22')">Hiện đáp án</button>
+      <div id="ans22" class="answer-text">Đáp án: C. 10 mV</div>
+    </div>
+
+    <div class="question">
+      <b>23. Operating range of LM35?</b>
+      <div class="options">
+        <div>A. -55°C to +150°C</div>
+        <div>B. -20°C to 100°C</div>
+        <div>C. 0°C to 150°C</div>
+        <div>D. -40°C to 125°C</div>
+      </div>
+      <button onclick="toggleAnswer('ans23')">Hiện đáp án</button>
+      <div id="ans23" class="answer-text">Đáp án: A. -55°C to +150°C</div>
+    </div>
+
+    <div class="question">
+      <b>24. Number of pins on LM35?</b>
+      <div class="options">
+        <div>A. 2</div>
+        <div>B. 3</div>
+        <div>C. 4</div>
+        <div>D. 5</div>
+      </div>
+      <button onclick="toggleAnswer('ans24')">Hiện đáp án</button>
+      <div id="ans24" class="answer-text">Đáp án: B. 3</div>
+    </div>
+
+    <div class="question">
+      <b>25. Which pin of Arduino should connect to LM35 output?</b>
+      <div class="options">
+        <div>A. Digital pin</div>
+        <div>B. PWM pin</div>
+        <div>C. Analog pin</div>
+        <div>D. Reset pin</div>
+      </div>
+      <button onclick="toggleAnswer('ans25')">Hiện đáp án</button>
+      <div id="ans25" class="answer-text">Đáp án: C. Analog pin</div>
+    </div>
+
+    <div class="question">
+      <b>26. Which Arduino function reads LM35?</b>
+      <div class="options">
+        <div>A. analogRead()</div>
+        <div>B. digitalRead()</div>
+        <div>C. analogWrite()</div>
+        <div>D. digitalWrite()</div>
+      </div>
+      <button onclick="toggleAnswer('ans26')">Hiện đáp án</button>
+      <div id="ans26" class="answer-text">Đáp án: A. analogRead()</div>
+    </div>
+
+    <div class="question">
+      <b>27. Voltage supply required for LM35?</b>
+      <div class="options">
+        <div>A. 3.3V</div>
+        <div>B. 5V</div>
+        <div>C. 9V</div>
+        <div>D. 12V</div>
+      </div>
+      <button onclick="toggleAnswer('ans27')">Hiện đáp án</button>
+      <div id="ans27" class="answer-text">Đáp án: B. 5V</div>
+    </div>
+
+    <div class="question">
+      <b>28. Does LM35 require calibration?</b>
+      <div class="options">
+        <div>A. Yes</div>
+        <div>B. No</div>
+      </div>
+      <button onclick="toggleAnswer('ans28')">Hiện đáp án</button>
+      <div id="ans28" class="answer-text">Đáp án: B. No</div>
+    </div>
+
+    <div class="question">
+      <b>29. Output of LM35 at 25°C?</b>
+      <div class="options">
+        <div>A. 2.5V</div>
+        <div>B. 250 mV</div>
+        <div>
+      <div class="options">
+        <div>A. 2.5V</div>
+        <div>B. 250 mV</div>
+        <div>C. 25 mV</div>
+        <div>D. 1V</div>
+      </div>
+      <button onclick="toggleAnswer('ans29')">Hiện đáp án</button>
+      <div id="ans29" class="answer-text">Đáp án: B. 250 mV</div>
+    </div>
+
+    <div class="question">
+      <b>30. Accuracy of LM35?</b>
+      <div class="options">
+        <div>A. ±2°C</div>
+        <div>B. ±1°C</div>
+        <div>C. ±0.5°C</div>
+        <div>D. ±5°C</div>
+      </div>
+      <button onclick="toggleAnswer('ans30')">Hiện đáp án</button>
+      <div id="ans30" class="answer-text">Đáp án: C. ±0.5°C</div>
+    </div>
+
+    <!-- SRF05 Ultrasonic Sensor Questions -->
+    <div class="question">
+      <b>31. SRF05 operates using which principle?</b>
+      <div class="options">
+        <div>A. Infrared</div>
+        <div>B. Ultrasonic</div>
+        <div>C. Electromagnetic</div>
+        <div>D. Capacitive</div>
+      </div>
+      <button onclick="toggleAnswer('ans31')">Hiện đáp án</button>
+      <div id="ans31" class="answer-text">Đáp án: B. Ultrasonic</div>
+    </div>
+
+    <div class="question">
+      <b>32. How many pins does SRF05 have?</b>
+      <div class="options">
+        <div>A. 3</div>
+        <div>B. 4</div>
+        <div>C. 5</div>
+        <div>D. 6</div>
+      </div>
+      <button onclick="toggleAnswer('ans32')">Hiện đáp án</button>
+      <div id="ans32" class="answer-text">Đáp án: B. 4</div>
+    </div>
+
+    <div class="question">
+      <b>33. Max detection range of SRF05?</b>
+      <div class="options">
+        <div>A. 1m</div>
+        <div>B. 2m</div>
+        <div>C. 3m</div>
+        <div>D. 4m</div>
+      </div>
+      <button onclick="toggleAnswer('ans33')">Hiện đáp án</button>
+      <div id="ans33" class="answer-text">Đáp án: D. 4m</div>
+    </div>
+
+    <div class="question">
+      <b>34. What is the function of TRIG pin?</b>
+      <div class="options">
+        <div>A. Receive signal</div>
+        <div>B. Send trigger pulse</div>
+        <div>C. Supply power</div>
+        <div>D. Reset sensor</div>
+      </div>
+      <button onclick="toggleAnswer('ans34')">Hiện đáp án</button>
+      <div id="ans34" class="answer-text">Đáp án: B. Send trigger pulse</div>
+    </div>
+
+    <div class="question">
+      <b>35. What is the ECHO pin used for?</b>
+      <div class="options">
+        <div>A. Power supply</div>
+        <div>B. Send trigger</div>
+        <div>C. Receive reflected pulse</div>
+        <div>D. Ground</div>
+      </div>
+      <button onclick="toggleAnswer('ans35')">Hiện đáp án</button>
+      <div id="ans35" class="answer-text">Đáp án: C. Receive reflected pulse</div>
+    </div>
+
+    <div class="question">
+      <b>36. A short ECHO time means?</b>
+      <div class="options">
+        <div>A. Object is far</div>
+        <div>B. Object is close</div>
+        <div>C. Sensor is damaged</div>
+        <div>D. Wrong wiring</div>
+      </div>
+      <button onclick="toggleAnswer('ans36')">Hiện đáp án</button>
+      <div id="ans36" class="answer-text">Đáp án: B. Object is close</div>
+    </div>
+
+    <div class="question">
+      <b>37. Operating voltage of SRF05?</b>
+      <div class="options">
+        <div>A. 3V</div>
+        <div>B. 5V</div>
+        <div>C. 9V</div>
+        <div>D. 12V</div>
+      </div>
+      <button onclick="toggleAnswer('ans37')">Hiện đáp án</button>
+      <div id="ans37" class="answer-text">Đáp án: B. 5V</div>
+    </div>
+
+    <div class="ans38">
+      <div class="question">
+      <b>38. Measurement unit for distance?</b>
+      <div class="options">
+        <div>A. Meter</div>
+        <div>B. Millimeter</div>
+        <div>C. Centimeter</div>
+        <div>D. Seconds</div>
+      </div>
+      <button onclick="toggleAnswer('ans38')">Hiện đáp án</button>
+      <div id="ans38" class="answer-text">Đáp án: C. Centimeter</div>
+    </div>
+
+    <div class="question">
+      <b>39. Function used in Arduino to measure pulse width?</b>
+      <div class="options">
+        <div>A. analogRead()</div>
+        <div>B. digitalRead()</div>
+        <div>C. pulseIn()</div>
+        <div>D. millis()</div>
+      </div>
+      <button onclick="toggleAnswer('ans39')">Hiện đáp án</button>
+      <div id="ans39" class="answer-text">Đáp án: C. pulseIn()</div>
+    </div>
+
+    <div class="question">
+      <b>40. Speed of sound assumed in air?</b>
+      <div class="options">
+        <div>A. 100 m/s</div>
+        <div>B. 150 m/s</div>
+        <div>C. 343 m/s</div>
+        <div>D. 500 m/s</div>
+      </div>
+      <button onclick="toggleAnswer('ans40')">Hiện đáp án</button>
+      <div id="ans40" class="answer-text">Đáp án: C. 343 m/s</div>
+    </div>
+
+    <!-- Interrupt Questions -->
+    <div class="question">
+      <b>41. What is an interrupt?</b>
+      <div class="options">
+        <div>A. Delay function</div>
+        <div>B. External event that breaks normal execution</div>
+        <div>C. PWM signal</div>
+        <div>D. Analog input</div>
+      </div>
+      <button onclick="toggleAnswer('ans41')">Hiện đáp án</button>
+      <div id="ans41" class="answer-text">Đáp án: B. External event that breaks normal execution</div>
+    </div>
+
+    <div class="question">
+      <b>42. Which pins support external interrupts on Uno?</b>
+      <div class="options">
+        <div>A. D2 and D3</div>
+        <div>B. A0 and A1</div>
+        <div>C. D0 and D1</div>
+        <div>D. D8 and D9</div>
+      </div>
+      <button onclick="toggleAnswer('ans42')">Hiện đáp án</button>
+      <div id="ans42" class="answer-text">Đáp án: A. D2 and D3</div>
+    </div>
+
+    <div class="question">
+      <b>43. Function to attach an interrupt?</b>
+      <div class="options">
+        <div>A. attachPWM()</div>
+        <div>B. attachInterrupt()</div>
+        <div>C. digitalInterrupt()</div>
+        <div>
+      </div>
+      <button onclick="toggleAnswer('ans43')">Hiện đáp án</button>
+      <div id="ans43" class="answer-text">Đáp án: B. attachInterrupt()</div>
+    </div>
+
+    <div class="question">
+      <b>44. Mode to trigger interrupt on any change?</b>
+      <div class="options">
+        <div>A. RISING</div>
+        <div>B. FALLING</div>
+        <div>C. CHANGE</div>
+        <div>
+      </div>
+      <button onclick="toggleAnswer('ans44')">Hiện answer</button>
+      <div id="ans44" class="answer-text">Đáp án: C. CHANGE</div>
+    </div>
+
+    <div class="question">
+      <b>45. What does detachInterrupt() do?</b>
+      <div class="options">
+        <div>A. Clears memory</div>
+        <div>B. Disables interrupt</div>
+        <div>C. Enables interrupt</div>
+        <div>D. Delays ISR</div>
+      </div>
+      <button onclick="toggleAnswer('ans45')">Hiện đáp án</button>
+      <div id="ans45" class="answer-text">Đáp án: B. Disables interrupt</div>
+    </div>
+
+    <div class="question">
+      <b>46. ISR stands for?</b>
+      <div class="options">
+        <div>A. Interruptible State Reset</div>
+        <div>B. Interrupt Service Routine</div>
+        <div>C. Interrupt Supply Register</div>
+        <div>D. Internal Sensor Register</div>
+      </div>
+      <button onclick="toggleAnswer('ans46')">Hiện đáp án</button>
+      <div id="ans46" class="answer-text">Đáp án: B. Interrupt Service Routine</div>
+    </div>
+
+    <div class="question">
+      <b>47. Can ISR have delay()?</b>
+      <div class="options">
+        <div>A. Yes</div>
+        <div>B. No</div>
+      </div>
+      <button onclick="toggleAnswer('ans47')">Hiện đáp án</button>
+      <div id="ans47" class="answer-text">Đáp án: B. No</div>
+    </div>
+
+    <div class="question">
+      <b>48. Best practice for ISR function?</b>
+      <div class="options">
+        <div>A. Long and complex</div>
+        <div>B. Use Serial.print()</div>
+        <div>C. Keep it short</div>
+        <div>D. Include delays</div>
+      </div>
+      <button onclick="toggleAnswer('ans48')">Hiện đáp án</button>
+      <div id="ans48" class="answer-text">Đáp án: C. Keep it short</div>
+    </div>
+
+    <div class="question">
+      <b>49. How many external interrupt vectors on Uno?</b>
+      <div class="options">
+        <div>A. 1</div>
+        <div>B. 2</div>
+        <div>C. 3</div>
+        <div>D. 4</div>
+      </div>
+      <button onclick="toggleAnswer('ans49')">Hiện đáp án</button>
+      <div id="ans49" class="answer-text">Đáp án: B. 2</div>
+    </div>
+
+    <div class="question">
+      <b>50. Default interrupt mode in Arduino?</b>
+      <div class="options">
+        <div>A. LOW</div>
+        <div>B. HIGH</div>
+        <div>C. RISING</div>
+        <div>D. NONE</div>
+      </div>
+      <button onclick="toggleAnswer('ans50')">Hiện đáp án</button>
+      <div id="ans50" class="answer-text">Đáp án: D. NONE</div>
+    </div>
+
+    <!-- PWM Questions -->
+    <div class="question">
+      <b>51. What does PWM stand for?</b>
+      <div class="options">
+        <div>A. Pulse Width Management</div>
+        <div>B. Pulse Width Modulation</div>
+        <div>C. Phase Wave Modulation</div>
+        <div>D. Power Wave Management</div>
+      </div>
+      <button onclick="toggleAnswer('ans51')">Hiện đáp án</button>
+      <div id="ans51" class="answer-text">Đáp án: B. Pulse Width Modulation</div>
+    </div>
+
+    <div class="question">
+      <b>52. Function used to write PWM signal?</b>
+      <div class="options">
+        <div>A. digitalWrite()</div>
+        <div>B. analogRead()</div>
+        <div>C. analogWrite()</div>
+        <div>D. pwmOutput()</div>
+      </div>
+      <button onclick="toggleAnswer('ans52')">Hiện đáp án</button>
+      <div id="ans52" class="answer-text">Đáp án: C. analogWrite()</div>
+    </div>
+
+    <div class="question">
+      <b>53. PWM pins on Uno?</b>
+      <div class="options">
+        <div>A. D3, D5, D6, D9, D10, D11</div>
+        <div>B. D2 to D7</div>
+        <div>C. A0 to A5</div>
+        <div>D. D0 and D1</div>
+      </div>
+      <button onclick="toggleAnswer('ans53')">Hiện đáp án</button>
+      <div id="ans53" class="answer-text">Đáp án: A. D3, D5, D6, D9, D10, D11</div>
+    </div>
+
+    <div class="question">
+      <b>54. Range of PWM output in Arduino?</b>
+      <div class="options">
+        <div>A. 0–1023</div>
+        <div>B. 0–5</div>
+        <div>C. 0–255</div>
+        <div>D. 0–1</div>
+      </div>
+      <button onclick="toggleAnswer('ans54')">Hiện đáp án</button>
+      <div id="ans54" class="answer-text">Đáp án: C. 0–255</div>
+    </div>
+
+    <div class="question">
+      <b>55. Default PWM frequency on D9, D10?</b>
+      <div class="options">
+        <div>A. 490 Hz</div>
+        <div>B. 1 kHz</div>
+        <div>C. 100 Hz</div>
+        <div>D. 1000 Hz</div>
+      </div>
+      <button onclick="toggleAnswer('ans55')">Hiện đáp án</button>
+      <div id="ans55" class="answer-text">Đáp án: A. 490 Hz</div>
+    </div>
+
+    <div class="question">
+      <b>56. PWM can simulate?</b>
+      <div class="options">
+        <div>A. Analog signal</div>
+        <div>B. Digital input</div>
+        <div>C. Serial communication</div>
+        <div>D. Interrupts</div>
+      </div>
+      <button onclick="toggleAnswer('ans56')">Hiện đáp án</button>
+      <div id="ans56" class="answer-text">Đáp án: A. Analog signal</div>
+    </div>
+
+    <div class="question">
+      <b>57. Duty cycle of 50% means?</b>
+      <div class="options">
+        <div>A. Fully off</div>
+        <div>B. Half power</div>
+        <div>C. Full power</div>
+        <div>D. No signal</div>
+      </div>
+      <button onclick="toggleAnswer('ans57')">Hiện đáp án</button>
+      <div id="ans57" class="answer-text">Đáp án: B. Half power</div>
+    </div>
+
+    <div class="question">
+      <b>58. analogWrite(255) gives?</b>
+      <div class="options">
+        <div>A. 0% duty</div>
+        <div>B. 50% duty</div>
+        <div>C. 100% duty</div>
+        <div>D. Error</div>
+      </div>
+      <button onclick="toggleAnswer('ans58')">Hiện đáp án</button>
+      <div id="ans58" class="answer-text">Đáp án: C. 100% duty</div>
+    </div>
+
+    <div class="question">
+      <b>59. PWM is commonly used to control?</b>
+      <div class="options">
+        <div>A. Temperature</div>
+        <div>B. Light brightness</div>
+        <div>C. Serial speed</div>
+        <div>D. Reset</div>
+      </div>
+      <button onclick="toggleAnswer('ans59')">Hiện đáp án</button>
+      <div id="ans59" class="answer-text">Đáp án: B. Light brightness</div>
+    </div>
+
+    <div class="question">
+      <b>60. analogWrite(0) results in?</b>
+      <div class="options">
+        <div>A. 0V output</div>
+        <div>B. 5V output</div>
+        <div>C. Random output</div>
+        <div>D. High impedance</div>
+      </div>
+      <button onclick="toggleAnswer('ans60')">Hiện đáp án</button>
+      <div id="ans60" class="answer-text">Đáp án: A. 0V output</div>
+    </div>
+
+    <!-- 7-Segment LED Display Questions -->
+    <div class="question">
+      <b>61. A 7-segment display typically has how many segments?</b>
+      <div class="options">
+        <div>A. 5</div>
+        <div>B. 6</div>
+        <div>C. 7</div>
+        <div>D. 8</div>
+      </div>
+      <button onclick="toggleAnswer('ans61')">Hiện đáp án</button>
+      <div id="ans61" class="answer-text">Đáp án: C. 7</div>
+    </div>
+
+    <div class="question">
+      <b>62. Common types of 7-segment display?</b>
+      <div class="options">
+        <div>A. Parallel and Serial</div>
+        <div>B. Anode and Cathode</div>
+        <div>C. Analog and Digital</div>
+        <div>D. Left and Right</div>
+      </div>
+      <button onclick="toggleAnswer('ans62')">Hiện đáp án</button>
+      <div id="ans62" class="answer-text">Đáp án: B. Anode and Cathode</div>
+    </div>
+
+    <div class="question">
+      <b>63. Segment labels are?</b>
+      <div class="options">
+        <div>A. A to G</div>
+        <div>B. 0 to 6</div>
+        <div>C. 1 to 8</div>
+        <div>D. P to Z</div>
+      </div>
+      <button onclick="toggleAnswer('ans63')">Hiện đáp án</button>
+      <div id="ans63" class="answer-text">Đáp án: A. A to G</div>
+    </div>
+
+    <div class="question">
+      <b>64. To display '1' on 7-segment, light up?</b>
+      <div class="options">
+        <div>A. a and b</div>
+        <div>B. b and c</div>
+        <div>C. a and g</div>
+        <div>D. g and d</div>
+      </div>
+      <button onclick="toggleAnswer('ans64')">Hiện answer</button>
+      <div id="ans64" class="answer-text">Đáp án: B. b and c</div>
+    </div>
+
+    <div class="question">
+      <b>65. Number '8' lights up how many segments?</b>
+      <div class="options">
+        <div>A. 5</div>
+        <div>B. 6</div>
+        <div>C. 7</div>
+        <div>D. 8</div>
+      </div>
+      <button onclick="toggleAnswer('ans65')">Hiện đáp án</button>
+      <div id="ans65" class="answer-text">Đáp án: C. C7</div>
+    </div>
+
+    <div class="question">
+      <b>66. Function of current-limiting resistor?</b>
+      <div class="options">
+        <div>A. Reduce brightness</div>
+        <div>B. Protect LED from high current</div>
+        <div>C. Increase power</div>
+        <div>D. Disable segments</div>
+      </div>
+      <button onclick="toggleAnswer('ans66')">Hiện đáp án</button>
+      <div id="ans66" class="answer-text">Đáp án: B. Protect LED from high current</div>
+    </div>
+
+    <div class="question">
+      <b>67. A 7-segment display can be driven directly from?</b>
+      <div class="options">
+        <div>A. Arduino I/O pins</div>
+        <div>B. EEPROM</div>
+        <div>C. USB</div>
+        <div>D. Reset pin</div>
+      </div>
+      <button onclick="toggleAnswer('ans67')">Hiện đáp án</button>
+      <div id="ans67" class="answer-text">Đáp án: A. Arduino I/O pins</div>
+    </div>
+
+    <div class="question">
+      <b>68. Which IC can drive multiple 7-segment displays?</b>
+      <div class="options">
+        <div>A. 555 Timer</div>
+        <div>B. 74LS47</div>
+        <div>C. 7805</div>
+        <div>D. LM35</div>
+      </div>
+      <button onclick="toggleAnswer('ans68')">Hiện đáp án</button>
+      <div id="ans68" class="answer-text">Đáp án: B. 74LS47</div>
+    </div>
+
+    <div class="question">
+      <b>69. Decimal point in 7-segment is labeled?</b>
+      <div class="options">
+        <div>A. A</div>
+        <div>B. DP</div>
+        <div>C. H</div>
+        <div>D. X</div>
+      </div>
+      <button onclick="toggleAnswer('ans69')">Hiện đáp án</button>
+      <div id="ans69" class="answer-text">Đáp án: B. DP</div>
+    </div>
+
+    <div class="question">
+      <b>70. Multiplexing in 7-segment is used to?</b>
+      <div class="options">
+        <div>A. Light all displays at once</div>
+        <div>B. Save I/O pins</div>
+        <div>C. Increase brightness</div>
+        <div>D. Disable display</div>
+      </div>
+      <button onclick="toggleAnswer('ans70')">Hiện đáp án</button>
+      <div id="ans70" class="answer-text">Đáp án: B. Save I/O pins</div>
+    </div>
+
+    <!-- LCD1602 Questions -->
+    <div class="question">
+      <b>71. LCD1602 means?</b>
+      <div class="options">
+        <div>A. 16 lines, 2 characters</div>
+        <div>B. 2 lines, 16 characters each</div>
+        <div>C. 16 pixels, 2 dots</div>
+        <div>D. 160x2 pixels</div>
+      </div>
+      <button onclick="toggleAnswer('ans71')">Hiện đáp án</button>
+      <div id="ans71" class="answer-text">Đáp án: B. 2 lines, 16 characters each</div>
+    </div>
+
+    <div class="question">
+      <b>72. Communication mode of LCD1602?</b>
+      <div class="options">
+        <div>A. Only 8-bit</div>
+        <div>B. Only 4-bit</div>
+        <div>C. Both 4-bit and 8-bit</div>
+        <div>D. I2C only</div>
+      </div>
+      <button onclick="toggleAnswer('ans72')">Hiện đáp án</button>
+      <div id="ans72" class="answer-text">Đáp án: C. Both 4-bit and 8-bit</div>
+    </div>
+
+    <div class="question">
+      <b>73. How many data pins in 8-bit mode?</b>
+      <div class="options">
+        <div>A. 4</div>
+        <div>B. 8</div>
+        <div>C. 16</div>
+        <div>D. 2</div>
+      </div>
+      <button onclick="toggleAnswer('ans73')">Hiện đáp án</button>
+      <div id="ans73" class="answer-text">Đáp án: B. 8</div>
+    </div>
+
+    <div class="question">
+      <b>74. Register select (RS) pin is for?</b>
+      <div class="options">
+        <div>A. Reset</div>
+        <div>B. Select command or data</div>
+        <div>C. Serial input</div>
+        <div>D. Display brightness</div>
+      </div>
+      <button onclick="toggleAnswer('ans74')">Hiện đáp án</button>
+      <div id="ans74" class="answer-text">Đáp án: B. Select command or data</div>
+    </div>
+
+    <div class="question">
+      <b>75. LCD1602 needs which library?</b>
+      <div class="options">
+        <div>A. EEPROM</div>
+        <div>B. LiquidCrystal</div>
+        <div>C. Wire</div>
+        <div>D. PWM</div>
+      </div>
+      <button onclick="toggleAnswer('ans75')">Hiện đáp án</button>
+      <div id="ans75" class="answer-text">Đáp án: B. LiquidCrystal</div>
+    </div>
+
+    <div class="question">
+      <b>76. EN pin on LCD does?</b>
+      <div class="options">
+        <div>A. Enable communication</div>
+        <div>B. End program</div>
+        <div>C. Error check</div>
+        <div>D. Escape character</div>
+      </div>
+      <button onclick="toggleAnswer('ans76')">Hiện đáp án</button>
+      <div id="ans76" class="answer-text">Đáp án: A. Enable communication</div>
+    </div>
+
+    <div class="question">
+      <b>77. How many rows and columns?</b>
+      <div class="options">
+        <div>A. 2x16</div>
+        <div>B. 4x20</div>
+        <div>C. 1x16</div>
+        <div>D. 8x2</div>
+      </div>
+      <button onclick="toggleAnswer('ans77')">Hiện đáp án</button>
+      <div id="ans77" class="answer-text">Đáp án: A. 2x16</div>
+    </div>
+
+    <div class="question">
+      <b>78. What adjusts brightness of LCD?</b>
+      <div class="options">
+        <div>A. EN pin</div>
+        <div>B. Potentiometer</div>
+        <div>C. Resistor</div>
+        <div>D. Ground</div>
+      </div>
+      <button onclick="toggleAnswer('ans78')">Hiện đáp án</button>
+      <div id="ans78" class="answer-text">Đáp án: B. Potentiometer</div>
+    </div>
+
+    <div class="question">
+      <b>79. Character location on LCD defined by?</b>
+      <div class="options">
+        <div>A. Row</div>
+        <div>B. Column</div>
+        <div>C. DDRAM</div>
+        <div>D. EEPROM</div>
+      </div>
+      <button onclick="toggleAnswer('ans79')">Hiện đáp án</button>
+      <div id="ans79" class="answer-text">Đáp án: C. DDRAM</div>
+    </div>
+
+    <div class="question">
+      <b>80. LCD I2C interface reduces?</b>
+      <div class="options">
+        <div>A. Display time</div>
+        <div>B. Number of wires</div>
+        <div>C. Brightness</div>
+        <div>D. Number of characters</div>
+      </div>
+      <button onclick="toggleAnswer('ans80')">Hiện đáp án</button>
+      <div id="ans80" class="answer-text">Đáp án: B. Number of wires</div>
+    </div>
+
+    <!-- Additional Questions to Reach 100 -->
+    <div class="question">
+      <b>81. What is the SRAM size of Arduino Uno?</b>
+      <div class="options">
+        <div>A. 512 Bytes</div>
+        <div>B. 1 KB</div>
+        <div>C. 2 KB</div>
+        <div>D. 4 KB</div>
+      </div>
+      <button onclick="toggleAnswer('ans81')">Hiện đáp án</button>
+      <div id="ans81" class="answer-text">Đáp án: C. 2 KB</div>
+    </div>
+
+    <div class="question">
+      <b>82. What is the flash memory size of Arduino Uno?</b>
+      <div class="options">
+        <div>A. 16 KB</div>
+        <div>B. 32 KB</div>
+        <div>C. 64 KB</div>
+        <div>D. 128 KB</div>
+      </div>
+      <button onclick="toggleAnswer('ans82')">Hiện đáp án</button>
+      <div id="ans82" class="answer-text">Đáp án: B. 32 KB</div>
+    </div>
+
+    <div class="question">
+      <b>83. Which Arduino function sets the cursor on LCD1602?</b>
+      <div class="options">
+        <div>A. setCursor()</div>
+        <div>B. moveCursor()</div>
+        <div>C. placeCursor()</div>
+        <div>D. cursorSet()</div>
+      </div>
+      <button onclick="toggleAnswer('ans83')">Hiện đáp án</button>
+      <div id="ans83" class="answer-text">Đáp án: A. setCursor</div>
+    </div>
+
+    <div class="question">
+      <b>84. What is the purpose of the VIN pin on Arduino Uno?</b>
+      <div class="options">
+        <div>A. 5V output</div>
+        <div>B. External power input</div>
+        <div>C. Ground</div>
+        <div>D. Analog reference</div>
+      </div>
+      <button onclick="toggleAnswer('ans84')">Hiện đáp án</button>
+      <div id="ans84" class="answer-text">Đáp án: B. External power input</div>
+    </div>
+
+    <div class="question">
+      <b>85. What is the resolution of analogRead() on Arduino Uno?</b>
+      <div class="options">
+        <div>A. 8 bits</div>
+        <div>B. 10 bits</div>
+        <div>C. 12 bits</div>
+        <div>D. 16 bits</div>
+      </div>
+      <button onclick="toggleAnswer('ans85')">Hiện đáp án</button>
+      <div id="ans85" class="answer-text">Đáp án: B. 10 bits</div>
+    </div>
+
+    <div class="question">
+      <b>86. What does the Serial.print() function do?</b>
+      <div class="options">
+        <div>A. Reads serial data</div>
+        <div>B. Sends data to Serial Monitor</div>
+        <div>C. Initializes serial port</div>
+        <div>D. Clears serial buffer</div>
+      </div>
+      <button onclick="toggleAnswer('ans86')">Hiện đáp án</button>
+      <div id="ans86" class="answer-text">Đáp án: B. Sends data to Serial Monitor</div>
+    </div>
+
+    <div class="question">
+      <b>87. What is the typical current limit per pin on Arduino Uno?</b>
+      <div class="options">
+        <div>A. 20 mA</div>
+        <div>B. 40 mA</div>
+        <div>C. 60 mA</div>
+        <div>D. 100 mA</div>
+      </div>
+      <button onclick="toggleAnswer('ans87')">Hiện đáp án</button>
+      <div id="ans87" class="answer-text">Đáp án: A. 20 mA</div>
+    </div>
+
+    <div class="question">
+      <b>88. What is the purpose of the 3.3V pin on Arduino Uno?</b>
+      <div class="options">
+        <div>A. Main power input</div>
+        <div>B. 3.3V regulated output</div>
+        <div>C. Analog reference</div>
+        <div>D. Ground</div>
+      </div>
+      <button onclick="toggleAnswer('ans88')">Hiện đáp án</button>
+      <div id="ans88" class="answer-text">Đáp án: B. 3.3V regulated output</div>
+    </div>
+
+    <div class="question">
+      <b>89. Which function clears the LCD1602 display?</b>
+      <div class="options">
+        <div>A. clear()</div>
+        <div>B. reset()</div>
+        <div>C. erase()</div>
+        <div>D. clean()</div>
+      </div>
+      <button onclick="toggleAnswer('ans89')">Hiện đáp án</button>
+      <div id="ans89" class="answer-text">Đáp án: A. clear()</div>
+    </div>
+
+    <div class="question">
+      <b>90. What is the typical trigger pulse duration for SRF05?</b>
+      <div class="options">
+        <div>A. 1 µs</div>
+        <div>B. 10 µs</div>
+        <div>C. 100 µs</div>
+        <div>D. 1 ms</div>
+      </div>
+      <button onclick="toggleAnswer('ans90')">Hiện đáp án</button>
+      <div id="ans90" class="answer-text">Đáp án: B. 10 µs</div>
+    </div>
+
+    <div class="question">
+      <b>91. What is the purpose of the SPI pins on Arduino Uno?</b>
+      <div class="options">
+        <div>A. Serial communication</div>
+        <div>B. SPI communication</div>
+        <div>C. I2C communication</div>
+        <div>D. PWM output</div>
+      </div>
+      <button onclick="toggleAnswer('ans91')">Hiện đáp án</button>
+      <div id="ans91" class="answer-text">Đáp án: B. SPI communication</div>
+    </div>
+
+    <div class="question">
+      <b>92. Which pins are used for SPI on Arduino Uno?</b>
+      <div class="options">
+        <div>A. D10, D11, D12, D13</div>
+        <div>B. D0, D1, D2, D3</div>
+        <div>C. A0, A1, A2, A3</div>
+        <div>D. D5, D6, D7, D8</div>
+      </div>
+      <button onclick="toggleAnswer('ans92')">Hiện đáp án</button>
+      <div id="ans92" class="answer-text">Đáp án: A. D10, D11, D12, D13</div>
+    </div>
+
+    <div class="question">
+      <b>93. What is the default baud rate for Serial.begin()?</b>
+      <div class="options">
+        <div>A. 4800</div>
+        <div>B. 9600</div>
+        <div>C. 19200</div>
+        <div>D. 115200</div>
+      </div>
+      <button onclick="toggleAnswer('ans93')">Hiện đáp án</button>
+      <div id="ans93" class="answer-text">Đáp án: B. 9600</div>
+    </div>
+
+    <div class="question">
+      <b>94. What does the millis() function return?</b>
+      <div class="options">
+        <div>A. Current time in seconds</div>
+        <div>B. Current time in milliseconds</div>
+        <div>C. Current time in microseconds</div>
+        <div>D. Current time in hours</div>
+      </div>
+      <button onclick="toggleAnswer('ans94')">Hiện đáp án</button>
+      <div id="ans94" class="answer-text">Đáp án: B. Current time in milliseconds</div>
+    </div>
+
+    <div class="question">
+      <b>95. What is the purpose of the GND pins on Arduino Uno?</b>
+      <div class="options">
+        <div>A. Power supply</div>
+        <div>B. Ground connection</div>
+        <div>C. Analog input</div>
+        <div>D. PWM output</div>
+      </div>
+      <button onclick="toggleAnswer('ans95')">Hiện đáp án</button>
+      <div id="ans95" class="answer-text">Đáp án: B. Ground connection</div>
+    </div>
+
+    <div class="question">
+      <b>96. What is the typical power consumption of LM35?</b>
+      <div class="options">
+        <div>A. 60 µA</div>
+        <div>B. 600 µA</div>
+        <div>C. 6 mA</div>
+        <div>D. 60 mA</div>
+      </div>
+      <button onclick="toggleAnswer('ans96')">Hiện đáp án</button>
+      <div id="ans96" class="answer-text">Đáp án: A. 60 µA</div>
+    </div>
+
+    <div class="question">
+      <b>97. What does digitalRead() return?</b>
+      <div class="options">
+        <div>A. 0 or 1</div>
+        <div>B. 0 to 1023</div>
+        <div>C. Voltage value</div>
+        <div>D. PWM signal</div>
+      </div>
+      <button onclick="toggleAnswer('ans97')">Hiện đáp án</button>
+      <div id="ans97" class="answer-text">Đáp án: A. 0 or A1</div>
+    </div>
+
+    <div class="question">
+      <b>98. What is the typical beam angle of the SRF05?</b>
+      <div class="options">
+        <div>A. 15°</div>
+        <div>B. 30°</div>
+        <div>C. 45°</div>
+        <div>D. 60°</div>
+      </div>
+      <button onclick="toggleAnswer('ans98')">Hiện đáp án</button>
+      <div id="ans98" class="answer-text">Đáp án: B. 30°</div>
+    </div>
+
+    <div class="question">
+      <b>99. What is the purpose of the Wire library in Arduino?</b>
+      <div class="options">
+        <div>A. Serial communication</div>
+        <div>B. I2C communication</div>
+        <div>C. SPI communication</div>
+        <div>D. PWM control</div>
+      </div>
+      <button onclick="toggleAnswer('ans99')">Hiện đáp án</button>
+      <div id="ans99" class="answer-text">Đáp án: B. I2C communication</div>
+    </div>
+
+    <div class="question">
+      <b>100. What is the typical contrast adjustment pin for LCD1602?</b>
+      <div class="options">
+        <div>A. V0</div>
+        <div>B. V1</div>
+        <div>C. V2</div>
+        <div>D. V3</div>
+      </div>
+      <button onclick="toggleAnswer('ans100')">Hiện đáp án</button>
+      <div id="ans100" class="answer-text">Đáp án: A. V0</div>
+    </div>
+
+  </body>
+</html>
