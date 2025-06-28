@@ -2921,559 +2921,556 @@
       <div id="ans_pwm_50" class="answer-text">Answer: C. analogWrite() with incrementing values</div>
     </div>
 
-    <!-- Arduino Uno General Questions -->
-    <h2>Arduino Uno General Questions</h2>
-    <div class="question">
-      <b>1. What is the microcontroller used in Arduino Uno?</b>
-      <div class="options">
-        <div>A. ATmega328P</div>
-        <div>B. ATmega168</div>
-        <div>C. ATmega2560</div>
-        <div>D. ATmega32U4</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_1')">Show Answer</button>
-      <div id="ans_uno_1" class="answer-text">Answer: A. ATmega328P</div>
+    <!-- LCD1602 Questions -->
+  <h2>LCD1602 Questions</h2>
+  <div class="question">
+    <b>1. What does "1602" stand for in LCD1602?</b>
+    <div class="options">
+      <div>A. 16 characters x 2 lines</div>
+      <div>B. 16-bit interface x 2 screens</div>
+      <div>C. 1602 bytes of memory</div>
+      <div>D. 16 rows and 2 columns</div>
     </div>
-    <div class="question">
-      <b>2. What is the operating voltage of Arduino Uno?</b>
-      <div class="options">
-        <div>A. 3.3V</div>
-        <div>B. 5V</div>
-        <div>C. 9V</div>
-        <div>D. 12V</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_2')">Show Answer</button>
-      <div id="ans_uno_2" class="answer-text">Answer: B. 5V</div>
+    <button onclick="toggleAnswer('ans_lcd_1')">Show Answer</button>
+    <div id="ans_lcd_1" class="answer-text">Answer: A. 16 characters x 2 lines</div>
+  </div>
+  <div class="question">
+    <b>2. How many characters can an LCD1602 display at once?</b>
+    <div class="options">
+      <div>A. 16</div>
+      <div>B. 32</div>
+      <div>C. 1602</div>
+      <div>D. 64</div>
     </div>
-    <div class="question">
-      <b>3. How many digital I/O pins does Arduino Uno have?</b>
-      <div class="options">
-        <div>A. 10</div>
-        <div>B. 14</div>
-        <div>C. 20</div>
-        <div>D. 28</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_3')">Show Answer</button>
-      <div id="ans_uno_3" class="answer-text">Answer: B. 14</div>
+    <button onclick="toggleAnswer('ans_lcd_2')">Show Answer</button>
+    <div id="ans_lcd_2" class="answer-text">Answer: B. 32 (16 characters × 2 lines = 32 characters)</div>
+  </div>
+  <div class="question">
+    <b>3. What controller chip is typically used in LCD1602?</b>
+    <div class="options">
+      <div>A. MAX7219</div>
+      <div>B. HD44780</div>
+      <div>C. MCP23017</div>
+      <div>D. ATmega328P</div>
     </div>
-    <div class="question">
-      <b>4. How many analog input pins does Arduino Uno have?</b>
-      <div class="options">
-        <div>A. 4</div>
-        <div>B. 6</div>
-        <div>C. 8</div>
-        <div>D. 10</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_4')">Show Answer</button>
-      <div id="ans_uno_4" class="answer-text">Answer: B. 6</div>
+    <button onclick="toggleAnswer('ans_lcd_3')">Show Answer</button>
+    <div id="ans_lcd_3" class="answer-text">Answer: B. HD44780</div>
+  </div>
+  <div class="question">
+    <b>4. What is the default data bus width of LCD1602?</b>
+    <div class="options">
+      <div>A. 4-bit or 8-bit</div>
+      <div>B. Only 8-bit</div>
+      <div>C. Only 4-bit</div>
+      <div>D. 16-bit</div>
     </div>
-    <div class="question">
-      <b>5. What is the clock speed of Arduino Uno?</b>
-      <div class="options">
-        <div>A. 8 MHz</div>
-        <div>B. 16 MHz</div>
-        <div>C. 20 MHz</div>
-        <div>D. 32 MHz</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_5')">Show Answer</button>
-      <div id="ans_uno_5" class="answer-text">Answer: B. 16 MHz</div>
+    <button onclick="toggleAnswer('ans_lcd_4')">Show Answer</button>
+    <div id="ans_lcd_4" class="answer-text">Answer: A. 4-bit or 8-bit</div>
+  </div>
+  <div class="question">
+    <b>5. What is the purpose of the RS (Register Select) pin?</b>
+    <div class="options">
+      <div>A. Controls contrast</div>
+      <div>B. Selects command or data mode</div>
+      <div>C. Sets backlight</div>
+      <div>D. Sends clock signal</div>
     </div>
-    <div class="question">
-      <b>6. What is the maximum current per I/O pin on Arduino Uno?</b>
-      <div class="options">
-        <div>A. 20 mA</div>
-        <div>B. 40 mA</div>
-        <div>C. 50 mA</div>
-        <div>D. 100 mA</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_6')">Show Answer</button>
-      <div id="ans_uno_6" class="answer-text">Answer: A. 20 mA</div>
+    <button onclick="toggleAnswer('ans_lcd_5')">Show Answer</button>
+    <div id="ans_lcd_5" class="answer-text">Answer: B. Selects command or data mode</div>
+  </div>
+  <div class="question">
+    <b>6. Which Arduino library is commonly used with LCD1602?</b>
+    <div class="options">
+      <div>A. Wire.h</div>
+      <div>B. LiquidCrystal.h</div>
+      <div>C. LCD.h</div>
+      <div>D. Display.h</div>
     </div>
-    <div class="question">
-      <b>7. Which pin provides 3.3V output on Arduino Uno?</b>
-      <div class="options">
-        <div>A. Vin</div>
-        <div>B. 5V</div>
-        <div>C. 3.3V</div>
-        <div>D. AREF</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_7')">Show Answer</button>
-      <div id="ans_uno_7" class="answer-text">Answer: C. 3.3V</div>
+    <button onclick="toggleAnswer('ans_lcd_6')">Show Answer</button>
+    <div id="ans_lcd_6" class="answer-text">Answer: B. LiquidCrystal.h</div>
+  </div>
+  <div class="question">
+    <b>7. What does the lcd.begin(16, 2); command do?</b>
+    <div class="options">
+      <div>A. Initializes LCD for 16-bit mode</div>
+      <div>B. Starts I2C communication</div>
+      <div>C. Sets LCD to 16 columns, 2 rows</div>
+      <div>D. Turns on backlight</div>
     </div>
-    <div class="question">
-      <b>8. What is the purpose of the AREF pin?</b>
-      <div class="options">
-        <div>A. Power supply</div>
-        <div>B. Analog reference voltage</div>
-        <div>C. Ground connection</div>
-        <div>D. PWM output</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_8')">Show Answer</button>
-      <div id="ans_uno_8" class="answer-text">Answer: B. Analog reference voltage</div>
+    <button onclick="toggleAnswer('ans_lcd_7')">Show Answer</button>
+    <div id="ans_lcd_7" class="answer-text">Answer: C. Sets LCD to 16 columns, 2 rows</div>
+  </div>
+  <div class="question">
+    <b>8. What is the function of the EN (Enable) pin on LCD1602?</b>
+    <div class="options">
+      <div>A. Powers the display</div>
+      <div>B. Enables serial mode</div>
+      <div>C. Tells LCD to read data</div>
+      <div>D. Resets the LCD</div>
     </div>
-    <div class="question">
-      <b>9. What is the flash memory size of Arduino Uno?</b>
-      <div class="options">
-        <div>A. 16 KB</div>
-        <div>B. 32 KB</div>
-        <div>C. 64 KB</div>
-        <div>D. 128 KB</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_9')">Show Answer</button>
-      <div id="ans_uno_9" class="answer-text">Answer: B. 32 KB</div>
+    <button onclick="toggleAnswer('ans_lcd_8')">Show Answer</button>
+    <div id="ans_lcd_8" class="answer-text">Answer: C. Tells LCD to read data</div>
+  </div>
+  <div class="question">
+    <b>9. What is the maximum number of custom characters you can define?</b>
+    <div class="options">
+      <div>A. 4</div>
+      <div>B. 8</div>
+      <div>C. 16</div>
+      <div>D. 64</div>
     </div>
-    <div class="question">
-      <b>10. How much SRAM does Arduino Uno have?</b>
-      <div class="options">
-        <div>A. 1 KB</div>
-        <div>B. 2 KB</div>
-        <div>C. 4 KB</div>
-        <div>D. 8 KB</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_10')">Show Answer</button>
-      <div id="ans_uno_10" class="answer-text">Answer: B. 2 KB</div>
+    <button onclick="toggleAnswer('ans_lcd_9')">Show Answer</button>
+    <div id="ans_lcd_9" class="answer-text">Answer: B. 8</div>
+  </div>
+  <div class="question">
+    <b>10. What command is used to print text on the LCD?</b>
+    <div class="options">
+      <div>A. Serial.print()</div>
+      <div>B. lcd.show()</div>
+      <div>C. lcd.print()</div>
+      <div>D. display.write()</div>
     </div>
-    <div class="question">
-      <b>11. What is the EEPROM size of Arduino Uno?</b>
-      <div class="options">
-        <div>A. 512 bytes</div>
-        <div>B. 1 KB</div>
-        <div>C. 2 KB</div>
-        <div>D. 4 KB</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_11')">Show Answer</button>
-      <div id="ans_uno_11" class="answer-text">Answer: B. 1 KB</div>
+    <button onclick="toggleAnswer('ans_lcd_10')">Show Answer</button>
+    <div id="ans_lcd_10" class="answer-text">Answer: C. lcd.print()</div>
+  </div>
+  <div class="question">
+    <b>11. What pin controls the backlight of a standard LCD1602?</b>
+    <div class="options">
+      <div>A. VSS</div>
+      <div>B. V0</div>
+      <div>C. A (anode)</div>
+      <div>D. D7</div>
     </div>
-    <div class="question">
-      <b>12. Which communication protocol is NOT supported by Arduino Uno?</b>
-      <div class="options">
-        <div>A. UART</div>
-        <div>B. I2C</div>
-        <div>C. SPI</div>
-        <div>D. CAN</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_12')">Show Answer</button>
-      <div id="ans_uno_12" class="answer-text">Answer: D. CAN</div>
+    <button onclick="toggleAnswer('ans_lcd_11')">Show Answer</button>
+    <div id="ans_lcd_11" class="answer-text">Answer: C. A (anode)</div>
+  </div>
+  <div class="question">
+    <b>12. Which LCD1602 mode saves Arduino I/O pins?</b>
+    <div class="options">
+      <div>A. 8-bit mode</div>
+      <div>B. SPI</div>
+      <div>C. I2C</div>
+      <div>D. UART</div>
     </div>
-    <div class="question">
-      <b>13. What is the recommended input voltage for Arduino Uno?</b>
-      <div class="options">
-        <div>A. 3–5V</div>
-        <div>B. 7–12V</div>
-        <div>C. 12–15V</div>
-        <div>D. 15–20V</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_13')">Show Answer</button>
-      <div id="ans_uno_13" class="answer-text">Answer: B. 7–12V</div>
+    <button onclick="toggleAnswer('ans_lcd_12')">Show Answer</button>
+    <div id="ans_lcd_12" class="answer-text">Answer: C. I2C</div>
+  </div>
+  <div class="question">
+    <b>13. Which module is used to convert LCD1602 to I2C interface?</b>
+    <div class="options">
+      <div>A. MAX7219</div>
+      <div>B. PCF8574</div>
+      <div>C. MCP3008</div>
+      <div>D. DS1307</div>
     </div>
-    <div class="question">
-      <b>14. Which pin is used for SPI MOSI on Arduino Uno?</b>
-      <div class="options">
-        <div>A. Pin 10</div>
-        <div>B. Pin 11</div>
-        <div>C. Pin 12</div>
-        <div>D. Pin 13</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_14')">Show Answer</button>
-      <div id="ans_uno_14" class="answer-text">Answer: B. Pin 11</div>
+    <button onclick="toggleAnswer('ans_lcd_13')">Show Answer</button>
+    <div id="ans_lcd_13" class="answer-text">Answer: B. PCF8574</div>
+  </div>
+  <div class="question">
+    <b>14. How many pins does the LCD1602 have in parallel (non-I2C) mode?</b>
+    <div class="options">
+      <div>A. 8</div>
+      <div>B. 10</div>
+      <div>C. 12</div>
+      <div>D. 16</div>
     </div>
-    <div class="question">
-      <b>15. Which pin is used for SPI MISO on Arduino Uno?</b>
-      <div class="options">
-        <div>A. Pin 10</div>
-        <div>B. Pin 11</div>
-        <div>C. Pin 12</div>
-        <div>D. Pin 13</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_15')">Show Answer</button>
-      <div id="ans_uno_15" class="answer-text">Answer: C. Pin 12</div>
+    <button onclick="toggleAnswer('ans_lcd_14')">Show Answer</button>
+    <div id="ans_lcd_14" class="answer-text">Answer: D. 16</div>
+  </div>
+  <div class="question">
+    <b>15. What does V0 pin do on LCD1602?</b>
+    <div class="options">
+      <div>A. Set contrast</div>
+      <div>B. Supply power</div>
+      <div>C. Control backlight</div>
+      <div>D. Control cursor</div>
     </div>
-    <div class="question">
-      <b>16. Which pin is used for SPI SCK on Arduino Uno?</b>
-      <div class="options">
-        <div>A. Pin 10</div>
-        <div>B. Pin 11</div>
-        <div>C. Pin 12</div>
-        <div>D. Pin 13</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_16')">Show Answer</button>
-      <div id="ans_uno_16" class="answer-text">Answer: D. Pin 13</div>
+    <button onclick="toggleAnswer('ans_lcd_15')">Show Answer</button>
+    <div id="ans_lcd_15" class="answer-text">Answer: A. Set contrast</div>
+  </div>
+  <div class="question">
+    <b>16. What voltage does the LCD typically operate at?</b>
+    <div class="options">
+      <div>A. 12V</div>
+      <div>B. 9V</div>
+      <div>C. 5V</div>
+      <div>D. 3.3V</div>
     </div>
-    <div class="question">
-      <b>17. What is the purpose of the Reset pin?</b>
-      <div class="options">
-        <div>A. Power supply</div>
-        <div>B. Restart the microcontroller</div>
-        <div>C. Analog input</div>
-        <div>D. PWM output</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_17')">Show Answer</button>
-      <div id="ans_uno_17" class="answer-text">Answer: B. Restart the microcontroller</div>
+    <button onclick="toggleAnswer('ans_lcd_16')">Show Answer</button>
+    <div id="ans_lcd_16" class="answer-text">Answer: C. 5V</div>
+  </div>
+  <div class="question">
+    <b>17. Which command clears the screen?</b>
+    <div class="options">
+      <div>A. lcd.reset()</div>
+      <div>B. lcd.blank()</div>
+      <div>C. lcd.clear()</div>
+      <div>D. lcd.erase()</div>
     </div>
-    <div class="question">
-      <b>18. Which pins are used for I2C communication on Arduino Uno?</b>
-      <div class="options">
-        <div>A. Pins 2 and 3</div>
-        <div>B. Pins A4 and A5</div>
-        <div>C. Pins 10 and 11</div>
-        <div>D. Pins 12 and 13</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_18')">Show Answer</button>
-      <div id="ans_uno_18" class="answer-text">Answer: B. Pins A4 and A5</div>
+    <button onclick="toggleAnswer('ans_lcd_17')">Show Answer</button>
+    <div id="ans_lcd_17" class="answer-text">Answer: C. lcd.clear()</div>
+  </div>
+  <div class="question">
+    <b>18. What does lcd.setCursor(0, 1); do?</b>
+    <div class="options">
+      <div>A. Turns on blinking</div>
+      <div>B. Sets cursor to row 0, column 1</div>
+      <div>C. Sets cursor to column 0, row 1</div>
+      <div>D. Resets the cursor</div>
     </div>
-    <div class="question">
-      <b>19. What is the resolution of analogRead() on Arduino Uno?</b>
-      <div class="options">
-        <div>A. 8-bit</div>
-        <div>B. 10-bit</div>
-        <div>C. 12-bit</div>
-        <div>D. 16-bit</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_19')">Show Answer</button>
-      <div id="ans_uno_19" class="answer-text">Answer: B. 10-bit</div>
+    <button onclick="toggleAnswer('ans_lcd_18')">Show Answer</button>
+    <div id="ans_lcd_18" class="answer-text">Answer: C. Sets cursor to column 0, row 1</div>
+  </div>
+  <div class="question">
+    <b>19. How is the LCD connected to Arduino in I2C mode?</b>
+    <div class="options">
+      <div>A. RX, TX</div>
+      <div>B. SDA, SCL</div>
+      <div>C. MISO, MOSI</div>
+      <div>D. D0, D1</div>
     </div>
-    <div class="question">
-      <b>20. What is the range of values returned by analogRead()?</b>
-      <div class="options">
-        <div>A. 0–255</div>
-        <div>B. 0–1023</div>
-        <div>C. 0–100</div>
-        <div>D. 0–5000</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_20')">Show Answer</button>
-      <div id="ans_uno_20" class="answer-text">Answer: B. 0–1023</div>
+    <button onclick="toggleAnswer('ans_lcd_19')">Show Answer</button>
+    <div id="ans_lcd_19" class="answer-text">Answer: B. SDA, SCL</div>
+  </div>
+  <div class="question">
+    <b>20. What is a common I2C address for LCD1602?</b>
+    <div class="options">
+      <div>A. 0x20</div>
+      <div>B. 0x27</div>
+      <div>C. 0x3C</div>
+      <div>D. 0x7F</div>
     </div>
-    <div class="question">
-      <b>21. What is the purpose of the Vin pin?</b>
-      <div class="options">
-        <div>A. Provides 3.3V</div>
-        <div>B. External power input</div>
-        <div>C. Analog reference</div>
-        <div>D. Ground</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_21')">Show Answer</button>
-      <div id="ans_uno_21" class="answer-text">Answer: B. External power input</div>
+    <button onclick="toggleAnswer('ans_lcd_20')">Show Answer</button>
+    <div id="ans_lcd_20" class="answer-text">Answer: B. 0x27</div>
+  </div>
+  <div class="question">
+    <b>21. Which LCD pin connects to GND?</b>
+    <div class="options">
+      <div>A. VCC</div>
+      <div>B. VSS</div>
+      <div>C. D7</div>
+      <div>D. RS</div>
     </div>
-    <div class="question">
-      <b>22. What is the maximum current output of the 5V pin?</b>
-      <div class="options">
-        <div>A. 200 mA</div>
-        <div>B. 500 mA</div>
-        <div>C. 800 mA</div>
-        <div>D. 1 A</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_22')">Show Answer</button>
-      <div id="ans_uno_22" class="answer-text">Answer: B. 500 mA</div>
+    <button onclick="toggleAnswer('ans_lcd_21')">Show Answer</button>
+    <div id="ans_lcd_21" class="answer-text">Answer: B. VSS</div>
+  </div>
+  <div class="question">
+    <b>22. Which command turns off the cursor?</b>
+    <div class="options">
+      <div>A. lcd.noCursor()</div>
+      <div>B. lcd.cursorOff()</div>
+      <div>C. lcd.cursor(false)</div>
+      <div>D. lcd.hideCursor()</div>
     </div>
-    <div class="question">
-      <b>23. What is the maximum current output of the 3.3V pin?</b>
-      <div class="options">
-        <div>A. 50 mA</div>
-        <div>B. 100 mA</div>
-        <div>C. 150 mA</div>
-        <div>D. 200 mA</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_23')">Show Answer</button>
-      <div id="ans_uno_23" class="answer-text">Answer: A. 50 mA</div>
+    <button onclick="toggleAnswer('ans_lcd_22')">Show Answer</button>
+    <div id="ans_lcd_22" class="answer-text">Answer: A. lcd.noCursor()</div>
+  </div>
+  <div class="question">
+    <b>23. Can LCD1602 display graphics?</b>
+    <div class="options">
+      <div>A. No</div>
+      <div>B. Yes</div>
     </div>
-    <div class="question">
-      <b>24. Which pin is connected to the onboard LED?</b>
-      <div class="options">
-        <div>A. Pin 10</div>
-        <div>B. Pin 11</div>
-        <div>C. Pin 12</div>
-        <div>D. Pin 13</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_24')">Show Answer</button>
-      <div id="ans_uno_24" class="answer-text">Answer: D. Pin 13</div>
+    <button onclick="toggleAnswer('ans_lcd_23')">Show Answer</button>
+    <div id="ans_lcd_23" class="answer-text">Answer: A. No (Only character-based)</div>
+  </div>
+  <div class="question">
+    <b>24. What is the purpose of a potentiometer in LCD circuits?</b>
+    <div class="options">
+      <div>A. Power control</div>
+      <div>B. Delay setting</div>
+      <div>C. Contrast adjustment</div>
+      <div>D. Speed control</div>
     </div>
-    <div class="question">
-      <b>25. What is the default bootloader used in Arduino Uno?</b>
-      <div class="options">
-        <div>A. Optiboot</div>
-        <div>B. LUFA</div>
-        <div>C. AVR-GCC</div>
-        <div>D. STK500</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_25')">Show Answer</button>
-      <div id="ans_uno_25" class="answer-text">Answer: A. Optiboot</div>
+    <button onclick="toggleAnswer('ans_lcd_24')">Show Answer</button>
+    <div id="ans_lcd_24" class="answer-text">Answer: C. Contrast adjustment</div>
+  </div>
+  <div class="question">
+    <b>25. How many data pins are used in 4-bit mode?</b>
+    <div class="options">
+      <div>A. 2</div>
+      <div>B. 4</div>
+      <div>C. 6</div>
+      <div>D. 8</div>
     </div>
-    <div class="question">
-      <b>26. What is the purpose of the ICSP header?</b>
-      <div class="options">
-        <div>A. Power supply</div>
-        <div>B. In-Circuit Serial Programming</div>
-        <div>C. Analog input</div>
-        <div>D. USB connection</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_26')">Show Answer</button>
-      <div id="ans_uno_26" class="answer-text">Answer: B. In-Circuit Serial Programming</div>
+    <button onclick="toggleAnswer('ans_lcd_25')">Show Answer</button>
+    <div id="ans_lcd_25" class="answer-text">Answer: B. 4</div>
+  </div>
+  <div class="question">
+    <b>26. What does the lcd.blink() function do?</b>
+    <div class="options">
+      <div>A. Turns off LCD</div>
+      <div>B. Makes text blink</div>
+      <div>C. Makes cursor blink</div>
+      <div>D. Refreshes display</div>
     </div>
-    <div class="question">
-      <b>27. Which USB chip is used in Arduino Uno R3?</b>
-      <div class="options">
-        <div>A. FT232R</div>
-        <div>B. ATmega16U2</div>
-        <div>C. CH340</div>
-        <div>D. CP2102</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_27')">Show Answer</button>
-      <div id="ans_uno_27" class="answer-text">Answer: B. ATmega16U2</div>
+    <button onclick="toggleAnswer('ans_lcd_26')">Show Answer</button>
+    <div id="ans_lcd_26" class="answer-text">Answer: C. Makes cursor blink</div>
+  </div>
+  <div class="question">
+    <b>27. Which command disables blinking cursor?</b>
+    <div class="options">
+      <div>A. lcd.blinkOff()</div>
+      <div>B. lcd.noBlink()</div>
+      <div>C. lcd.stopBlink()</div>
+      <div>D. lcd.hideBlink()</div>
     </div>
-    <div class="question">
-      <b>28. What is the default baud rate for Serial communication?</b>
-      <div class="options">
-        <div>A. 9600</div>
-        <div>B. 19200</div>
-        <div>C. 38400</div>
-        <div>D. 115200</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_28')">Show Answer</button>
-      <div id="ans_uno_28" class="answer-text">Answer: A. 9600</div>
+    <button onclick="toggleAnswer('ans_lcd_27')">Show Answer</button>
+    <div id="ans_lcd_27" class="answer-text">Answer: B. lcd.noBlink()</div>
+  </div>
+  <div class="question">
+    <b>28. What is the maximum number of rows supported in LCD1602?</b>
+    <div class="options">
+      <div>A. 1</div>
+      <div>B. 2</div>
+      <div>C. 4</div>
+      <div>D. 8</div>
     </div>
-    <div class="question">
-      <b>29. Which library is used for I2C communication?</b>
-      <div class="options">
-        <div>A. SPI.h</div>
-        <div>B. Wire.h</div>
-        <div>C. Serial.h</div>
-        <div>D. I2C.h</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_29')">Show Answer</button>
-      <div id="ans_uno_29" class="answer-text">Answer: B. Wire.h</div>
+    <button onclick="toggleAnswer('ans_lcd_28')">Show Answer</button>
+    <div id="ans_lcd_28" class="answer-text">Answer: B. 2</div>
+  </div>
+  <div class="question">
+    <b>29. What happens when text exceeds column limit?</b>
+    <div class="options">
+      <div>A. Truncated</div>
+      <div>B. Goes to next line</div>
+      <div>C. Wraps around</div>
+      <div>D. Nothing</div>
     </div>
-    <div class="question">
-      <b>30. Which library is used for SPI communication?</b>
-      <div class="options">
-        <div>A. SPI.h</div>
-        <div>B. Wire.h</div>
-        <div>C. Serial.h</div>
-        <div>D. I2C.h</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_30')">Show Answer</button>
-      <div id="ans_uno_30" class="answer-text">Answer: A. SPI.h</div>
+    <button onclick="toggleAnswer('ans_lcd_29')">Show Answer</button>
+    <div id="ans_lcd_29" class="answer-text">Answer: A. Truncated</div>
+  </div>
+  <div class="question">
+    <b>30. Which Arduino library supports I2C LCD1602 displays?</b>
+    <div class="options">
+      <div>A. Wire.h only</div>
+      <div>B. LiquidCrystal_I2C.h</div>
+      <div>C. Serial.h</div>
+      <div>D. Keypad.h</div>
     </div>
-    <div class="question">
-      <b>31. What is the purpose of the pinMode() function?</b>
-      <div class="options">
-        <div>A. Reads digital input</div>
-        <div>B. Sets pin as input or output</div>
-        <div>C. Generates PWM</div>
-        <div>D. Reads analog input</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_31')">Show Answer</button>
-      <div id="ans_uno_31" class="answer-text">Answer: B. Sets pin as input or output</div>
+    <button onclick="toggleAnswer('ans_lcd_30')">Show Answer</button>
+    <div id="ans_lcd_30" class="answer-text">Answer: B. LiquidCrystal_I2C.h</div>
+  </div>
+  <div class="question">
+    <b>31. What does lcd.home() do?</b>
+    <div class="options">
+      <div>A. Clears the display</div>
+      <div>B. Turns off backlight</div>
+      <div>C. Moves cursor to (0, 0)</div>
+      <div>D. Returns LCD to standby</div>
     </div>
-    <div class="question">
-      <b>32. What is the maximum voltage that can be applied to an analog input pin?</b>
-      <div class="options">
-        <div>A. 3.3V</div>
-        <div>B. 5V</div>
-        <div>C. 9V</div>
-        <div>D. 12V</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_32')">Show Answer</button>
-      <div id="ans_uno_32" class="answer-text">Answer: B. 5V</div>
+    <button onclick="toggleAnswer('ans_lcd_31')">Show Answer</button>
+    <div id="ans_lcd_31" class="answer-text">Answer: C. Moves cursor to (0, 0)</div>
+  </div>
+  <div class="question">
+    <b>32. Can you define custom characters in LCD1602?</b>
+    <div class="options">
+      <div>A. No</div>
+      <div>B. Yes, up to 4</div>
+      <div>C. Yes, up to 8</div>
+      <div>D. Yes, up to 16</div>
     </div>
-    <div class="question">
-      <b>33. What happens if you exceed the maximum current on an I/O pin?</b>
-      <div class="options">
-        <div>A. Pin becomes analog</div>
-        <div>B. Microcontroller may get damaged</div>
-        <div>C. Pin outputs 5V</div>
-        <div>D. No effect</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_33')">Show Answer</button>
-      <div id="ans_uno_33" class="answer-text">Answer: B. Microcontroller may get damaged</div>
+    <button onclick="toggleAnswer('ans_lcd_32')">Show Answer</button>
+    <div id="ans_lcd_32" class="answer-text">Answer: C. Yes, up to 8</div>
+  </div>
+  <div class="question">
+    <b>33. Which command creates a custom character?</b>
+    <div class="options">
+      <div>A. lcd.write()</div>
+      <div>B. lcd.define()</div>
+      <div>C. lcd.createChar()</div>
+      <div>D. lcd.setCustom()</div>
     </div>
-    <div class="question">
-      <b>34. Which pins can be used for UART communication?</b>
-      <div class="options">
-        <div>A. Pins 0 and 1</div>
-        <div>B. Pins 2 and 3</div>
-        <div>C. Pins A0 and A1</div>
-        <div>D. Pins 10 and 11</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_34')">Show Answer</button>
-      <div id="ans_uno_34" class="answer-text">Answer: A. Pins 0 and 1</div>
+    <button onclick="toggleAnswer('ans_lcd_33')">Show Answer</button>
+    <div id="ans_lcd_33" class="answer-text">Answer: C. lcd.createChar()</div>
+  </div>
+  <div class="question">
+    <b>34. What value range is used to access custom characters?</b>
+    <div class="options">
+      <div>A. 0–3</div>
+      <div>B. 0–7</div>
+      <div>C. 0–15</div>
+      <div>D. 0–255</div>
     </div>
-    <div class="question">
-      <b>35. What is the purpose of the Serial.begin() function?</b>
-      <div class="options">
-        <div>A. Starts I2C communication</div>
-        <div>B. Initializes serial communication</div>
-        <div>C. Sets PWM frequency</div>
-        <div>D. Reads analog input</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_35')">Show Answer</button>
-      <div id="ans_uno_35" class="answer-text">Answer: B. Initializes serial communication</div>
+    <button onclick="toggleAnswer('ans_lcd_34')">Show Answer</button>
+    <div id="ans_lcd_34" class="answer-text">Answer: B. 0–7</div>
+  </div>
+  <div class="question">
+    <b>35. What data type is used to define a custom character?</b>
+    <div class="options">
+      <div>A. char</div>
+      <div>B. byte array</div>
+      <div>C. int</div>
+      <div>D. float</div>
     </div>
-    <div class="question">
-      <b>36. What is the function of digitalRead()?</b>
-      <div class="options">
-        <div>A. Sets pin HIGH or LOW</div>
-        <div>B. Reads digital input</div>
-        <div>C. Generates PWM</div>
-        <div>D. Reads analog input</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_36')">Show Answer</button>
-      <div id="ans_uno_36" class="answer-text">Answer: B. Reads digital input</div>
+    <button onclick="toggleAnswer('ans_lcd_35')">Show Answer</button>
+    <div id="ans_lcd_35" class="answer-text">Answer: B. byte array</div>
+  </div>
+  <div class="question">
+    <b>36. How many bytes are needed to define one custom character?</b>
+    <div class="options">
+      <div>A. 4</div>
+      <div>B. 7</div>
+      <div>C. 8</div>
+      <div>D. 16</div>
     </div>
-    <div class="question">
-      <b>37. What is the function of digitalWrite()?</b>
-      <div class="options">
-        <div>A. Reads digital input</div>
-        <div>B. Sets pin HIGH or LOW</div>
-        <div>C. Generates PWM</div>
-        <div>D. Reads analog input</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_37')">Show Answer</button>
-      <div id="ans_uno_37" class="answer-text">Answer: B. Sets pin HIGH or LOW</div>
+    <button onclick="toggleAnswer('ans_lcd_36')">Show Answer</button>
+    <div id="ans_lcd_36" class="answer-text">Answer: C. 8</div>
+  </div>
+  <div class="question">
+    <b>37. In 4-bit mode, how is data sent to LCD1602?</b>
+    <div class="options">
+      <div>A. One byte at a time</div>
+      <div>B. 2 nibbles (4-bit each)</div>
+      <div>C. As ASCII values</div>
+      <div>D. Using SPI</div>
     </div>
-    <div class="question">
-      <b>38. What is the default state of digital pins at startup?</b>
-      <div class="options">
-        <div>A. HIGH</div>
-        <div>B. LOW</div>
-        <div>C. Input</div>
-        <div>D. Output</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_38')">Show Answer</button>
-      <div id="ans_uno_38" class="answer-text">Answer: C. Input</div>
+    <button onclick="toggleAnswer('ans_lcd_37')">Show Answer</button>
+    <div id="ans_lcd_37" class="answer-text">Answer: B. 2 nibbles (4-bit each)</div>
+  </div>
+  <div class="question">
+    <b>38. What happens if EN pin is not pulsed correctly?</b>
+    <div class="options">
+      <div>A. Data is corrupted</div>
+      <div>B. Backlight turns off</div>
+      <div>C. LCD resets</div>
+      <div>D. Nothing happens</div>
     </div>
-    <div class="question">
-      <b>39. What is the purpose of the delay() function?</b>
-      <div class="options">
-        <div>A. Reads digital input</div>
-        <div>B. Pauses program execution</div>
-        <div>C. Generates PWM</div>
-        <div>D. Initializes serial communication</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_39')">Show Answer</button>
-      <div id="ans_uno_39" class="answer-text">Answer: B. Pauses program execution</div>
+    <button onclick="toggleAnswer('ans_lcd_38')">Show Answer</button>
+    <div id="ans_lcd_38" class="answer-text">Answer: A. Data is corrupted</div>
+  </div>
+  <div class="question">
+    <b>39. Which function turns on the display after turning it off?</b>
+    <div class="options">
+      <div>A. lcd.begin()</div>
+      <div>B. lcd.display()</div>
+      <div>C. lcd.show()</div>
+      <div>D. lcd.turnOn()</div>
     </div>
-    <div class="question">
-      <b>40. What is the unit of time used in delay()?</b>
-      <div class="options">
-        <div>A. Seconds</div>
-        <div>B. Microseconds</div>
-        <div>C. Milliseconds</div>
-        <div>D. Minutes</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_40')">Show Answer</button>
-      <div id="ans_uno_40" class="answer-text">Answer: C. Milliseconds</div>
+    <button onclick="toggleAnswer('ans_lcd_39')">Show Answer</button>
+    <div id="ans_lcd_39" class="answer-text">Answer: B. lcd.display()</div>
+  </div>
+  <div class="question">
+    <b>40. Which function disables the display without clearing it?</b>
+    <div class="options">
+      <div>A. lcd.sleep()</div>
+      <div>B. lcd.noDisplay()</div>
+      <div>C. lcd.clear()</div>
+      <div>D. lcd.blink()</div>
     </div>
-    <div class="question">
-      <b>41. What function is used to pause in microseconds?</b>
-      <div class="options">
-        <div>A. delay()</div>
-        <div>B. delayMicroseconds()</div>
-        <div>C. pause()</div>
-        <div>D. wait()</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_41')">Show Answer</button>
-      <div id="ans_uno_41" class="answer-text">Answer: B. delayMicroseconds()</div>
+    <button onclick="toggleAnswer('ans_lcd_40')">Show Answer</button>
+    <div id="ans_lcd_40" class="answer-text">Answer: B. lcd.noDisplay()</div>
+  </div>
+  <div class="question">
+    <b>41. What type of device is the LCD1602?</b>
+    <div class="options">
+      <div>A. Input</div>
+      <div>B. Output</div>
+      <div>C. Storage</div>
+      <div>D. Sensor</div>
     </div>
-    <div class="question">
-      <b>42. What is the maximum number of timers in Arduino Uno?</b>
-      <div class="options">
-        <div>A. 2</div>
-        <div>B. 3</div>
-        <div>C. 4</div>
-        <div>D. 5</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_42')">Show Answer</button>
-      <div id="ans_uno_42" class="answer-text">Answer: B. 3</div>
+    <button onclick="toggleAnswer('ans_lcd_41')">Show Answer</button>
+    <div id="ans_lcd_41" class="answer-text">Answer: B. Output</div>
+  </div>
+  <div class="question">
+    <b>42. What pin of the I2C LCD1602 determines the module address?</b>
+    <div class="options">
+      <div>A. EN</div>
+      <div>B. SDA</div>
+      <div>C. A0–A2</div>
+      <div>D. V0</div>
     </div>
-    <div class="question">
-      <b>43. Which function reads the time since Arduino started?</b>
-      <div class="options">
-        <div>A. time()</div>
-        <div>B. millis()</div>
-        <div>C. micros()</div>
-        <div>D. delay()</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_43')">Show Answer</button>
-      <div id="ans_uno_43" class="answer-text">Answer: B. millis()</div>
+    <button onclick="toggleAnswer('ans_lcd_42')">Show Answer</button>
+    <div id="ans_lcd_42" class="answer-text">Answer: C. A0–A2</div>
+  </div>
+  <div class="question">
+    <b>43. What is the default contrast voltage for optimal display?</b>
+    <div class="options">
+      <div>A. 3.3V</div>
+      <div>B. 5V</div>
+      <div>C. Around 0.5–1V</div>
+      <div>D. GND</div>
     </div>
-    <div class="question">
-      <b>44. What is the resolution of micros() function?</b>
-      <div class="options">
-        <div>A. 1 millisecond</div>
-        <div>B. 4 microseconds</div>
-        <div>C. 1 second</div>
-        <div>D. 10 milliseconds</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_44')">Show Answer</button>
-      <div id="ans_uno_44" class="answer-text">Answer: B. 4 microseconds</div>
+    <button onclick="toggleAnswer('ans_lcd_43')">Show Answer</button>
+    <div id="ans_lcd_43" class="answer-text">Answer: C. Around 0.5–1V</div>
+  </div>
+  <div class="question">
+    <b>44. Which pin group sends data to the LCD?</b>
+    <div class="options">
+      <div>A. D0–D7</div>
+      <div>B. RS, EN</div>
+      <div>C. SDA, SCL</div>
+      <div>D. VSS, VDD</div>
     </div>
-    <div class="question">
-      <b>45. What happens when millis() overflows?</b>
-      <div class="options">
-        <div>A. Arduino resets</div>
-        <div>B. Returns to 0</div>
-        <div>C. Stops counting</div>
-        <div>D. Causes error</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_45')">Show Answer</button>
-      <div id="ans_uno_45" class="answer-text">Answer: B. Returns to 0</div>
+    <button onclick="toggleAnswer('ans_lcd_44')">Show Answer</button>
+    <div id="ans_lcd_44" class="answer-text">Answer: A. D0–D7</div>
+  </div>
+  <div class="question">
+    <b>45. What is the typical delay needed after lcd.begin() before printing?</b>
+    <div class="options">
+      <div>A. 1 ms</div>
+      <div>B. 5 ms</div>
+      <div>C. 10 ms</div>
+      <div>D. No delay needed</div>
     </div>
-    <div class="question">
-      <b>46. After how many days does millis() overflow?</b>
-      <div class="options">
-        <div>A. ~50 days</div>
-        <div>B. ~30 days</div>
-        <div>C. ~10 days</div>
-        <div>D. ~100 days</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_46')">Show Answer</button>
-      <div id="ans_uno_46" class="answer-text">Answer: A. ~50 days</div>
+    <button onclick="toggleAnswer('ans_lcd_45')">Show Answer</button>
+    <div id="ans_lcd_45" class="answer-text">Answer: D. No delay needed</div>
+  </div>
+  <div class="question">
+    <b>46. What kind of characters can LCD1602 display?</b>
+    <div class="options">
+      <div>A. Only numbers</div>
+      <div>B. Only letters</div>
+      <div>C. ASCII characters</div>
+      <div>D. Images</div>
     </div>
-    <div class="question">
-      <b>47. What is the purpose of the tone() function?</b>
-      <div class="options">
-        <div>A. Reads analog input</div>
-        <div>B. Generates square wave for sound</div>
-        <div>C. Sets PWM duty cycle</div>
-        <div>D. Initializes I2C</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_47')">Show Answer</button>
-      <div id="ans_uno_47" class="answer-text">Answer: B. Generates square wave for sound</div>
+    <button onclick="toggleAnswer('ans_lcd_46')">Show Answer</button>
+    <div id="ans_lcd_46" class="answer-text">Answer: C. ASCII characters</div>
+  </div>
+  <div class="question">
+    <b>47. What pin count does the I2C LCD module reduce the LCD1602 to?</b>
+    <div class="options">
+      <div>A. 8</div>
+      <div>B. 4</div>
+      <div>C. 2</div>
+      <div>D. 6</div>
     </div>
-    <div class="question">
-      <b>48. Which pins are used for analogWrite()?</b>
-      <div class="options">
-        <div>A. A0–A5</div>
-        <div>B. 3, 5, 6, 9, 10, 11</div>
-        <div>C. 0–13</div>
-        <div>D. 2 and 3</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_48')">Show Answer</button>
-      <div id="ans_uno_48" class="answer-text">Answer: B. 3, 5, 6, 9, 10, 11</div>
+    <button onclick="toggleAnswer('ans_lcd_47')">Show Answer</button>
+    <div id="ans_lcd_47" class="answer-text">Answer: C. 2 (Just SDA and SCL)</div>
+  </div>
+  <div class="question">
+    <b>48. What do you connect the LCD1602’s R/W pin to for write-only mode?</b>
+    <div class="options">
+      <div>A. VCC</div>
+      <div>B. GND</div>
+      <div>C. SDA</div>
+      <div>D. D0</div>
     </div>
-    <div class="question">
-      <b>49. What is the purpose of the random() function?</b>
-      <div class="options">
-        <div>A. Generates random numbers</div>
-        <div>B. Reads random analog input</div>
-        <div>C. Sets random PWM</div>
-        <div>D. Initializes serial</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_49')">Show Answer</button>
-      <div id="ans_uno_49" class="answer-text">Answer: A. Generates random numbers</div>
+    <button onclick="toggleAnswer('ans_lcd_48')">Show Answer</button>
+    <div id="ans_lcd_48" class="answer-text">Answer: B. GND</div>
+  </div>
+  <div class="question">
+    <b>49. Which command is used to scroll text left?</b>
+    <div class="options">
+      <div>A. lcd.scrollLeft()</div>
+      <div>B. lcd.moveLeft()</div>
+      <div>C. lcd.leftShift()</div>
+      <div>D. lcd.scrollDisplayLeft()</div>
     </div>
-    <div class="question">
-      <b>50. What is the main advantage of Arduino Uno for prototyping?</b>
-      <div class="options">
-        <div>A. High processing power</div>
-        <div>B. Easy-to-use platform</div>
-        <div>C. Low cost and wide community support</div>
-        <div>D. Built-in Wi-Fi</div>
-      </div>
-      <button onclick="toggleAnswer('ans_uno_50')">Show Answer</button>
-      <div id="ans_uno_50" class="answer-text">Answer: C. Low cost and wide community support</div>
+    <button onclick="toggleAnswer('ans_lcd_49')">Show Answer</button>
+    <div id="ans_lcd_49" class="answer-text">Answer: D. lcd.scrollDisplayLeft()</div>
+  </div>
+  <div class="question">
+    <b>50. Can LCD1602 display Unicode or emojis?</b>
+    <div class="options">
+      <div>A. Yes</div>
+      <div>B. Only basic ones</div>
+      <div>C. No</div>
+      <div>D. Only on OLED screens</div>
     </div>
-
+    <button onclick="toggleAnswer('ans_lcd_50')">Show Answer</button>
+    <div id="ans_lcd_50" class="answer-text">Answer: C. No</div>
+  </div>
   </body>
 </html>
   </body>
