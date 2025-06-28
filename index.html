@@ -77,7 +77,7 @@
     </style>
   </head>
   <body>
-    <h1>100 Câu Hỏi Trắc Nghiệm Arduino Uno</h1>
+    <h1>Arduino Uno, LM35, SRF05, Interrupts, PWM, and LCD1602 Quiz</h1>
 
     <script>
       function toggleAnswer(id) {
@@ -91,1210 +91,3390 @@
     </script>
 
     <!-- Arduino Uno Questions -->
+    <h2>Arduino Uno Questions</h2>
     <div class="question">
-      <b>1. Arduino Uno uses which microcontroller?</b>
+      <b>1. What microcontroller does the Arduino Uno use?</b>
       <div class="options">
         <div>A. ATmega16</div>
-        <div>B. ATmega328P</div>
-        <div>C. ATmega2560</div>
-        <div>D. ATtiny85</div>
+        <div>B. ATmega32</div>
+        <div>C. ATmega328P</div>
+        <div>D. ATmega2560</div>
       </div>
-      <button onclick="toggleAnswer('ans1')">Hiện đáp án</button>
-      <div id="ans1" class="answer-text">Đáp án: B. ATmega328P</div>
+      <button onclick="toggleAnswer('ans1')">Show Answer</button>
+      <div id="ans1" class="answer-text">Answer: C. ATmega328P</div>
     </div>
-
     <div class="question">
-      <b>2. What is the clock speed of Arduino Uno?</b>
+      <b>2. What is the clock speed of the Arduino Uno?</b>
       <div class="options">
-        <div>A. 4 MHz</div>
-        <div>B. 8 MHz</div>
-        <div>C. 12 MHz</div>
-        <div>D. 16 MHz</div>
+        <div>A. 8 MHz</div>
+        <div>B. 12 MHz</div>
+        <div>C. 16 MHz</div>
+        <div>D. 20 MHz</div>
       </div>
-      <button onclick="toggleAnswer('ans2')">Hiện đáp án</button>
-      <div id="ans2" class="answer-text">Đáp án: D. 16 MHz</div>
+      <button onclick="toggleAnswer('ans2')">Show Answer</button>
+      <div id="ans2" class="answer-text">Answer: C. 16 MHz</div>
     </div>
-
     <div class="question">
-      <b>3. How many digital I/O pins are there on Arduino Uno?</b>
+      <b>3. How many digital I/O pins does the Arduino Uno have?</b>
       <div class="options">
         <div>A. 10</div>
-        <div>B. 14</div>
-        <div>C. 20</div>
-        <div>D. 28</div>
+        <div>B. 12</div>
+        <div>C. 14</div>
+        <div>D. 16</div>
       </div>
-      <button onclick="toggleAnswer('ans3')">Hiện đáp án</button>
-      <div id="ans3" class="answer-text">Đáp án: B. 14</div>
+      <button onclick="toggleAnswer('ans3')">Show Answer</button>
+      <div id="ans3" class="answer-text">Answer: C. 14</div>
     </div>
-
     <div class="question">
-      <b>4. How many PWM pins does Arduino Uno have?</b>
+      <b>4. How many analog input pins does the Arduino Uno have?</b>
       <div class="options">
-        <div>A. 4</div>
-        <div>B. 5</div>
-        <div>C. 6</div>
-        <div>D. 8</div>
+        <div>A. 6</div>
+        <div>B. 8</div>
+        <div>C. 10</div>
+        <div>D. 4</div>
       </div>
-      <button onclick="toggleAnswer('ans4')">Hiện đáp án</button>
-      <div id="ans4" class="answer-text">Đáp án: C. 6</div>
+      <button onclick="toggleAnswer('ans4')">Show Answer</button>
+      <div id="ans4" class="answer-text">Answer: A. 6</div>
     </div>
-
     <div class="question">
-      <b>5. What language is used to program Arduino Uno?</b>
+      <b
+        >5. What is the recommended operating voltage range for the Arduino
+        Uno?</b
+      >
       <div class="options">
-        <div>A. Python</div>
-        <div>B. Java</div>
-        <div>C. C/C++</div>
-        <div>D. Assembly</div>
+        <div>A. 1.8V – 3.3V</div>
+        <div>B. 5V – 9V</div>
+        <div>C. 7V – 12V</div>
+        <div>D. 6V – 20V</div>
       </div>
-      <button onclick="toggleAnswer('ans5')">Hiện đáp án</button>
-      <div id="ans5" class="answer-text">Đáp án: C. C/C++</div>
+      <button onclick="toggleAnswer('ans5')">Show Answer</button>
+      <div id="ans5" class="answer-text">Answer: C. 7V – 12V</div>
     </div>
-
     <div class="question">
-      <b>6. What is the purpose of the AREF pin?</b>
-      <div class="options">
-        <div>A. Ground</div>
-        <div>B. Power supply</div>
-        <div>C. ADC reference voltage</div>
-        <div>D. Reset</div>
-      </div>
-      <button onclick="toggleAnswer('ans6')">Hiện đáp án</button>
-      <div id="ans6" class="answer-text">Đáp án: C. ADC reference voltage</div>
-    </div>
-
-    <div class="question">
-      <b>7. How many analog input pins are on Arduino Uno?</b>
+      <b>6. How many PWM pins are available on the Arduino Uno?</b>
       <div class="options">
         <div>A. 4</div>
         <div>B. 6</div>
         <div>C. 8</div>
         <div>D. 10</div>
       </div>
-      <button onclick="toggleAnswer('ans7')">Hiện đáp án</button>
-      <div id="ans7" class="answer-text">Đáp án: B. 6</div>
+      <button onclick="toggleAnswer('ans6')">Show Answer</button>
+      <div id="ans6" class="answer-text">Answer: B. 6</div>
     </div>
-
     <div class="question">
-      <b>8. Operating voltage of Arduino Uno?</b>
+      <b>7. What programming language is used to write Arduino code?</b>
       <div class="options">
-        <div>A. 3.3V</div>
-        <div>B. 5V</div>
-        <div>C. 9V</div>
-        <div>D. 12V</div>
+        <div>A. Python</div>
+        <div>B. Java</div>
+        <div>C. C/C++</div>
+        <div>D. Assembly</div>
       </div>
-      <button onclick="toggleAnswer('ans8')">Hiện đáp án</button>
-      <div id="ans8" class="answer-text">Đáp án: B. 5V</div>
+      <button onclick="toggleAnswer('ans7')">Show Answer</button>
+      <div id="ans7" class="answer-text">Answer: C. C/C++</div>
     </div>
-
     <div class="question">
-      <b>9. Which pins are used for hardware serial communication?</b>
+      <b>8. Which pin is used to reset the Arduino Uno?</b>
       <div class="options">
-        <div>A. D0 and D1</div>
-        <div>B. D2 and D3</div>
-        <div>C. A0 and A1</div>
-        <div>D. D9 and D10</div>
+        <div>A. A0</div>
+        <div>B. TX</div>
+        <div>C. RESET</div>
+        <div>D. VIN</div>
       </div>
-      <button onclick="toggleAnswer('ans9')">Hiện đáp án</button>
-      <div id="ans9" class="answer-text">Đáp án: A. D0 and D1</div>
+      <button onclick="toggleAnswer('ans8')">Show Answer</button>
+      <div id="ans8" class="answer-text">Answer: C. RESET</div>
     </div>
-
     <div class="question">
-      <b>10. Which memory stores the program on Uno?</b>
+      <b>9. What is the official software to program Arduino boards?</b>
       <div class="options">
-        <div>A. SRAM</div>
-        <div>B. EEPROM</div>
-        <div>C. Flash</div>
-        <div>D. DRAM</div>
+        <div>A. Eclipse</div>
+        <div>B. Arduino IDE</div>
+        <div>C. Visual Studio</div>
+        <div>D. NetBeans</div>
       </div>
-      <button onclick="toggleAnswer('ans10')">Hiện đáp án</button>
-      <div id="ans10" class="answer-text">Đáp án: C. Flash</div>
+      <button onclick="toggleAnswer('ans9')">Show Answer</button>
+      <div id="ans9" class="answer-text">Answer: B. Arduino IDE</div>
     </div>
-
     <div class="question">
-      <b>11. Purpose of RESET pin?</b>
-      <div class="options">
-        <div>A. Turn off</div>
-        <div>B. Restart the program</div>
-        <div>C. Voltage input</div>
-        <div>D. Format memory</div>
-      </div>
-      <button onclick="toggleAnswer('ans11')">Hiện đáp án</button>
-      <div id="ans11" class="answer-text">Đáp án: B. Restart the program</div>
-    </div>
-
-    <div class="question">
-      <b>12. How is Arduino Uno typically programmed?</b>
-      <div class="options">
-        <div>A. HDMI</div>
-        <div>B. USB</div>
-        <div>C. Ethernet</div>
-        <div>D. Serial over VGA</div>
-      </div>
-      <button onclick="toggleAnswer('ans12')">Hiện đáp án</button>
-      <div id="ans12" class="answer-text">Đáp án: B. USB</div>
-    </div>
-
-    <div class="question">
-      <b>13. Function of Serial.begin()?</b>
-      <div class="options">
-        <div>A. Initialize serial communication</div>
-        <div>B. Print to Serial Monitor</div>
-        <div>C. Read analog</div>
-        <div>D. Send data</div>
-      </div>
-      <button onclick="toggleAnswer('ans13')">Hiện đáp án</button>
-      <div id="ans13" class="answer-text">Đáp án: A. Initialize serial communication</div>
-    </div>
-
-    <div class="question">
-      <b>14. Bootloader used in Uno?</b>
-      <div class="options">
-        <div>A. TinyBoot</div>
-        <div>B. Optiboot</div>
-        <div>C. AVRDude</div>
-        <div>D. UnoBoot</div>
-      </div>
-      <button onclick="toggleAnswer('ans14')">Hiện đáp án</button>
-      <div id="ans14" class="answer-text">Đáp án: B. Optiboot</div>
-    </div>
-
-    <div class="question">
-      <b>15. pinMode() function is used to?</b>
-      <div class="options">
-        <div>A. Set PWM frequency</div>
-        <div>B. Set pin as input or output</div>
-        <div>C. Enable ADC</div>
-        <div>D. Initialize Serial</div>
-      </div>
-      <button onclick="toggleAnswer('ans15')">Hiện đáp án</button>
-      <div id="ans15" class="answer-text">Đáp án: B. Set pin as input or output</div>
-    </div>
-
-    <div class="question">
-      <b>16. EEPROM size of Arduino Uno?</b>
-      <div class="options">
-        <div>A. 512 Bytes</div>
-        <div>B. 1 KB</div>
-        <div>C. 2 KB</div>
-        <div>D. 256 Bytes</div>
-      </div>
-      <button onclick="toggleAnswer('ans16')">Hiện đáp án</button>
-      <div id="ans16" class="answer-text">Đáp án: B. 1 KB</div>
-    </div>
-
-    <div class="question">
-      <b>17. I2C communication pins?</b>
-      <div class="options">
-        <div>A. A4 (SDA), A5 (SCL)</div>
-        <div>B. D0 and D1</div>
-        <div>C. D2 and D3</div>
-        <div>D. A0 and A1</div>
-      </div>
-      <button onclick="toggleAnswer('ans17')">Hiện đáp án</button>
-      <div id="ans17" class="answer-text">Đáp án: A. A4 (SDA), A5 (SCL)</div>
-    </div>
-
-    <div class="question">
-      <b>18. Voltage input range for Uno board?</b>
-      <div class="options">
-        <div>A. 2-5V</div>
-        <div>B. 6-12V</div>
-        <div>C. 3.3-6V</div>
-        <div>D. 10-20V</div>
-      </div>
-      <button onclick="toggleAnswer('ans18')">Hiện đáp án</button>
-      <div id="ans18" class="answer-text">Đáp án: B. 6-12V</div>
-    </div>
-
-    <div class="question">
-      <b>19. Unit of analogRead result on Uno?</b>
-      <div class="options">
-        <div>A. Volt</div>
-        <div>B. Bit value (0-1023)</div>
-        <div>C. Celsius</div>
-        <div>D. Byte</div>
-      </div>
-      <button onclick="toggleAnswer('ans19')">Hiện đáp án</button>
-      <div id="ans19" class="answer-text">Đáp án: B. Bit value (0-1023)</div>
-    </div>
-
-    <div class="question">
-      <b>20. Function of delay(1000)?</b>
-      <div class="options">
-        <div>A. Delay 1 ms</div>
-        <div>B. Delay 10 sec</div>
-        <div>C. Delay 100 sec</div>
-        <div>D. Delay 1 sec</div>
-      </div>
-      <button onclick="toggleAnswer('ans20')">Hiện đáp án</button>
-      <div id="ans20" class="answer-text">Đáp án: D. Delay 1 sec</div>
-    </div>
-
-    <!-- LM35 Temperature Sensor Questions -->
-    <div class="question">
-      <b>21. What type of output does LM35 provide?</b>
-      <div class="options">
-        <div>A. Digital</div>
-        <div>B. Analog</div>
-        <div>C. PWM</div>
-        <div>D. UART</div>
-      </div>
-      <button onclick="toggleAnswer('ans21')">Hiện đáp án</button>
-      <div id="ans21" class="answer-text">Đáp án: B. Analog</div>
-    </div>
-
-    <div class="question">
-      <b>22. How much voltage change per °C?</b>
-      <div class="options">
-        <div>A. 1 mV</div>
-        <div>B. 5 mV</div>
-        <div>C. 10 mV</div>
-        <div>D. 100 mV</div>
-      </div>
-      <button onclick="toggleAnswer('ans22')">Hiện đáp án</button>
-      <div id="ans22" class="answer-text">Đáp án: C. 10 mV</div>
-    </div>
-
-    <div class="question">
-      <b>23. Operating range of LM35?</b>
-      <div class="options">
-        <div>A. -55°C to +150°C</div>
-        <div>B. -20°C to 100°C</div>
-        <div>C. 0°C to 150°C</div>
-        <div>D. -40°C to 125°C</div>
-      </div>
-      <button onclick="toggleAnswer('ans23')">Hiện đáp án</button>
-      <div id="ans23" class="answer-text">Đáp án: A. -55°C to +150°C</div>
-    </div>
-
-    <div class="question">
-      <b>24. Number of pins on LM35?</b>
-      <div class="options">
-        <div>A. 2</div>
-        <div>B. 3</div>
-        <div>C. 4</div>
-        <div>D. 5</div>
-      </div>
-      <button onclick="toggleAnswer('ans24')">Hiện đáp án</button>
-      <div id="ans24" class="answer-text">Đáp án: B. 3</div>
-    </div>
-
-    <div class="question">
-      <b>25. Which pin of Arduino should connect to LM35 output?</b>
-      <div class="options">
-        <div>A. Digital pin</div>
-        <div>B. PWM pin</div>
-        <div>C. Analog pin</div>
-        <div>D. Reset pin</div>
-      </div>
-      <button onclick="toggleAnswer('ans25')">Hiện đáp án</button>
-      <div id="ans25" class="answer-text">Đáp án: C. Analog pin</div>
-    </div>
-
-    <div class="question">
-      <b>26. Which Arduino function reads LM35?</b>
-      <div class="options">
-        <div>A. analogRead()</div>
-        <div>B. digitalRead()</div>
-        <div>C. analogWrite()</div>
-        <div>D. digitalWrite()</div>
-      </div>
-      <button onclick="toggleAnswer('ans26')">Hiện đáp án</button>
-      <div id="ans26" class="answer-text">Đáp án: A. analogRead()</div>
-    </div>
-
-    <div class="question">
-      <b>27. Voltage supply required for LM35?</b>
-      <div class="options">
-        <div>A. 3.3V</div>
-        <div>B. 5V</div>
-        <div>C. 9V</div>
-        <div>D. 12V</div>
-      </div>
-      <button onclick="toggleAnswer('ans27')">Hiện đáp án</button>
-      <div id="ans27" class="answer-text">Đáp án: B. 5V</div>
-    </div>
-
-    <div class="question">
-      <b>28. Does LM35 require calibration?</b>
-      <div class="options">
-        <div>A. Yes</div>
-        <div>B. No</div>
-      </div>
-      <button onclick="toggleAnswer('ans28')">Hiện đáp án</button>
-      <div id="ans28" class="answer-text">Đáp án: B. No</div>
-    </div>
-
-    <div class="question">
-      <b>29. Output of LM35 at 25°C?</b>
-      <div class="options">
-        <div>A. 2.5V</div>
-        <div>B. 250 mV</div>
-        <div>C. 25 mV</div>
-        <div>D. 1V</div>
-      </div>
-      <button onclick="toggleAnswer('ans29')">Hiện đáp án</button>
-      <div id="ans29" class="answer-text">Đáp án: B. 250 mV</div>
-    </div>
-
-    <div class="question">
-      <b>30. Accuracy of LM35?</b>
-      <div class="options">
-        <div>A. ±2°C</div>
-        <div>B. ±1°C</div>
-        <div>C. ±0.5°C</div>
-        <div>D. ±5°C</div>
-      </div>
-      <button onclick="toggleAnswer('ans30')">Hiện đáp án</button>
-      <div id="ans30" class="answer-text">Đáp án: C. ±0.5°C</div>
-    </div>
-
-    <!-- SRF05 Ultrasonic Sensor Questions -->
-    <div class="question">
-      <b>31. SRF05 operates using which principle?</b>
-      <div class="options">
-        <div>A. Infrared</div>
-        <div>B. Ultrasonic</div>
-        <div>C. Electromagnetic</div>
-        <div>D. Capacitive</div>
-      </div>
-      <button onclick="toggleAnswer('ans31')">Hiện đáp án</button>
-      <div id="ans31" class="answer-text">Đáp án: B. Ultrasonic</div>
-    </div>
-
-    <div class="question">
-      <b>32. How many pins does SRF05 have?</b>
-      <div class="options">
-        <div>A. 3</div>
-        <div>B. 4</div>
-        <div>C. 5</div>
-        <div>D. 6</div>
-      </div>
-      <button onclick="toggleAnswer('ans32')">Hiện đáp án</button>
-      <div id="ans32" class="answer-text">Đáp án: B. 4</div>
-    </div>
-
-    <div class="question">
-      <b>33. Max detection range of SRF05?</b>
-      <div class="options">
-        <div>A. 1m</div>
-        <div>B. 2m</div>
-        <div>C. 3m</div>
-        <div>D. 4m</div>
-      </div>
-      <button onclick="toggleAnswer('ans33')">Hiện đáp án</button>
-      <div id="ans33" class="answer-text">Đáp án: D. 4m</div>
-    </div>
-
-    <div class="question">
-      <b>34. What is the function of TRIG pin?</b>
-      <div class="options">
-        <div>A. Receive signal</div>
-        <div>B. Send trigger pulse</div>
-        <div>C. Supply power</div>
-        <div>D. Reset sensor</div>
-      </div>
-      <button onclick="toggleAnswer('ans34')">Hiện đáp án</button>
-      <div id="ans34" class="answer-text">Đáp án: B. Send trigger pulse</div>
-    </div>
-
-    <div class="question">
-      <b>35. What is the ECHO pin used for?</b>
+      <b>10. What is the function of the GND pin on Arduino?</b>
       <div class="options">
         <div>A. Power supply</div>
-        <div>B. Send trigger</div>
-        <div>C. Receive reflected pulse</div>
-        <div>D. Ground</div>
+        <div>B. Ground connection</div>
+        <div>C. Signal transmission</div>
+        <div>D. Data storage</div>
       </div>
-      <button onclick="toggleAnswer('ans35')">Hiện đáp án</button>
-      <div id="ans35" class="answer-text">Đáp án: C. Receive reflected pulse</div>
+      <button onclick="toggleAnswer('ans10')">Show Answer</button>
+      <div id="ans10" class="answer-text">Answer: B. Ground connection</div>
     </div>
-
     <div class="question">
-      <b>36. A short ECHO time means?</b>
-      <div class="options">
-        <div>A. Object is far</div>
-        <div>B. Object is close</div>
-        <div>C. Sensor is damaged</div>
-        <div>D. Wrong wiring</div>
-      </div>
-      <button onclick="toggleAnswer('ans36')">Hiện đáp án</button>
-      <div id="ans36" class="answer-text">Đáp án: B. Object is close</div>
-    </div>
-
-    <div class="question">
-      <b>37. Operating voltage of SRF05?</b>
-      <div class="options">
-        <div>A. 3V</div>
-        <div>B. 5V</div>
-        <div>C. 9V</div>
-        <div>D. 12V</div>
-      </div>
-      <button onclick="toggleAnswer('ans37')">Hiện đáp án</button>
-      <div id="ans37" class="answer-text">Đáp án: B. 5V</div>
-    </div>
-
-    <div class="ans38">
-      <div class="question">
-      <b>38. Measurement unit for distance?</b>
-      <div class="options">
-        <div>A. Meter</div>
-        <div>B. Millimeter</div>
-        <div>C. Centimeter</div>
-        <div>D. Seconds</div>
-      </div>
-      <button onclick="toggleAnswer('ans38')">Hiện đáp án</button>
-      <div id="ans38" class="answer-text">Đáp án: C. Centimeter</div>
-    </div>
-
-    <div class="question">
-      <b>39. Function used in Arduino to measure pulse width?</b>
-      <div class="options">
-        <div>A. analogRead()</div>
-        <div>B. digitalRead()</div>
-        <div>C. pulseIn()</div>
-        <div>D. millis()</div>
-      </div>
-      <button onclick="toggleAnswer('ans39')">Hiện đáp án</button>
-      <div id="ans39" class="answer-text">Đáp án: C. pulseIn()</div>
-    </div>
-
-    <div class="question">
-      <b>40. Speed of sound assumed in air?</b>
-      <div class="options">
-        <div>A. 100 m/s</div>
-        <div>B. 150 m/s</div>
-        <div>C. 343 m/s</div>
-        <div>D. 500 m/s</div>
-      </div>
-      <button onclick="toggleAnswer('ans40')">Hiện đáp án</button>
-      <div id="ans40" class="answer-text">Đáp án: C. 343 m/s</div>
-    </div>
-
-    <!-- Interrupt Questions -->
-    <div class="question">
-      <b>41. What is an interrupt?</b>
-      <div class="options">
-        <div>A. Delay function</div>
-        <div>B. External event that breaks normal execution</div>
-        <div>C. PWM signal</div>
-        <div>D. Analog input</div>
-      </div>
-      <button onclick="toggleAnswer('ans41')">Hiện đáp án</button>
-      <div id="ans41" class="answer-text">Đáp án: B. External event that breaks normal execution</div>
-    </div>
-
-    <div class="question">
-      <b>42. Which pins support external interrupts on Uno?</b>
-      <div class="options">
-        <div>A. D2 and D3</div>
-        <div>B. A0 and A1</div>
-        <div>C. D0 and D1</div>
-        <div>D. D8 and D9</div>
-      </div>
-      <button onclick="toggleAnswer('ans42')">Hiện đáp án</button>
-      <div id="ans42" class="answer-text">Đáp án: A. D2 and D3</div>
-    </div>
-
-    <div class="question">
-      <b>43. Function to attach an interrupt?</b>
-      <div class="options">
-        <div>A. attachPWM()</div>
-        <div>B. attachInterrupt()</div>
-        <div>C. digitalInterrupt()</div>
-        <div>
-      </div>
-      <button onclick="toggleAnswer('ans43')">Hiện đáp án</button>
-      <div id="ans43" class="answer-text">Đáp án: B. attachInterrupt()</div>
-    </div>
-</div>
-
-    <div class="question">
-      <b>44. Mode to trigger interrupt on any change?</b>
-      <div class="options">
-        <div>A. RISING</div>
-        <div>B. FALLING</div>
-        <div>C. CHANGE</div>
-        <div>
-      </div>
-      <button onclick="toggleAnswer('ans44')">Hiện answer</button>
-      <div id="ans44" class="answer-text">Đáp án: C. CHANGE</div>
-    </div>
-</div>
-    <div class="question">
-      <b>45. What does detachInterrupt() do?</b>
-      <div class="options">
-        <div>A. Clears memory</div>
-        <div>B. Disables interrupt</div>
-        <div>C. Enables interrupt</div>
-        <div>D. Delays ISR</div>
-      </div>
-      <button onclick="toggleAnswer('ans45')">Hiện đáp án</button>
-      <div id="ans45" class="answer-text">Đáp án: B. Disables interrupt</div>
-    </div>
-
-    <div class="question">
-      <b>46. ISR stands for?</b>
-      <div class="options">
-        <div>A. Interruptible State Reset</div>
-        <div>B. Interrupt Service Routine</div>
-        <div>C. Interrupt Supply Register</div>
-        <div>D. Internal Sensor Register</div>
-      </div>
-      <button onclick="toggleAnswer('ans46')">Hiện đáp án</button>
-      <div id="ans46" class="answer-text">Đáp án: B. Interrupt Service Routine</div>
-    </div>
-
-    <div class="question">
-      <b>47. Can ISR have delay()?</b>
-      <div class="options">
-        <div>A. Yes</div>
-        <div>B. No</div>
-      </div>
-      <button onclick="toggleAnswer('ans47')">Hiện đáp án</button>
-      <div id="ans47" class="answer-text">Đáp án: B. No</div>
-    </div>
-
-    <div class="question">
-      <b>48. Best practice for ISR function?</b>
-      <div class="options">
-        <div>A. Long and complex</div>
-        <div>B. Use Serial.print()</div>
-        <div>C. Keep it short</div>
-        <div>D. Include delays</div>
-      </div>
-      <button onclick="toggleAnswer('ans48')">Hiện đáp án</button>
-      <div id="ans48" class="answer-text">Đáp án: C. Keep it short</div>
-    </div>
-
-    <div class="question">
-      <b>49. How many external interrupt vectors on Uno?</b>
+      <b>11. How many main timers does the Arduino Uno have?</b>
       <div class="options">
         <div>A. 1</div>
         <div>B. 2</div>
         <div>C. 3</div>
         <div>D. 4</div>
       </div>
-      <button onclick="toggleAnswer('ans49')">Hiện đáp án</button>
-      <div id="ans49" class="answer-text">Đáp án: B. 2</div>
-    </div>
-
-    <div class="question">
-      <b>50. Default interrupt mode in Arduino?</b>
-      <div class="options">
-        <div>A. LOW</div>
-        <div>B. HIGH</div>
-        <div>C. RISING</div>
-        <div>D. NONE</div>
+      <button onclick="toggleAnswer('ans11')">Show Answer</button>
+      <div id="ans11" class="answer-text">
+        Answer: C. Timer0, Timer1, Timer2
       </div>
-      <button onclick="toggleAnswer('ans50')">Hiện đáp án</button>
-      <div id="ans50" class="answer-text">Đáp án: D. NONE</div>
     </div>
-
-    <!-- PWM Questions -->
     <div class="question">
-      <b>51. What does PWM stand for?</b>
+      <b>12. What is the size of EEPROM in Arduino Uno?</b>
       <div class="options">
-        <div>A. Pulse Width Management</div>
-        <div>B. Pulse Width Modulation</div>
-        <div>C. Phase Wave Modulation</div>
-        <div>D. Power Wave Management</div>
+        <div>A. 512 bytes</div>
+        <div>B. 1024 bytes</div>
+        <div>C. 2048 bytes</div>
+        <div>D. 4096 bytes</div>
       </div>
-      <button onclick="toggleAnswer('ans51')">Hiện đáp án</button>
-      <div id="ans51" class="answer-text">Đáp án: B. Pulse Width Modulation</div>
+      <button onclick="toggleAnswer('ans12')">Show Answer</button>
+      <div id="ans12" class="answer-text">Answer: B. 1024 bytes</div>
     </div>
-
     <div class="question">
-      <b>52. Function used to write PWM signal?</b>
+      <b>13. Which library is used to interface with the LCD1602 module?</b>
       <div class="options">
-        <div>A. digitalWrite()</div>
-        <div>B. analogRead()</div>
-        <div>C. analogWrite()</div>
-        <div>D. pwmOutput()</div>
+        <div>A. LCD.h</div>
+        <div>B. Wire.h</div>
+        <div>C. LiquidCrystal.h</div>
+        <div>D. Display.h</div>
       </div>
-      <button onclick="toggleAnswer('ans52')">Hiện đáp án</button>
-      <div id="ans52" class="answer-text">Đáp án: C. analogWrite()</div>
+      <button onclick="toggleAnswer('ans13')">Show Answer</button>
+      <div id="ans13" class="answer-text">Answer: C. LiquidCrystal.h</div>
     </div>
-
     <div class="question">
-      <b>53. PWM pins on Uno?</b>
+      <b>14. What does the command digitalWrite(pin, HIGH) do?</b>
       <div class="options">
-        <div>A. D3, D5, D6, D9, D10, D11</div>
-        <div>B. D2 to D7</div>
-        <div>C. A0 to A5</div>
-        <div>D. D0 and D1</div>
+        <div>A. Read digital signal</div>
+        <div>B. Write analog value</div>
+        <div>C. Set digital pin to HIGH</div>
+        <div>D. Disable the pin</div>
       </div>
-      <button onclick="toggleAnswer('ans53')">Hiện đáp án</button>
-      <div id="ans53" class="answer-text">Đáp án: A. D3, D5, D6, D9, D10, D11</div>
+      <button onclick="toggleAnswer('ans14')">Show Answer</button>
+      <div id="ans14" class="answer-text">
+        Answer: C. Set digital pin to HIGH
+      </div>
     </div>
-
     <div class="question">
-      <b>54. Range of PWM output in Arduino?</b>
+      <b
+        >15. Which communication protocol is used by default in Arduino for
+        serial communication?</b
+      >
       <div class="options">
-        <div>A. 0–1023</div>
-        <div>B. 0–5</div>
-        <div>C. 0–255</div>
-        <div>D. 0–1</div>
+        <div>A. I2C</div>
+        <div>B. SPI</div>
+        <div>C. UART</div>
+        <div>D. USB</div>
       </div>
-      <button onclick="toggleAnswer('ans54')">Hiện đáp án</button>
-      <div id="ans54" class="answer-text">Đáp án: C. 0–255</div>
+      <button onclick="toggleAnswer('ans15')">Show Answer</button>
+      <div id="ans15" class="answer-text">Answer: C. UART</div>
     </div>
-
     <div class="question">
-      <b>55. Default PWM frequency on D9, D10?</b>
+      <b>16. How much SRAM does the Arduino Uno have?</b>
       <div class="options">
-        <div>A. 490 Hz</div>
-        <div>B. 1 kHz</div>
-        <div>C. 100 Hz</div>
-        <div>D. 1000 Hz</div>
+        <div>A. 512 bytes</div>
+        <div>B. 1024 bytes</div>
+        <div>C. 2048 bytes</div>
+        <div>D. 4096 bytes</div>
       </div>
-      <button onclick="toggleAnswer('ans55')">Hiện đáp án</button>
-      <div id="ans55" class="answer-text">Đáp án: A. 490 Hz</div>
+      <button onclick="toggleAnswer('ans16')">Show Answer</button>
+      <div id="ans16" class="answer-text">Answer: C. 2048 bytes</div>
     </div>
-
     <div class="question">
-      <b>56. PWM can simulate?</b>
+      <b>17. What is the purpose of pinMode(pin, OUTPUT)?</b>
       <div class="options">
-        <div>A. Analog signal</div>
-        <div>B. Digital input</div>
-        <div>C. Serial communication</div>
-        <div>D. Interrupts</div>
+        <div>A. Assign value to pin</div>
+        <div>B. Set pin as output</div>
+        <div>C. Disable the pin</div>
+        <div>D. Read from pin</div>
       </div>
-      <button onclick="toggleAnswer('ans56')">Hiện đáp án</button>
-      <div id="ans56" class="answer-text">Đáp án: A. Analog signal</div>
+      <button onclick="toggleAnswer('ans17')">Show Answer</button>
+      <div id="ans17" class="answer-text">Answer: B. Set pin as output</div>
     </div>
-
     <div class="question">
-      <b>57. Duty cycle of 50% means?</b>
+      <b>18. The Arduino IDE is developed using which language?</b>
       <div class="options">
-        <div>A. Fully off</div>
-        <div>B. Half power</div>
-        <div>C. Full power</div>
-        <div>D. No signal</div>
+        <div>A. Java</div>
+        <div>B. Python</div>
+        <div>C. C++</div>
+        <div>D. HTML</div>
       </div>
-      <button onclick="toggleAnswer('ans57')">Hiện đáp án</button>
-      <div id="ans57" class="answer-text">Đáp án: B. Half power</div>
+      <button onclick="toggleAnswer('ans18')">Show Answer</button>
+      <div id="ans18" class="answer-text">Answer: A. Java</div>
     </div>
-
     <div class="question">
-      <b>58. analogWrite(255) gives?</b>
+      <b>19. Which pins are used for UART communication on Arduino Uno?</b>
       <div class="options">
-        <div>A. 0% duty</div>
-        <div>B. 50% duty</div>
-        <div>C. 100% duty</div>
-        <div>D. Error</div>
+        <div>A. 0 and 1</div>
+        <div>B. 2 and 3</div>
+        <div>C. A0 and A1</div>
+        <div>D. 9 and 10</div>
       </div>
-      <button onclick="toggleAnswer('ans58')">Hiện đáp án</button>
-      <div id="ans58" class="answer-text">Đáp án: C. 100% duty</div>
+      <button onclick="toggleAnswer('ans19')">Show Answer</button>
+      <div id="ans19" class="answer-text">Answer: A. 0 and 1</div>
     </div>
-
     <div class="question">
-      <b>59. PWM is commonly used to control?</b>
+      <b>20. What does the function delay(ms) do?</b>
       <div class="options">
-        <div>A. Temperature</div>
-        <div>B. Light brightness</div>
-        <div>C. Serial speed</div>
-        <div>D. Reset</div>
+        <div>A. Loop the code</div>
+        <div>B. Pause the program</div>
+        <div>C. Power off</div>
+        <div>D. Stop the code</div>
       </div>
-      <button onclick="toggleAnswer('ans59')">Hiện đáp án</button>
-      <div id="ans59" class="answer-text">Đáp án: B. Light brightness</div>
+      <button onclick="toggleAnswer('ans20')">Show Answer</button>
+      <div id="ans20" class="answer-text">Answer: B. Pause the program</div>
     </div>
-
     <div class="question">
-      <b>60. analogWrite(0) results in?</b>
-      <div class="options">
-        <div>A. 0V output</div>
-        <div>B. 5V output</div>
-        <div>C. Random output</div>
-        <div>D. High impedance</div>
-      </div>
-      <button onclick="toggleAnswer('ans60')">Hiện đáp án</button>
-      <div id="ans60" class="answer-text">Đáp án: A. 0V output</div>
-    </div>
-
-    <!-- 7-Segment LED Display Questions -->
-    <div class="question">
-      <b>61. A 7-segment display typically has how many segments?</b>
-      <div class="options">
-        <div>A. 5</div>
-        <div>B. 6</div>
-        <div>C. 7</div>
-        <div>D. 8</div>
-      </div>
-      <button onclick="toggleAnswer('ans61')">Hiện đáp án</button>
-      <div id="ans61" class="answer-text">Đáp án: C. 7</div>
-    </div>
-
-    <div class="question">
-      <b>62. Common types of 7-segment display?</b>
-      <div class="options">
-        <div>A. Parallel and Serial</div>
-        <div>B. Anode and Cathode</div>
-        <div>C. Analog and Digital</div>
-        <div>D. Left and Right</div>
-      </div>
-      <button onclick="toggleAnswer('ans62')">Hiện đáp án</button>
-      <div id="ans62" class="answer-text">Đáp án: B. Anode and Cathode</div>
-    </div>
-
-    <div class="question">
-      <b>63. Segment labels are?</b>
-      <div class="options">
-        <div>A. A to G</div>
-        <div>B. 0 to 6</div>
-        <div>C. 1 to 8</div>
-        <div>D. P to Z</div>
-      </div>
-      <button onclick="toggleAnswer('ans63')">Hiện đáp án</button>
-      <div id="ans63" class="answer-text">Đáp án: A. A to G</div>
-    </div>
-
-    <div class="question">
-      <b>64. To display '1' on 7-segment, light up?</b>
-      <div class="options">
-        <div>A. a and b</div>
-        <div>B. b and c</div>
-        <div>C. a and g</div>
-        <div>D. g and d</div>
-      </div>
-      <button onclick="toggleAnswer('ans64')">Hiện answer</button>
-      <div id="ans64" class="answer-text">Đáp án: B. b and c</div>
-    </div>
-
-    <div class="question">
-      <b>65. Number '8' lights up how many segments?</b>
-      <div class="options">
-        <div>A. 5</div>
-        <div>B. 6</div>
-        <div>C. 7</div>
-        <div>D. 8</div>
-      </div>
-      <button onclick="toggleAnswer('ans65')">Hiện đáp án</button>
-      <div id="ans65" class="answer-text">Đáp án: C. C7</div>
-    </div>
-
-    <div class="question">
-      <b>66. Function of current-limiting resistor?</b>
-      <div class="options">
-        <div>A. Reduce brightness</div>
-        <div>B. Protect LED from high current</div>
-        <div>C. Increase power</div>
-        <div>D. Disable segments</div>
-      </div>
-      <button onclick="toggleAnswer('ans66')">Hiện đáp án</button>
-      <div id="ans66" class="answer-text">Đáp án: B. Protect LED from high current</div>
-    </div>
-
-    <div class="question">
-      <b>67. A 7-segment display can be driven directly from?</b>
-      <div class="options">
-        <div>A. Arduino I/O pins</div>
-        <div>B. EEPROM</div>
-        <div>C. USB</div>
-        <div>D. Reset pin</div>
-      </div>
-      <button onclick="toggleAnswer('ans67')">Hiện đáp án</button>
-      <div id="ans67" class="answer-text">Đáp án: A. Arduino I/O pins</div>
-    </div>
-
-    <div class="question">
-      <b>68. Which IC can drive multiple 7-segment displays?</b>
-      <div class="options">
-        <div>A. 555 Timer</div>
-        <div>B. 74LS47</div>
-        <div>C. 7805</div>
-        <div>D. LM35</div>
-      </div>
-      <button onclick="toggleAnswer('ans68')">Hiện đáp án</button>
-      <div id="ans68" class="answer-text">Đáp án: B. 74LS47</div>
-    </div>
-
-    <div class="question">
-      <b>69. Decimal point in 7-segment is labeled?</b>
-      <div class="options">
-        <div>A. A</div>
-        <div>B. DP</div>
-        <div>C. H</div>
-        <div>D. X</div>
-      </div>
-      <button onclick="toggleAnswer('ans69')">Hiện đáp án</button>
-      <div id="ans69" class="answer-text">Đáp án: B. DP</div>
-    </div>
-
-    <div class="question">
-      <b>70. Multiplexing in 7-segment is used to?</b>
-      <div class="options">
-        <div>A. Light all displays at once</div>
-        <div>B. Save I/O pins</div>
-        <div>C. Increase brightness</div>
-        <div>D. Disable display</div>
-      </div>
-      <button onclick="toggleAnswer('ans70')">Hiện đáp án</button>
-      <div id="ans70" class="answer-text">Đáp án: B. Save I/O pins</div>
-    </div>
-
-    <!-- LCD1602 Questions -->
-    <div class="question">
-      <b>71. LCD1602 means?</b>
-      <div class="options">
-        <div>A. 16 lines, 2 characters</div>
-        <div>B. 2 lines, 16 characters each</div>
-        <div>C. 16 pixels, 2 dots</div>
-        <div>D. 160x2 pixels</div>
-      </div>
-      <button onclick="toggleAnswer('ans71')">Hiện đáp án</button>
-      <div id="ans71" class="answer-text">Đáp án: B. 2 lines, 16 characters each</div>
-    </div>
-
-    <div class="question">
-      <b>72. Communication mode of LCD1602?</b>
-      <div class="options">
-        <div>A. Only 8-bit</div>
-        <div>B. Only 4-bit</div>
-        <div>C. Both 4-bit and 8-bit</div>
-        <div>D. I2C only</div>
-      </div>
-      <button onclick="toggleAnswer('ans72')">Hiện đáp án</button>
-      <div id="ans72" class="answer-text">Đáp án: C. Both 4-bit and 8-bit</div>
-    </div>
-
-    <div class="question">
-      <b>73. How many data pins in 8-bit mode?</b>
-      <div class="options">
-        <div>A. 4</div>
-        <div>B. 8</div>
-        <div>C. 16</div>
-        <div>D. 2</div>
-      </div>
-      <button onclick="toggleAnswer('ans73')">Hiện đáp án</button>
-      <div id="ans73" class="answer-text">Đáp án: B. 8</div>
-    </div>
-
-    <div class="question">
-      <b>74. Register select (RS) pin is for?</b>
-      <div class="options">
-        <div>A. Reset</div>
-        <div>B. Select command or data</div>
-        <div>C. Serial input</div>
-        <div>D. Display brightness</div>
-      </div>
-      <button onclick="toggleAnswer('ans74')">Hiện đáp án</button>
-      <div id="ans74" class="answer-text">Đáp án: B. Select command or data</div>
-    </div>
-
-    <div class="question">
-      <b>75. LCD1602 needs which library?</b>
-      <div class="options">
-        <div>A. EEPROM</div>
-        <div>B. LiquidCrystal</div>
-        <div>C. Wire</div>
-        <div>D. PWM</div>
-      </div>
-      <button onclick="toggleAnswer('ans75')">Hiện đáp án</button>
-      <div id="ans75" class="answer-text">Đáp án: B. LiquidCrystal</div>
-    </div>
-
-    <div class="question">
-      <b>76. EN pin on LCD does?</b>
-      <div class="options">
-        <div>A. Enable communication</div>
-        <div>B. End program</div>
-        <div>C. Error check</div>
-        <div>D. Escape character</div>
-      </div>
-      <button onclick="toggleAnswer('ans76')">Hiện đáp án</button>
-      <div id="ans76" class="answer-text">Đáp án: A. Enable communication</div>
-    </div>
-
-    <div class="question">
-      <b>77. How many rows and columns?</b>
-      <div class="options">
-        <div>A. 2x16</div>
-        <div>B. 4x20</div>
-        <div>C. 1x16</div>
-        <div>D. 8x2</div>
-      </div>
-      <button onclick="toggleAnswer('ans77')">Hiện đáp án</button>
-      <div id="ans77" class="answer-text">Đáp án: A. 2x16</div>
-    </div>
-
-    <div class="question">
-      <b>78. What adjusts brightness of LCD?</b>
-      <div class="options">
-        <div>A. EN pin</div>
-        <div>B. Potentiometer</div>
-        <div>C. Resistor</div>
-        <div>D. Ground</div>
-      </div>
-      <button onclick="toggleAnswer('ans78')">Hiện đáp án</button>
-      <div id="ans78" class="answer-text">Đáp án: B. Potentiometer</div>
-    </div>
-
-    <div class="question">
-      <b>79. Character location on LCD defined by?</b>
-      <div class="options">
-        <div>A. Row</div>
-        <div>B. Column</div>
-        <div>C. DDRAM</div>
-        <div>D. EEPROM</div>
-      </div>
-      <button onclick="toggleAnswer('ans79')">Hiện đáp án</button>
-      <div id="ans79" class="answer-text">Đáp án: C. DDRAM</div>
-    </div>
-
-    <div class="question">
-      <b>80. LCD I2C interface reduces?</b>
-      <div class="options">
-        <div>A. Display time</div>
-        <div>B. Number of wires</div>
-        <div>C. Brightness</div>
-        <div>D. Number of characters</div>
-      </div>
-      <button onclick="toggleAnswer('ans80')">Hiện đáp án</button>
-      <div id="ans80" class="answer-text">Đáp án: B. Number of wires</div>
-    </div>
-
-    <!-- Additional Questions to Reach 100 -->
-    <div class="question">
-      <b>81. What is the SRAM size of Arduino Uno?</b>
-      <div class="options">
-        <div>A. 512 Bytes</div>
-        <div>B. 1 KB</div>
-        <div>C. 2 KB</div>
-        <div>D. 4 KB</div>
-      </div>
-      <button onclick="toggleAnswer('ans81')">Hiện đáp án</button>
-      <div id="ans81" class="answer-text">Đáp án: C. 2 KB</div>
-    </div>
-
-    <div class="question">
-      <b>82. What is the flash memory size of Arduino Uno?</b>
+      <b>21. How much Flash memory is available in the Arduino Uno?</b>
       <div class="options">
         <div>A. 16 KB</div>
         <div>B. 32 KB</div>
         <div>C. 64 KB</div>
         <div>D. 128 KB</div>
       </div>
-      <button onclick="toggleAnswer('ans82')">Hiện đáp án</button>
-      <div id="ans82" class="answer-text">Đáp án: B. 32 KB</div>
+      <button onclick="toggleAnswer('ans21')">Show Answer</button>
+      <div id="ans21" class="answer-text">Answer: B. 32 KB</div>
     </div>
-
     <div class="question">
-      <b>83. Which Arduino function sets the cursor on LCD1602?</b>
+      <b>22. What is the return value range of analogRead(pin)?</b>
       <div class="options">
-        <div>A. setCursor()</div>
-        <div>B. moveCursor()</div>
-        <div>C. placeCursor()</div>
-        <div>D. cursorSet()</div>
+        <div>A. 0 –255</div>
+        <div>B. 0 –512</div>
+        <div>C. 0 –1023</div>
+        <div>D. 0 –2047</div>
       </div>
-      <button onclick="toggleAnswer('ans83')">Hiện đáp án</button>
-      <div id="ans83" class="answer-text">Đáp án: A. setCursor</div>
+      <button onclick="toggleAnswer('ans22')">Show Answer</button>
+      <div id="ans22" class="answer-text">Answer: C. 0 –1023</div>
     </div>
-
     <div class="question">
-      <b>84. What is the purpose of the VIN pin on Arduino Uno?</b>
+      <b>23. The command analogWrite(pin, value) is valid only on:</b>
       <div class="options">
-        <div>A. 5V output</div>
-        <div>B. External power input</div>
-        <div>C. Ground</div>
-        <div>D. Analog reference</div>
+        <div>A. Any digital pin</div>
+        <div>B. Analog pins</div>
+        <div>C. PWM-enabled pins</div>
+        <div>D. GND pins</div>
       </div>
-      <button onclick="toggleAnswer('ans84')">Hiện đáp án</button>
-      <div id="ans84" class="answer-text">Đáp án: B. External power input</div>
+      <button onclick="toggleAnswer('ans23')">Show Answer</button>
+      <div id="ans23" class="answer-text">Answer: C. PWM-enabled pins</div>
     </div>
-
     <div class="question">
-      <b>85. What is the resolution of analogRead() on Arduino Uno?</b>
+      <b>24. Which pins are used for I2C communication on the Arduino Uno?</b>
       <div class="options">
-        <div>A. 8 bits</div>
-        <div>B. 10 bits</div>
-        <div>C. 12 bits</div>
-        <div>D. 16 bits</div>
+        <div>A. A4 and A5</div>
+        <div>B. 2 and 3</div>
+        <div>C. 10 and 11</div>
+        <div>D. 4 and 5</div>
       </div>
-      <button onclick="toggleAnswer('ans85')">Hiện đáp án</button>
-      <div id="ans85" class="answer-text">Đáp án: B. 10 bits</div>
+      <button onclick="toggleAnswer('ans24')">Show Answer</button>
+      <div id="ans24" class="answer-text">Answer: A. A4 and A5</div>
     </div>
-
     <div class="question">
-      <b>86. What does the Serial.print() function do?</b>
+      <b
+        >25. What is the maximum current that a digital I/O pin can source or
+        sink?</b
+      >
       <div class="options">
-        <div>A. Reads serial data</div>
-        <div>B. Sends data to Serial Monitor</div>
-        <div>C. Initializes serial port</div>
-        <div>D. Clears serial buffer</div>
-      </div>
-      <button onclick="toggleAnswer('ans86')">Hiện đáp án</button>
-      <div id="ans86" class="answer-text">Đáp án: B. Sends data to Serial Monitor</div>
-    </div>
-
-    <div class="question">
-      <b>87. What is the typical current limit per pin on Arduino Uno?</b>
-      <div class="options">
-        <div>A. 20 mA</div>
-        <div>B. 40 mA</div>
-        <div>C. 60 mA</div>
+        <div>A. 10 mA</div>
+        <div>B. 20 mA</div>
+        <div>C. 40 mA</div>
         <div>D. 100 mA</div>
       </div>
-      <button onclick="toggleAnswer('ans87')">Hiện đáp án</button>
-      <div id="ans87" class="answer-text">Đáp án: A. 20 mA</div>
+      <button onclick="toggleAnswer('ans25')">Show Answer</button>
+      <div id="ans25" class="answer-text">Answer: C. 40 mA</div>
     </div>
-
     <div class="question">
-      <b>88. What is the purpose of the 3.3V pin on Arduino Uno?</b>
+      <b>26. Which USB port is used on the Arduino Uno board?</b>
       <div class="options">
-        <div>A. Main power input</div>
-        <div>B. 3.3V regulated output</div>
-        <div>C. Analog reference</div>
-        <div>D. Ground</div>
+        <div>A. Micro USB</div>
+        <div>B. USB-B</div>
+        <div>C. USB-C</div>
+        <div>D. Mini USB</div>
       </div>
-      <button onclick="toggleAnswer('ans88')">Hiện đáp án</button>
-      <div id="ans88" class="answer-text">Đáp án: B. 3.3V regulated output</div>
+      <button onclick="toggleAnswer('ans26')">Show Answer</button>
+      <div id="ans26" class="answer-text">Answer: B. USB-B</div>
     </div>
-
     <div class="question">
-      <b>89. Which function clears the LCD1602 display?</b>
+      <b>27. What does LED_BUILTIN refer to on Arduino Uno?</b>
       <div class="options">
-        <div>A. clear()</div>
-        <div>B. reset()</div>
-        <div>C. erase()</div>
-        <div>D. clean()</div>
+        <div>A. External LED</div>
+        <div>B. Pin 0</div>
+        <div>C. Pin 13</div>
+        <div>D. Power LED</div>
       </div>
-      <button onclick="toggleAnswer('ans89')">Hiện đáp án</button>
-      <div id="ans89" class="answer-text">Đáp án: A. clear()</div>
+      <button onclick="toggleAnswer('ans27')">Show Answer</button>
+      <div id="ans27" class="answer-text">Answer: C. Pin 13</div>
     </div>
-
     <div class="question">
-      <b>90. What is the typical trigger pulse duration for SRF05?</b>
+      <b>28. What is the function of Serial.begin(9600);?</b>
       <div class="options">
-        <div>A. 1 µs</div>
-        <div>B. 10 µs</div>
-        <div>C. 100 µs</div>
-        <div>D. 1 ms</div>
+        <div>A. Start analog input</div>
+        <div>B. Start digital output</div>
+        <div>C. Start serial communication at 9600 baud</div>
+        <div>D. Stop all communication</div>
       </div>
-      <button onclick="toggleAnswer('ans90')">Hiện đáp án</button>
-      <div id="ans90" class="answer-text">Đáp án: B. 10 µs</div>
+      <button onclick="toggleAnswer('ans28')">Show Answer</button>
+      <div id="ans28" class="answer-text">
+        Answer: C. Start serial communication at 9600 baud
+      </div>
     </div>
-
     <div class="question">
-      <b>91. What is the purpose of the SPI pins on Arduino Uno?</b>
+      <b>29. Which function is used to loop code continuously in Arduino?</b>
       <div class="options">
-        <div>A. Serial communication</div>
-        <div>B. SPI communication</div>
-        <div>C. I2C communication</div>
-        <div>D. PWM output</div>
+        <div>A. start()</div>
+        <div>B. repeat()</div>
+        <div>C. run()</div>
+        <div>D. loop()</div>
       </div>
-      <button onclick="toggleAnswer('ans91')">Hiện đáp án</button>
-      <div id="ans91" class="answer-text">Đáp án: B. SPI communication</div>
+      <button onclick="toggleAnswer('ans29')">Show Answer</button>
+      <div id="ans29" class="answer-text">Answer: D. loop()</div>
     </div>
-
     <div class="question">
-      <b>92. Which pins are used for SPI on Arduino Uno?</b>
+      <b>30. Which function runs once when the Arduino board starts?</b>
       <div class="options">
-        <div>A. D10, D11, D12, D13</div>
-        <div>B. D0, D1, D2, D3</div>
-        <div>C. A0, A1, A2, A3</div>
-        <div>D. D5, D6, D7, D8</div>
+        <div>A. run()</div>
+        <div>B. loop()</div>
+        <div>C. setup()</div>
+        <div>D. begin()</div>
       </div>
-      <button onclick="toggleAnswer('ans92')">Hiện đáp án</button>
-      <div id="ans92" class="answer-text">Đáp án: A. D10, D11, D12, D13</div>
+      <button onclick="toggleAnswer('ans30')">Show Answer</button>
+      <div id="ans30" class="answer-text">Answer: C. setup()</div>
     </div>
-
     <div class="question">
-      <b>93. What is the default baud rate for Serial.begin()?</b>
+      <b>31. What is the purpose of the VIN pin on Arduino Uno?</b>
+      <div class="options">
+        <div>A. USB power output</div>
+        <div>B. Voltage input for external power</div>
+        <div>C. Ground pin</div>
+        <div>D. Analog input pin</div>
+      </div>
+      <button onclick="toggleAnswer('ans31')">Show Answer</button>
+      <div id="ans31" class="answer-text">
+        Answer: B. Voltage input for external power
+      </div>
+    </div>
+    <div class="question">
+      <b>32. Which communication protocol uses MOSI, MISO, and SCK pins?</b>
+      <div class="options">
+        <div>A. UART</div>
+        <div>B. SPI</div>
+        <div>C. I2C</div>
+        <div>D. HTTP</div>
+      </div>
+      <button onclick="toggleAnswer('ans32')">Show Answer</button>
+      <div id="ans32" class="answer-text">Answer: B. SPI</div>
+    </div>
+    <div class="question">
+      <b
+        >33. What is the default baud rate for Serial Monitor in Arduino IDE?</b
+      >
       <div class="options">
         <div>A. 4800</div>
         <div>B. 9600</div>
-        <div>C. 19200</div>
+        <div>C. 14400</div>
         <div>D. 115200</div>
       </div>
-      <button onclick="toggleAnswer('ans93')">Hiện đáp án</button>
-      <div id="ans93" class="answer-text">Đáp án: B. 9600</div>
+      <button onclick="toggleAnswer('ans33')">Show Answer</button>
+      <div id="ans33" class="answer-text">Answer: B. 9600</div>
     </div>
-
     <div class="question">
-      <b>94. What does the millis() function return?</b>
+      <b>34. What type of memory is used to store Arduino sketches?</b>
       <div class="options">
-        <div>A. Current time in seconds</div>
-        <div>B. Current time in milliseconds</div>
-        <div>C. Current time in microseconds</div>
-        <div>D. Current time in hours</div>
+        <div>A. EEPROM</div>
+        <div>B. SRAM</div>
+        <div>C. DRAM</div>
+        <div>D. Flash</div>
       </div>
-      <button onclick="toggleAnswer('ans94')">Hiện đáp án</button>
-      <div id="ans94" class="answer-text">Đáp án: B. Current time in milliseconds</div>
+      <button onclick="toggleAnswer('ans34')">Show Answer</button>
+      <div id="ans34" class="answer-text">Answer: D. Flash</div>
+    </div>
+    <div class="question">
+      <b>35. Which function is used to read an analog sensor value?</b>
+      <div class="options">
+        <div>A. digitalRead()</div>
+        <div>B. analogWrite()</div>
+        <div>C. analogRead()</div>
+        <div>D. readSensor()</div>
+      </div>
+      <button onclick="toggleAnswer('ans35')">Show Answer</button>
+      <div id="ans35" class="answer-text">Answer: C. analogRead()</div>
+    </div>
+    <div class="question">
+      <b>36. What voltage level represents a digital HIGH on Arduino Uno?</b>
+      <div class="options">
+        <div>A. 1V</div>
+        <div>B. 2.5V</div>
+        <div>C. 3.3V</div>
+        <div>D. 5V</div>
+      </div>
+      <button onclick="toggleAnswer('ans36')">Show Answer</button>
+      <div id="ans36" class="answer-text">Answer: D. 5V</div>
+    </div>
+    <div class="question">
+      <b>37. Which pin can provide 3.3V output?</b>
+      <div class="options">
+        <div>A. 5V</div>
+        <div>B. AREF</div>
+        <div>C. 3.3V</div>
+        <div>D. RESET</div>
+      </div>
+      <button onclick="toggleAnswer('ans37')">Show Answer</button>
+      <div id="ans37" class="answer-text">Answer: C. 3.3V</div>
+    </div>
+    <div class="question">
+      <b>38. Which command reads the digital state of a pin?</b>
+      <div class="options">
+        <div>A. pinMode()</div>
+        <div>B. digitalWrite()</div>
+        <div>C. digitalRead()</div>
+        <div>D. analogRead()</div>
+      </div>
+      <button onclick="toggleAnswer('ans38')">Show Answer</button>
+      <div id="ans38" class="answer-text">Answer: C. digitalRead()</div>
+    </div>
+    <div class="question">
+      <b>39. What is the function of the AREF pin?</b>
+      <div class="options">
+        <div>A. Ground connection</div>
+        <div>B. Reference voltage for analog input</div>
+        <div>C. Voltage output</div>
+        <div>D. I2C communication</div>
+      </div>
+      <button onclick="toggleAnswer('ans39')">Show Answer</button>
+      <div id="ans39" class="answer-text">
+        Answer: B. Reference voltage for analog input
+      </div>
+    </div>
+    <div class="question">
+      <b>40. How do you create a comment in Arduino code?</b>
+      <div class="options">
+        <div>A. # comment</div>
+        <div>B. // comment</div>
+        <div>C. * comment *</div>
+        <div>D. -- comment</div>
+      </div>
+      <button onclick="toggleAnswer('ans40')">Show Answer</button>
+      <div id="ans40" class="answer-text">Answer: B. // comment</div>
+    </div>
+    <div class="question">
+      <b>41. Which pin number corresponds to analog pin A0?</b>
+      <div class="options">
+        <div>A. 0</div>
+        <div>B. 14</div>
+        <div>C. A0</div>
+        <div>D. 6</div>
+      </div>
+      <button onclick="toggleAnswer('ans41')">Show Answer</button>
+      <div id="ans41" class="answer-text">Answer: B. 14</div>
+    </div>
+    <div class="question">
+      <b
+        >42. What happens if you power Arduino Uno with more than 12V on VIN?</b
+      >
+      <div class="options">
+        <div>A. It works better</div>
+        <div>B. It charges the board</div>
+        <div>C. It may damage the board</div>
+        <div>D. It resets automatically</div>
+      </div>
+      <button onclick="toggleAnswer('ans42')">Show Answer</button>
+      <div id="ans42" class="answer-text">
+        Answer: C. It may damage the board
+      </div>
+    </div>
+    <div class="question">
+      <b>43. What does the Serial.print() function do?</b>
+      <div class="options">
+        <div>A. Reads from the serial port</div>
+        <div>B. Stops serial communication</div>
+        <div>C. Sends data to the Serial Monitor</div>
+        <div>D. Clears memory</div>
+      </div>
+      <button onclick="toggleAnswer('ans43')">Show Answer</button>
+      <div id="ans43" class="answer-text">
+        Answer: C. Sends data to the Serial Monitor
+      </div>
+    </div>
+    <div class="question">
+      <b>44. How do you clear the Serial Monitor in Arduino IDE?</b>
+      <div class="options">
+        <div>A. Use Serial.clear()</div>
+        <div>B. Use Serial.end()</div>
+        <div>C. Press Ctrl + L</div>
+        <div>D. There is no code function; use Clear button</div>
+      </div>
+      <button onclick="toggleAnswer('ans44')">Show Answer</button>
+      <div id="ans44" class="answer-text">
+        Answer: D. There is no code function; use Clear button
+      </div>
+    </div>
+    <div class="question">
+      <b>45. Which memory type on Arduino Uno retains data after power off?</b>
+      <div class="options">
+        <div>A. SRAM</div>
+        <div>B. EEPROM</div>
+        <div>C. DRAM</div>
+        <div>D. Cache</div>
+      </div>
+      <button onclick="toggleAnswer('ans45')">Show Answer</button>
+      <div id="ans45" class="answer-text">Answer: B. EEPROM</div>
+    </div>
+    <div class="question">
+      <b>46. Which digital pin is typically used for SPI SS (Slave Select)?</b>
+      <div class="options">
+        <div>A. 10</div>
+        <div>B. 11</div>
+        <div>C. 12</div>
+        <div>D. 13</div>
+      </div>
+      <button onclick="toggleAnswer('ans46')">Show Answer</button>
+      <div id="ans46" class="answer-text">Answer: A. 10</div>
+    </div>
+    <div class="question">
+      <b>47. Which pin on Arduino Uno is used for SPI MOSI?</b>
+      <div class="options">
+        <div>A. 11</div>
+        <div>B. 12</div>
+        <div>C. 13</div>
+        <div>D. 10</div>
+      </div>
+      <button onclick="toggleAnswer('ans47')">Show Answer</button>
+      <div id="ans47" class="answer-text">Answer: A. 11</div>
+    </div>
+    <div class="question">
+      <b>48. Which pin is used for SPI MISO?</b>
+      <div class="options">
+        <div>A. 11</div>
+        <div>B. 12</div>
+        <div>C. 13</div>
+        <div>D. 10</div>
+      </div>
+      <button onclick="toggleAnswer('ans48')">Show Answer</button>
+      <div id="ans48" class="answer-text">Answer: B. 12</div>
+    </div>
+    <div class="question">
+      <b>49. Which pin is used for SPI SCK (Serial Clock)?</b>
+      <div class="options">
+        <div>A. 10</div>
+        <div>B. 11</div>
+        <div>C. 12</div>
+        <div>D. 13</div>
+      </div>
+      <button onclick="toggleAnswer('ans49')">Show Answer</button>
+      <div id="ans49" class="answer-text">Answer: D. 13</div>
+    </div>
+    <div class="question">
+      <b>50. What is the full form of IDE in Arduino IDE?</b>
+      <div class="options">
+        <div>A. Integrated Digital Environment</div>
+        <div>B. Internet Development Engine</div>
+        <div>C. Integrated Development Environment</div>
+        <div>D. Internal Device Emulator</div>
+      </div>
+      <button onclick="toggleAnswer('ans50')">Show Answer</button>
+      <div id="ans50" class="answer-text">
+        Answer: C. Integrated Development Environment
+      </div>
     </div>
 
+    <!-- LM35 Questions -->
+    <h2>LM35 Temperature Sensor Questions</h2>
     <div class="question">
-      <b>95. What is the purpose of the GND pins on Arduino Uno?</b>
+      <b>1. What type of sensor is the LM35?</b>
+      <div class="options">
+        <div>A. Humidity sensor</div>
+        <div>B. Pressure sensor</div>
+        <div>C. Temperature sensor</div>
+        <div>D. Gas sensor</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_1')">Show Answer</button>
+      <div id="ans_lm35_1" class="answer-text">
+        Answer: C. Temperature sensor
+      </div>
+    </div>
+    <div class="question">
+      <b>2. What is the output voltage of the LM35 for each degree Celsius?</b>
+      <div class="options">
+        <div>A. 10 mV</div>
+        <div>B. 1 mV</div>
+        <div>C. 100 mV</div>
+        <div>D. 1 V</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_2')">Show Answer</button>
+      <div id="ans_lm35_2" class="answer-text">Answer: A. 10 mV</div>
+    </div>
+    <div class="question">
+      <b>3. What is the temperature range of the LM35 sensor?</b>
+      <div class="options">
+        <div>A. 0°C to 100°C</div>
+        <div>B. -55°C to +150°C</div>
+        <div>C. 0°C to 50°C</div>
+        <div>D. -40°C to +125°C</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_3')">Show Answer</button>
+      <div id="ans_lm35_3" class="answer-text">Answer: B. -55°C to +150°C</div>
+    </div>
+    <div class="question">
+      <b>4. What type of output does LM35 provide?</b>
+      <div class="options">
+        <div>A. Digital</div>
+        <div>B. PWM</div>
+        <div>C. Analog</div>
+        <div>D. Serial</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_4')">Show Answer</button>
+      <div id="ans_lm35_4" class="answer-text">Answer: C. Analog</div>
+    </div>
+    <div class="question">
+      <b>5. How many pins does the LM35 sensor have?</b>
+      <div class="options">
+        <div>A. 2</div>
+        <div>B. 3</div>
+        <div>C. 4</div>
+        <div>D. 5</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_5')">Show Answer</button>
+      <div id="ans_lm35_5" class="answer-text">Answer: B. 3</div>
+    </div>
+    <div class="question">
+      <b>6. Which pin of LM35 gives the temperature output?</b>
+      <div class="options">
+        <div>A. Pin 1</div>
+        <div>B. Pin 2</div>
+        <div>C. Pin 3</div>
+        <div>D. Pin 4</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_6')">Show Answer</button>
+      <div id="ans_lm35_6" class="answer-text">Answer: B. Pin 2</div>
+    </div>
+    <div class="question">
+      <b>7. What is the accuracy of LM35 at room temperature?</b>
+      <div class="options">
+        <div>A. ±1°C</div>
+        <div>B. ±0.5°C</div>
+        <div>C. ±2°C</div>
+        <div>D. ±5°C</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_7')">Show Answer</button>
+      <div id="ans_lm35_7" class="answer-text">Answer: B. ±0.5°C</div>
+    </div>
+    <div class="question">
+      <b>8. What is the typical current consumption of the LM35?</b>
+      <div class="options">
+        <div>A. 10 mA</div>
+        <div>B. 1 mA</div>
+        <div>C. 60 μA</div>
+        <div>D. 5 mA</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_8')">Show Answer</button>
+      <div id="ans_lm35_8" class="answer-text">Answer: C. 60 μA</div>
+    </div>
+    <div class="question">
+      <b>9. Which pin of LM35 is connected to ground?</b>
+      <div class="options">
+        <div>A. Pin 1</div>
+        <div>B. Pin 2</div>
+        <div>C. Pin 3</div>
+        <div>D. None</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_9')">Show Answer</button>
+      <div id="ans_lm35_9" class="answer-text">Answer: C. Pin 3</div>
+    </div>
+    <div class="question">
+      <b>10. What voltage range can be used to power the LM35?</b>
+      <div class="options">
+        <div>A. 1.8V to 3.3V</div>
+        <div>B. 2V to 5V</div>
+        <div>C. 4V to 30V</div>
+        <div>D. 5V to 9V</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_10')">Show Answer</button>
+      <div id="ans_lm35_10" class="answer-text">Answer: C. 4V to 30V</div>
+    </div>
+    <div class="question">
+      <b
+        >11. What happens to the LM35 output voltage as temperature
+        increases?</b
+      >
+      <div class="options">
+        <div>A. Increases</div>
+        <div>B. Decreases</div>
+        <div>C. Constant</div>
+        <div>D. Becomes negative</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_11')">Show Answer</button>
+      <div id="ans_lm35_11" class="answer-text">Answer: A. Increases</div>
+    </div>
+    <div class="question">
+      <b>12. What is the output of LM35 at 25°C?</b>
+      <div class="options">
+        <div>A. 250 mV</div>
+        <div>B. 25 mV</div>
+        <div>C. 2.5 V</div>
+        <div>D. 1 V</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_12')">Show Answer</button>
+      <div id="ans_lm35_12" class="answer-text">Answer: A. 250 mV</div>
+    </div>
+    <div class="question">
+      <b>13. Which unit does the LM35 measure temperature in?</b>
+      <div class="options">
+        <div>A. Kelvin</div>
+        <div>B. Fahrenheit</div>
+        <div>C. Celsius</div>
+        <div>D. Rankine</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_13')">Show Answer</button>
+      <div id="ans_lm35_13" class="answer-text">Answer: C. Celsius</div>
+    </div>
+    <div class="question">
+      <b>14. What is the packaging type of LM35?</b>
+      <div class="options">
+        <div>A. TO-92</div>
+        <div>B. DIP-40</div>
+        <div>C. SOIC</div>
+        <div>D. QFP</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_14')">Show Answer</button>
+      <div id="ans_lm35_14" class="answer-text">Answer: A. TO-92</div>
+    </div>
+    <div class="question">
+      <b>15. Can LM35 be interfaced with Arduino analog pins?</b>
+      <div class="options">
+        <div>A. No</div>
+        <div>B. Yes</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_15')">Show Answer</button>
+      <div id="ans_lm35_15" class="answer-text">Answer: B. Yes</div>
+    </div>
+    <div class="question">
+      <b
+        >16. What should you multiply the analog reading of LM35 by (in volts)
+        when using a 5V Arduino?</b
+      >
+      <div class="options">
+        <div>A. 0.005</div>
+        <div>B. 0.01</div>
+        <div>C. 0.488</div>
+        <div>D. 0.00488</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_16')">Show Answer</button>
+      <div id="ans_lm35_16" class="answer-text">Answer: D. 0.00488</div>
+    </div>
+    <div class="question">
+      <b>17. LM35 is a product of which company?</b>
+      <div class="options">
+        <div>A. Texas Instruments</div>
+        <div>B. Intel</div>
+        <div>C. STMicroelectronics</div>
+        <div>D. Bosch</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_17')">Show Answer</button>
+      <div id="ans_lm35_17" class="answer-text">
+        Answer: A. Texas Instruments
+      </div>
+    </div>
+    <div class="question">
+      <b>18. If the LM35 gives an output of 300 mV, what is the temperature?</b>
+      <div class="options">
+        <div>A. 30°C</div>
+        <div>B. 3°C</div>
+        <div>C. 300°C</div>
+        <div>D. 0.3°C</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_18')">Show Answer</button>
+      <div id="ans_lm35_18" class="answer-text">Answer: A. 30°C</div>
+    </div>
+    <div class="question">
+      <b>19. LM35 provides temperature reading linearly in:</b>
+      <div class="options">
+        <div>A. 5 mV/°C</div>
+        <div>B. 20 mV/°C</div>
+        <div>C. 10 mV/°C</div>
+        <div>D. 100 mV/°C</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_19')">Show Answer</button>
+      <div id="ans_lm35_19" class="answer-text">Answer: C. 10 mV/°C</div>
+    </div>
+    <div class="question">
+      <b>20. Can LM35 directly interface with an ADC?</b>
+      <div class="options">
+        <div>A. Yes</div>
+        <div>B. No</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_20')">Show Answer</button>
+      <div id="ans_lm35_20" class="answer-text">Answer: A. Yes</div>
+    </div>
+    <div class="question">
+      <b>21. What is the typical self-heating effect of LM35 in still air?</b>
+      <div class="options">
+        <div>A. 0.1°C</div>
+        <div>B. 1°C</div>
+        <div>C. 10°C</div>
+        <div>D. 0.01°C</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_21')">Show Answer</button>
+      <div id="ans_lm35_21" class="answer-text">Answer: D. 0.01°C</div>
+    </div>
+    <div class="question">
+      <b>22. What is the maximum output voltage of LM35?</b>
+      <div class="options">
+        <div>A. 5V</div>
+        <div>B. 3.3V</div>
+        <div>C. 1.5V</div>
+        <div>D. 10V</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_22')">Show Answer</button>
+      <div id="ans_lm35_22" class="answer-text">Answer: C. 1.5V</div>
+    </div>
+    <div class="question">
+      <b>23. What is the primary application of LM35?</b>
+      <div class="options">
+        <div>A. Gas detection</div>
+        <div>B. Distance measurement</div>
+        <div>C. Temperature sensing</div>
+        <div>D. Light detection</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_23')">Show Answer</button>
+      <div id="ans_lm35_23" class="answer-text">
+        Answer: C. Temperature sensing
+      </div>
+    </div>
+    <div class="question">
+      <b>24. What does the analogRead() function return in Arduino?</b>
+      <div class="options">
+        <div>A. Voltage</div>
+        <div>B. Temperature</div>
+        <div>C. Digital value (0–1023)</div>
+        <div>D. Binary</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_24')">Show Answer</button>
+      <div id="ans_lm35_24" class="answer-text">
+        Answer: C. Digital value (0–1023)
+      </div>
+    </div>
+    <div class="question">
+      <b
+        >25. What happens to the LM35 output if the temperature goes below 0°C
+        (in standard version)?</b
+      >
+      <div class="options">
+        <div>A. It gives 0V</div>
+        <div>B. It gives negative voltage</div>
+        <div>C. It gives error</div>
+        <div>D. It resets</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_25')">Show Answer</button>
+      <div id="ans_lm35_25" class="answer-text">Answer: A. It gives 0V</div>
+    </div>
+    <div class="question">
+      <b>26. What is the output of the LM35 at 0°C?</b>
+      <div class="options">
+        <div>A. 0V</div>
+        <div>B. 100 mV</div>
+        <div>C. 10 mV</div>
+        <div>D. 1V</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_26')">Show Answer</button>
+      <div id="ans_lm35_26" class="answer-text">Answer: A. 0V</div>
+    </div>
+    <div class="question">
+      <b>27. What type of temperature sensor is LM35 classified as?</b>
+      <div class="options">
+        <div>A. Thermocouple</div>
+        <div>B. Thermistor</div>
+        <div>C. Semiconductor</div>
+        <div>D. RTD</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_27')">Show Answer</button>
+      <div id="ans_lm35_27" class="answer-text">Answer: C. Semiconductor</div>
+    </div>
+    <div class="question">
+      <b>28. How do you convert voltage from LM35 to temperature in Celsius?</b>
+      <div class="options">
+        <div>A. voltage / 0.5</div>
+        <div>B. voltage * 10</div>
+        <div>C. voltage * 100</div>
+        <div>D. voltage / 10</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_28')">Show Answer</button>
+      <div id="ans_lm35_28" class="answer-text">Answer: C. voltage * 100</div>
+    </div>
+    <div class="question">
+      <b>29. What is the maximum temperature that LM35 can measure?</b>
+      <div class="options">
+        <div>A. 100°C</div>
+        <div>B. 125°C</div>
+        <div>C. 150°C</div>
+        <div>D. 200°C</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_29')">Show Answer</button>
+      <div id="ans_lm35_29" class="answer-text">Answer: C. 150°C</div>
+    </div>
+    <div class="question">
+      <b>30. What is the minimum measurable temperature (typical LM35)?</b>
+      <div class="options">
+        <div>A. 0°C</div>
+        <div>B. -40°C</div>
+        <div>C. -55°C</div>
+        <div>D. -10°C</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_30')">Show Answer</button>
+      <div id="ans_lm35_30" class="answer-text">Answer: C. -55°C</div>
+    </div>
+    <div class="question">
+      <b>31. What is the thermal response time of LM35 (in seconds)?</b>
+      <div class="options">
+        <div>A. <1s</div>
+        <div>B. ~5s</div>
+        <div>C. ~10s</div>
+        <div>D. >15s</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_31')">Show Answer</button>
+      <div id="ans_lm35_31" class="answer-text">Answer: A. <1s</div>
+    </div>
+    <div class="question">
+      <b>32. What is the supply current of LM35 typically?</b>
+      <div class="options">
+        <div>A. <60 μA</div>
+        <div>B. <1 mA</div>
+        <div>C. <10 mA</div>
+        <div>D. <100 mA</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_32')">Show Answer</button>
+      <div id="ans_lm35_32" class="answer-text">Answer: A. <60 μA</div>
+    </div>
+    <div class="question">
+      <b>33. Can LM35 be used in battery-powered applications?</b>
+      <div class="options">
+        <div>A. No</div>
+        <div>B. Yes</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_33')">Show Answer</button>
+      <div id="ans_lm35_33" class="answer-text">Answer: B. Yes</div>
+    </div>
+    <div class="question">
+      <b>34. What is the function of decoupling capacitors in LM35 circuits?</b>
+      <div class="options">
+        <div>A. Boost signal</div>
+        <div>B. Filter noise</div>
+        <div>C. Increase temperature range</div>
+        <div>D. Amplify output</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_34')">Show Answer</button>
+      <div id="ans_lm35_34" class="answer-text">Answer: B. Filter noise</div>
+    </div>
+    <div class="question">
+      <b>35. Which pin of LM35 is the VCC (supply voltage)?</b>
+      <div class="options">
+        <div>A. Pin 1</div>
+        <div>B. Pin 2</div>
+        <div>C. Pin 3</div>
+        <div>D. None</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_35')">Show Answer</button>
+      <div id="ans_lm35_35" class="answer-text">Answer: A. Pin 1</div>
+    </div>
+    <div class="question">
+      <b>36. Can LM35 be used underwater directly?</b>
+      <div class="options">
+        <div>A. Yes</div>
+        <div>B. No</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_36')">Show Answer</button>
+      <div id="ans_lm35_36" class="answer-text">Answer: B. No</div>
+    </div>
+    <div class="question">
+      <b>37. Which feature makes LM35 better than thermistors?</b>
+      <div class="options">
+        <div>A. Lower cost</div>
+        <div>B. Linear output</div>
+        <div>C. Larger size</div>
+        <div>D. Requires ADC</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_37')">Show Answer</button>
+      <div id="ans_lm35_37" class="answer-text">Answer: B. Linear output</div>
+    </div>
+    <div class="question">
+      <b>38. Is the LM35 output affected by supply voltage variation?</b>
+      <div class="options">
+        <div>A. Yes</div>
+        <div>B. No</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_38')">Show Answer</button>
+      <div id="ans_lm35_38" class="answer-text">Answer: B. No</div>
+    </div>
+    <div class="question">
+      <b>39. If ambient temperature is 0°C, what is LM35’s output?</b>
+      <div class="options">
+        <div>A. 0V</div>
+        <div>B. 10 mV</div>
+        <div>C. 100 mV</div>
+        <div>D. -10 mV</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_39')">Show Answer</button>
+      <div id="ans_lm35_39" class="answer-text">Answer: A. 0V</div>
+    </div>
+    <div class="question">
+      <b>40. Which of the following is a limitation of LM35?</b>
+      <div class="options">
+        <div>A. Analog output</div>
+        <div>B. Small size</div>
+        <div>C. Low power</div>
+        <div>D. Low cost</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_40')">Show Answer</button>
+      <div id="ans_lm35_40" class="answer-text">Answer: A. Analog output</div>
+    </div>
+    <div class="question">
+      <b
+        >41. What should you do before reading LM35 analog voltage on
+        Arduino?</b
+      >
+      <div class="options">
+        <div>A. Set pin to OUTPUT</div>
+        <div>B. Set pin to INPUT</div>
+        <div>C. Use Serial.begin()</div>
+        <div>D. Use digitalWrite()</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_41')">Show Answer</button>
+      <div id="ans_lm35_41" class="answer-text">
+        Answer: B. Set pin to INPUT
+      </div>
+    </div>
+    <div class="question">
+      <b>42. What happens if you reverse VCC and GND on LM35?</b>
+      <div class="options">
+        <div>A. It still works</div>
+        <div>B. No output</div>
+        <div>C. May damage sensor</div>
+        <div>D. Output increases</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_42')">Show Answer</button>
+      <div id="ans_lm35_42" class="answer-text">
+        Answer: C. May damage sensor
+      </div>
+    </div>
+    <div class="question">
+      <b
+        >43. What is the resolution of LM35 with Arduino 10-bit ADC and 5V
+        ref?</b
+      >
+      <div class="options">
+        <div>A. ~5°C</div>
+        <div>B. ~0.5°C</div>
+        <div>C. ~0.1°C</div>
+        <div>D. ~0.49°C</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_43')">Show Answer</button>
+      <div id="ans_lm35_43" class="answer-text">Answer: D. ~0.49°C</div>
+    </div>
+    <div class="question">
+      <b>44. How many LM35 sensors can be connected to Arduino Uno?</b>
+      <div class="options">
+        <div>A. Only 1</div>
+        <div>B. 2</div>
+        <div>C. 3</div>
+        <div>D. Up to 6 (using analog pins)</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_44')">Show Answer</button>
+      <div id="ans_lm35_44" class="answer-text">
+        Answer: D. Up to 6 (using analog pins)
+      </div>
+    </div>
+    <div class="question">
+      <b>45. What is the maximum analog voltage output of LM35 for 150°C?</b>
+      <div class="options">
+        <div>A. 1.5V</div>
+        <div>B. 5V</div>
+        <div>C. 3.3V</div>
+        <div>D. 0.15V</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_45')">Show Answer</button>
+      <div id="ans_lm35_45" class="answer-text">Answer: A. 1.5V</div>
+    </div>
+    <div class="question">
+      <b>46. Is LM35 output ratiometric to supply voltage?</b>
+      <div class="options">
+        <div>A. Yes</div>
+        <div>B. No</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_46')">Show Answer</button>
+      <div id="ans_lm35_46" class="answer-text">Answer: B. No</div>
+    </div>
+    <div class="question">
+      <b>47. LM35 is available in which of the following versions?</b>
+      <div class="options">
+        <div>A. LM35A</div>
+        <div>B. LM35C</div>
+        <div>C. LM35D</div>
+        <div>D. All of the above</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_47')">Show Answer</button>
+      <div id="ans_lm35_47" class="answer-text">
+        Answer: D. All of the above
+      </div>
+    </div>
+    <div class="question">
+      <b>48. What is the full form of "LM" in LM35?</b>
+      <div class="options">
+        <div>A. Linear Measurement</div>
+        <div>B. Linear Monitor</div>
+        <div>C. Linear Monolithic</div>
+        <div>D. Logic Module</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_48')">Show Answer</button>
+      <div id="ans_lm35_48" class="answer-text">
+        Answer: C. Linear Monolithic
+      </div>
+    </div>
+    <div class="question">
+      <b>49. What is the best place to mount LM35 for ambient air sensing?</b>
+      <div class="options">
+        <div>A. Inside metal box</div>
+        <div>B. Near heating element</div>
+        <div>C. Exposed to air</div>
+        <div>D. Under LCD screen</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_49')">Show Answer</button>
+      <div id="ans_lm35_49" class="answer-text">Answer: C. Exposed to air</div>
+    </div>
+    <div class="question">
+      <b
+        >50. Which command is used to print temperature to Serial Monitor in
+        Arduino?</b
+      >
+      <div class="options">
+        <div>A. printTemp()</div>
+        <div>B. Serial.display()</div>
+        <div>C. Serial.print()</div>
+        <div>D. analog.print()</div>
+      </div>
+      <button onclick="toggleAnswer('ans_lm35_50')">Show Answer</button>
+      <div id="ans_lm35_50" class="answer-text">Answer: C. Serial.print()</div>
+    </div>
+
+    <!-- SRF05 Questions -->
+    <h2>SRF05 Ultrasonic Sensor Questions</h2>
+    <div class="question">
+      <b>1. What type of sensor is the SRF05?</b>
+      <div class="options">
+        <div>A. Temperature sensor</div>
+        <div>B. Ultrasonic distance sensor</div>
+        <div>C. Infrared sensor</div>
+        <div>D. Light sensor</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_1')">Show Answer</button>
+      <div id="ans_srf05_1" class="answer-text">
+        Answer: B. Ultrasonic distance sensor
+      </div>
+    </div>
+    <div class="question">
+      <b>2. What is the working principle of the SRF05 sensor?</b>
+      <div class="options">
+        <div>A. Infrared radiation</div>
+        <div>B. Laser triangulation</div>
+        <div>C. Ultrasonic echo timing</div>
+        <div>D. Capacitive touch</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_2')">Show Answer</button>
+      <div id="ans_srf05_2" class="answer-text">
+        Answer: C. Ultrasonic echo timing
+      </div>
+    </div>
+    <div class="question">
+      <b>3. How many pins does the SRF05 module have?</b>
+      <div class="options">
+        <div>A. 3</div>
+        <div>B. 4</div>
+        <div>C. 5</div>
+        <div>D. 6</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_3')">Show Answer</button>
+      <div id="ans_srf05_3" class="answer-text">Answer: C. 5</div>
+    </div>
+    <div class="question">
+      <b>4. What is the typical operating voltage of the SRF05?</b>
+      <div class="options">
+        <div>A. 3.3V</div>
+        <div>B. 9V</div>
+        <div>C. 5V</div>
+        <div>D. 12V</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_4')">Show Answer</button>
+      <div id="ans_srf05_4" class="answer-text">Answer: C. 5V</div>
+    </div>
+    <div class="question">
+      <b>5. Which pin on the SRF05 is used to trigger the pulse?</b>
+      <div class="options">
+        <div>A. Echo</div>
+        <div>B. Trig</div>
+        <div>C. Out</div>
+        <div>D. Vcc</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_5')">Show Answer</button>
+      <div id="ans_srf05_5" class="answer-text">Answer: B. Trig</div>
+    </div>
+    <div class="question">
+      <b>6. What is the function of the Echo pin?</b>
+      <div class="options">
+        <div>A. Sends a pulse</div>
+        <div>B. Receives a digital signal</div>
+        <div>C. Outputs the duration of reflected pulse</div>
+        <div>D. Powers the sensor</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_6')">Show Answer</button>
+      <div id="ans_srf05_6" class="answer-text">
+        Answer: C. Outputs the duration of reflected pulse
+      </div>
+    </div>
+    <div class="question">
+      <b>7. What is the measuring range of SRF05?</b>
+      <div class="options">
+        <div>A. 2 cm to 80 cm</div>
+        <div>B. 1 cm to 100 cm</div>
+        <div>C. 2 cm to 400 cm</div>
+        <div>D. 10 cm to 300 cm</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_7')">Show Answer</button>
+      <div id="ans_srf05_7" class="answer-text">Answer: C. 2 cm to 400 cm</div>
+    </div>
+    <div class="question">
+      <b>8. What is the time delay between trigger and echo in air?</b>
+      <div class="options">
+        <div>A. 1 μs</div>
+        <div>B. 10 μs</div>
+        <div>C. 100 μs</div>
+        <div>D. Depends on distance</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_8')">Show Answer</button>
+      <div id="ans_srf05_8" class="answer-text">
+        Answer: D. Depends on distance
+      </div>
+    </div>
+    <div class="question">
+      <b
+        >9. Which programming function is commonly used to measure the echo
+        duration in Arduino?</b
+      >
+      <div class="options">
+        <div>A. analogRead()</div>
+        <div>B. digitalRead()</div>
+        <div>C. delay()</div>
+        <div>D. pulseIn()</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_9')">Show Answer</button>
+      <div id="ans_srf05_9" class="answer-text">Answer: D. pulseIn()</div>
+    </div>
+    <div class="question">
+      <b>10. What is the unit of the value returned by pulseIn()?</b>
+      <div class="options">
+        <div>A. Milliseconds</div>
+        <div>B. Seconds</div>
+        <div>C. Microseconds</div>
+        <div>D. Meters</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_10')">Show Answer</button>
+      <div id="ans_srf05_10" class="answer-text">Answer: C. Microseconds</div>
+    </div>
+    <div class="question">
+      <b
+        >11. What is the speed of sound in air (used in distance
+        calculation)?</b
+      >
+      <div class="options">
+        <div>A. 330 m/s</div>
+        <div>B. 343 m/s</div>
+        <div>C. 400 m/s</div>
+        <div>D. 300 m/s</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_11')">Show Answer</button>
+      <div id="ans_srf05_11" class="answer-text">Answer: B. 343 m/s</div>
+    </div>
+    <div class="question">
+      <b>12. How is distance calculated using SRF05?</b>
+      <div class="options">
+        <div>A. Time × Velocity</div>
+        <div>B. (Time × Speed of sound) / 2</div>
+        <div>C. Time / Velocity</div>
+        <div>D. Echo × Trig</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_12')">Show Answer</button>
+      <div id="ans_srf05_12" class="answer-text">
+        Answer: B. (Time × Speed of sound) / 2
+      </div>
+    </div>
+    <div class="question">
+      <b>13. What shape is the sound wave emitted by SRF05?</b>
+      <div class="options">
+        <div>A. Square</div>
+        <div>B. Sine</div>
+        <div>C. Ultrasonic burst</div>
+        <div>D. PWM</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_13')">Show Answer</button>
+      <div id="ans_srf05_13" class="answer-text">
+        Answer: C. Ultrasonic burst
+      </div>
+    </div>
+    <div class="question">
+      <b>14. What type of signal does the Trig pin expect?</b>
+      <div class="options">
+        <div>A. Continuous HIGH</div>
+        <div>B. 10 μs HIGH pulse</div>
+        <div>C. 1-second pulse</div>
+        <div>D. Analog signal</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_14')">Show Answer</button>
+      <div id="ans_srf05_14" class="answer-text">
+        Answer: B. 10 μs HIGH pulse
+      </div>
+    </div>
+    <div class="question">
+      <b>15. What type of signal does the Echo pin return?</b>
+      <div class="options">
+        <div>A. Analog</div>
+        <div>B. Digital HIGH</div>
+        <div>C. PWM</div>
+        <div>D. A pulse with duration proportional to distance</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_15')">Show Answer</button>
+      <div id="ans_srf05_15" class="answer-text">
+        Answer: D. A pulse with duration proportional to distance
+      </div>
+    </div>
+    <div class="question">
+      <b>16. How do you reduce noise in SRF05 readings?</b>
+      <div class="options">
+        <div>A. Use delay()</div>
+        <div>B. Add capacitors</div>
+        <div>C. Average multiple readings</div>
+        <div>D. Increase trigger frequency</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_16')">Show Answer</button>
+      <div id="ans_srf05_16" class="answer-text">
+        Answer: C. Average multiple readings
+      </div>
+    </div>
+    <div class="question">
+      <b>17. What is the SRF05’s resolution?</b>
+      <div class="options">
+        <div>A. 1 mm</div>
+        <div>B. 3 mm</div>
+        <div>C. 5 mm</div>
+        <div>D. 10 mm</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_17')">Show Answer</button>
+      <div id="ans_srf05_17" class="answer-text">Answer: B. 3 mm</div>
+    </div>
+    <div class="question">
+      <b>18. What should be the minimum delay between two measurements?</b>
+      <div class="options">
+        <div>A. 10 ms</div>
+        <div>B. 30 ms</div>
+        <div>C. 60 ms</div>
+        <div>D. 100 ms</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_18')">Show Answer</button>
+      <div id="ans_srf05_18" class="answer-text">Answer: B. 30 ms</div>
+    </div>
+    <div class="question">
+      <b>19. Which environmental factor affects SRF05 accuracy the most?</b>
+      <div class="options">
+        <div>A. Light</div>
+        <div>B. Temperature</div>
+        <div>C. Voltage</div>
+        <div>D. Humidity</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_19')">Show Answer</button>
+      <div id="ans_srf05_19" class="answer-text">Answer: B. Temperature</div>
+    </div>
+    <div class="question">
+      <b>20. Why divide by 2 in the distance calculation formula?</b>
+      <div class="options">
+        <div>A. To convert cm to mm</div>
+        <div>B. Sound goes to target and back</div>
+        <div>C. To average readings</div>
+        <div>D. It's part of the delay formula</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_20')">Show Answer</button>
+      <div id="ans_srf05_20" class="answer-text">
+        Answer: B. Sound goes to target and back
+      </div>
+    </div>
+    <div class="question">
+      <b>21. What is the maximum recommended distance for reliable use?</b>
+      <div class="options">
+        <div>A. 80 cm</div>
+        <div>B. 150 cm</div>
+        <div>C. 300 cm</div>
+        <div>D. 400 cm</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_21')">Show Answer</button>
+      <div id="ans_srf05_21" class="answer-text">Answer: D. 400 cm</div>
+    </div>
+    <div class="question">
+      <b>22. What happens if there's no object in front of the sensor?</b>
+      <div class="options">
+        <div>A. Echo pin stays HIGH</div>
+        <div>B. Echo pin stays LOW</div>
+        <div>C. Echo timeout occurs</div>
+        <div>D. Random data is returned</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_22')">Show Answer</button>
+      <div id="ans_srf05_22" class="answer-text">Answer: C. Echo timeout occurs</div>
+    </div>
+    <div class="question">
+      <b>23. How to connect SRF05 to Arduino?</b>
+      <div class="options">
+        <div>A. Trig and Echo to analog pins</div>
+        <div>B. Trig and Echo to digital pins</div>
+        <div>C. Vcc to GND</div>
+        <div>D. All to PWM pins</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_23')">Show Answer</button>
+      <div id="ans_srf05_23" class="answer-text">Answer: B. Trig and Echo to digital pins</div>
+    </div>
+    <div class="question">
+      <b>24. What is the trigger pulse duration for SRF05?</b>
+      <div class="options">
+        <div>A. 1 μs</div>
+        <div>B. 10 μs</div>
+        <div>C. 100 μs</div>
+        <div>D. 1 ms</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_24')">Show Answer</button>
+      <div id="ans_srf05_24" class="answer-text">Answer: B. 10 μs</div>
+    </div>
+    <div class="question">
+      <b>25. Can SRF05 detect soft materials accurately?</b>
+      <div class="options">
+        <div>A. Yes</div>
+        <div>B. No</div>
+        <div>C. Only black objects</div>
+        <div>D. Only metal</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_25')">Show Answer</button>
+      <div id="ans_srf05_25" class="answer-text">Answer: B. No</div>
+    </div>
+    <div class="question">
+      <b>26. What happens if you give a continuous HIGH signal to Trig?</b>
+      <div class="options">
+        <div>A. SRF05 measures normally</div>
+        <div>B. Echo stays LOW</div>
+        <div>C. Sensor malfunctions</div>
+        <div>D. Distance reading becomes faster</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_26')">Show Answer</button>
+      <div id="ans_srf05_26" class="answer-text">Answer: C. Sensor malfunctions</div>
+    </div>
+    <div class="question">
+      <b>27. What is the typical frequency of the ultrasonic sound emitted by SRF05?</b>
+      <div class="options">
+        <div>A. 20 kHz</div>
+        <div>B. 25 kHz</div>
+        <div>C. 40 kHz</div>
+        <div>D. 100 kHz</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_27')">Show Answer</button>
+      <div id="ans_srf05_27" class="answer-text">Answer: C. 40 kHz</div>
+    </div>
+    <div class="question">
+      <b>28. SRF05 is typically used in which of the following applications?</b>
+      <div class="options">
+        <div>A. Temperature monitoring</div>
+        <div>B. Distance measurement</div>
+        <div>C. Image recognition</div>
+        <div>D. Data encryption</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_28')">Show Answer</button>
+      <div id="ans_srf05_28" class="answer-text">Answer: B. Distance measurement</div>
+    </div>
+    <div class="question">
+      <b>29. Can SRF05 be used outdoors?</b>
+      <div class="options">
+        <div>A. No</div>
+        <div>B. Yes, with protection</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_29')">Show Answer</button>
+      <div id="ans_srf05_29" class="answer-text">Answer: B. Yes, with protection</div>
+    </div>
+    <div class="question">
+      <b>30. What is the effect of a tilted surface on SRF05 readings?</b>
+      <div class="options">
+        <div>A. No effect</div>
+        <div>B. Accurate reading</div>
+        <div>C. Echo may miss the receiver</div>
+        <div>D. Increases range</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_30')">Show Answer</button>
+      <div id="ans_srf05_30" class="answer-text">Answer: C. Echo may miss the receiver</div>
+    </div>
+    <div class="question">
+      <b>31. What is the main advantage of SRF05 over SRF04?</b>
+      <div class="options">
+        <div>A. Fewer pins</div>
+        <div>B. Longer range</div>
+        <div>C. Dual operating modes</div>
+        <div>D. Works on 3.3V</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_31')">Show Answer</button>
+      <div id="ans_srf05_31" class="answer-text">Answer: C. Dual operating modes</div>
+    </div>
+    <div class="question">
+      <b>32. What is the default mode of SRF05 operation?</b>
+      <div class="options">
+        <div>A. Single-pin mode</div>
+        <div>B. Dual-pin mode</div>
+        <div>C. SPI mode</div>
+        <div>D. I2C mode</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_32')">Show Answer</button>
+      <div id="ans_srf05_32" class="answer-text">Answer: B. Dual-pin mode</div>
+    </div>
+    <div class="question">
+      <b>33. Which type of signal does SRF05 use for distance measurement?</b>
+      <div class="options">
+        <div>A. Infrared</div>
+        <div>B. Ultrasonic pulse</div>
+        <div>C. PWM</div>
+        <div>D. Serial</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_33')">Show Answer</button>
+      <div id="ans_srf05_33" class="answer-text">Answer: B. Ultrasonic pulse</div>
+    </div>
+    <div class="question">
+      <b>34. What is the typical field of view of SRF05?</b>
+      <div class="options">
+        <div>A. 5°</div>
+        <div>B. 15°</div>
+        <div>C. 45°</div>
+        <div>D. 90°</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_34')">Show Answer</button>
+      <div id="ans_srf05_34" class="answer-text">Answer: B. 15°</div>
+    </div>
+    <div class="question">
+      <b>35. How do you convert time in microseconds to distance in cm?</b>
+      <div class="options">
+        <div>A. time / 58</div>
+        <div>B. time × 2</div>
+        <div>C. time / 100</div>
+        <div>D. time × 10</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_35')">Show Answer</button>
+      <div id="ans_srf05_35" class="answer-text">Answer: A. time / 58</div>
+    </div>
+    <div class="question">
+      <b>36. What value does pulseIn() return when no echo is received?</b>
+      <div class="options">
+        <div>A. -1</div>
+        <div>B. 0</div>
+        <div>C. 1</div>
+        <div>D. 1023</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_36')">Show Answer</button>
+      <div id="ans_srf05_36" class="answer-text">Answer: B. 0</div>
+    </div>
+    <div class="question">
+      <b>37. Can you use SRF05 on a robot for obstacle avoidance?</b>
+      <div class="options">
+        <div>A. No</div>
+        <div>B. Yes</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_37')">Show Answer</button>
+      <div id="ans_srf05_37" class="answer-text">Answer: B. Yes</div>
+    </div>
+    <div class="question">
+      <b>38. What Arduino function is used to send a HIGH signal for a short time?</b>
+      <div class="options">
+        <div>A. digitalRead()</div>
+        <div>B. pulseIn()</div>
+        <div>C. digitalWrite()</div>
+        <div>D. analogWrite()</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_38')">Show Answer</button>
+      <div id="ans_srf05_38" class="answer-text">Answer: C. digitalWrite()</div>
+    </div>
+    <div class="question">
+      <b>39. What is the typical power consumption of SRF05?</b>
+      <div class="options">
+        <div>A. 10 mA</div>
+        <div>B. 25 mA</div>
+        <div>C. 50 mA</div>
+        <div>D. 100 mA</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_39')">Show Answer</button>
+      <div id="ans_srf05_39" class="answer-text">Answer: B. 25 mA</div>
+    </div>
+    <div class="question">
+      <b>40. Which material would likely absorb ultrasonic waves?</b>
+      <div class="options">
+        <div>A. Metal</div>
+        <div>B. Water</div>
+        <div>C. Foam</div>
+        <div>D. Plastic</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_40')">Show Answer</button>
+      <div id="ans_srf05_40" class="answer-text">Answer: C. Foam</div>
+    </div>
+    <div class="question">
+      <b>41. In what units does SRF05 measure distance directly?</b>
+      <div class="options">
+        <div>A. Inches</div>
+        <div>B. Meters</div>
+        <div>C. Centimeters</div>
+        <div>D. Microseconds</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_41')">Show Answer</button>
+      <div id="ans_srf05_41" class="answer-text">Answer: D. Microseconds (Raw output is in microseconds)</div>
+    </div>
+    <div class="question">
+      <b>42. How can you increase measurement accuracy with SRF05?</b>
+      <div class="options">
+        <div>A. Use fewer readings</div>
+        <div>B. Use average of multiple readings</div>
+        <div>C. Decrease voltage</div>
+        <div>D. Change echo pin</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_42')">Show Answer</button>
+      <div id="ans_srf05_42" class="answer-text">Answer: B. Use average of multiple readings</div>
+    </div>
+    <div class="question">
+      <b>43. Which Arduino library is commonly used for SRF05?</b>
+      <div class="options">
+        <div>A. Servo.h</div>
+        <div>B. Wire.h</div>
+        <div>C. NewPing.h</div>
+        <div>D. Ultrasonic.h</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_43')">Show Answer</button>
+      <div id="ans_srf05_43" class="answer-text">Answer: C. NewPing.h</div>
+    </div>
+    <div class="question">
+      <b>44. Can the SRF05 measure through transparent materials like glass?</b>
+      <div class="options">
+        <div>A. Yes</div>
+        <div>B. No</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_44')">Show Answer</button>
+      <div id="ans_srf05_44" class="answer-text">Answer: B. No</div>
+    </div>
+    <div class="question">
+      <b>45. What happens if Echo pin is not read correctly?</b>
+      <div class="options">
+        <div>A. Wrong distance</div>
+        <div>B. Correct distance</div>
+        <div>C. Overheating</div>
+        <div>D. Resets Arduino</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_45')">Show Answer</button>
+      <div id="ans_srf05_45" class="answer-text">Answer: A. Wrong distance</div>
+    </div>
+    <div class="question">
+      <b>46. What is the main difference between analog and ultrasonic distance sensors?</b>
+      <div class="options">
+        <div>A. Ultrasonic uses sound</div>
+        <div>B. Analog uses voltage</div>
+        <div>C. Ultrasonic is digital</div>
+        <div>D. All of the above</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_46')">Show Answer</button>
+      <div id="ans_srf05_46" class="answer-text">Answer: D. All of the above</div>
+    </div>
+    <div class="question">
+      <b>47. How do you wire SRF05 in single-pin mode?</b>
+      <div class="options">
+        <div>A. Combine Trig and Echo on the same pin</div>
+        <div>B. Connect Trig to ground</div>
+        <div>C. Use I2C</div>
+        <div>D. Use 3.3V</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_47')">Show Answer</button>
+      <div id="ans_srf05_47" class="answer-text">Answer: A. Combine Trig and Echo on the same pin</div>
+    </div>
+    <div class="question">
+      <b>48. Which wave travels faster: ultrasonic or infrared?</b>
+      <div class="options">
+        <div>A. Ultrasonic</div>
+        <div>B. Infrared</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_48')">Show Answer</button>
+      <div id="ans_srf05_48" class="answer-text">Answer: B. Infrared</div>
+    </div>
+    <div class="question">
+      <b>49. What is the unit of sound wave frequency?</b>
+      <div class="options">
+        <div>A. cm</div>
+        <div>B. V</div>
+        <div>C. Hz</div>
+        <div>D. dB</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_49')">Show Answer</button>
+      <div id="ans_srf05_49" class="answer-text">Answer: C. Hz</div>
+    </div>
+    <div class="question">
+      <b>50. What kind of data does SRF05 output?</b>
+      <div class="options">
+        <div>A. Temperature data</div>
+        <div>B. Digital pulse width</div>
+        <div>C. Raw analog signal</div>
+        <div>D. PWM signal</div>
+      </div>
+      <button onclick="toggleAnswer('ans_srf05_50')">Show Answer</button>
+      <div id="ans_srf05_50" class="answer-text">Answer: B. Digital pulse width</div>
+    </div>
+
+    <!-- Interrupts Questions -->
+    <h2>Interrupts Questions</h2>
+    <div class="question">
+      <b>1. What is an interrupt in Arduino?</b>
+      <div class="options">
+        <div>A. A delay function</div>
+        <div>B. A type of loop</div>
+        <div>C. A signal that temporarily halts the main program</div>
+        <div>D. A command to stop Arduino</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_1')">Show Answer</button>
+      <div id="ans_int_1" class="answer-text">Answer: C. A signal that temporarily halts the main program</div>
+    </div>
+    <div class="question">
+      <b>2. Which Arduino Uno pins support external interrupts?</b>
+      <div class="options">
+        <div>A. Pins 2 and 3</div>
+        <div>B. Pins 4 and 5</div>
+        <div>C. Pins A0 and A1</div>
+        <div>D. All digital pins</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_2')">Show Answer</button>
+      <div id="ans_int_2" class="answer-text">Answer: A. Pins 2 and 3</div>
+    </div>
+    <div class="question">
+      <b>3. Which function is used to attach an interrupt in Arduino?</b>
+      <div class="options">
+        <div>A. interruptAttach()</div>
+        <div>B. attachInterrupt()</div>
+        <div>C. pinInterrupt()</div>
+        <div><div>D. enableInterrupt()</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_3')">Show Answer</button>
+      <div id="ans_int_3" class="answer-text">Answer: B. attachInterrupt()</div>
+    </div>
+  </div>
+    <div class="question">
+      <b>4. Which function is used to remove an interrupt?</b>
+      <div class="options">
+        <div>A. detachInterrupt()</div>
+        <div>B. stopInterrupt()</div>
+        <div>C. disableInterrupt()</div>
+        <div>D. removeInterrupt()</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_4')">Show Answer</button>
+      <div id="ans_int_4" class="answer-text">Answer: A. detachInterrupt()</div>
+    </div>
+    <div class="question">
+      <b>5. What is the correct syntax of attachInterrupt()?</b>
+      <div class="options">
+        <div>A. attachInterrupt(pin, ISR, type)</div>
+        <div>B. attachInterrupt(ISR, pin, type)</div>
+        <div>C. attachInterrupt(digitalPinToInterrupt(pin), ISR, mode)</div>
+        <div>D. attachInterrupt(ISR, mode)</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_5')">Show Answer</button>
+      <div id="ans_int_5" class="answer-text">Answer: C. attachInterrupt(digitalPinToInterrupt(pin), ISR, mode)</div>
+    </div>
+    <div class="question">
+      <b>6. What does ISR stand for?</b>
+      <div class="options">
+        <div>A. Interrupt Source Register</div>
+        <div>B. Interrupt Service Routine</div>
+        <div>C. Internal System Reset</div>
+        <div>D. Interrupt Sensor Response</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_6')">Show Answer</button>
+      <div id="ans_int_6" class="answer-text">Answer: B. Interrupt Service Routine</div>
+    </div>
+    <div class="question">
+      <b>7. What is the return type of an ISR function?</b>
+      <div class="options">
+        <div>A. int</div>
+        <div>B. void</div>
+        <div>C. bool</div>
+        <div>D. float</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_7')">Show Answer</button>
+      <div id="ans_int_7" class="answer-text">Answer: B. void</div>
+    </div>
+    <div class="question">
+      <b>8. Which of the following is NOT a valid interrupt mode?</b>
+      <div class="options">
+        <div>A. LOW</div>
+        <div>B. RISING</div>
+        <div>C. CHANGE</div>
+        <div>D. FAST</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_8')">Show Answer</button>
+      <div id="ans_int_8" class="answer-text">Answer: D. FAST</div>
+    </div>
+    <div class="question">
+      <b>9. In attachInterrupt(), what does RISING mean?</b>
+      <div class="options">
+        <div>A. Trigger when pin goes LOW</div>
+        <div>B. Trigger when pin changes state</div>
+        <div>C. Trigger when pin goes from LOW to HIGH</div>
+        <div>D. Trigger when pin stays HIGH</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_9')">Show Answer</button>
+      <div id="ans_int_9" class="answer-text">Answer: C. Trigger when pin goes from LOW to HIGH</div>
+    </div>
+    <div class="question">
+      <b>10. Can you use delay() inside an ISR?</b>
+      <div class="options">
+        <div>A. Yes</div>
+        <div>B. Only if delay is less than 10ms</div>
+        <div>C. No</div>
+        <div>D. Only in Arduino Mega</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_10')">Show Answer</button>
+      <div id="ans_int_10" class="answer-text">Answer: C. No</div>
+    </div>
+    <div class="question">
+      <b>11. What type of variables should be used in ISRs to share data?</b>
+      <div class="options">
+        <div>A. Global</div>
+        <div>B. volatile</div>
+        <div>C. static</div>
+        <div>D. const</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_11')">Show Answer</button>
+      <div id="ans_int_11" class="answer-text">Answer: B. volatile</div>
+    </div>
+    <div class="question">
+      <b>12. What keyword prevents compiler optimization on variables used in ISRs?</b>
+      <div class="options">
+        <div>A. const</div>
+        <div>B. static</div>
+        <div>C. volatile</div>
+        <div>D. extern</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_12')">Show Answer</button>
+      <div id="ans_int_12" class="answer-text">Answer: C. volatile</div>
+    </div>
+    <div class="question">
+      <b>13. How many external interrupt lines does Arduino Uno support?</b>
+      <div class="options">
+        <div>A. 1</div>
+        <div>B. 2</div>
+        <div>C. 4</div>
+        <div>D. 6</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_13')">Show Answer</button>
+      <div id="ans_int_13" class="answer-text">Answer: B. 2</div>
+    </div>
+    <div class="question">
+      <b>14. What function disables all interrupts globally?</b>
+      <div class="options">
+        <div>A. stopInterrupts()</div>
+        <div>B. noInterrupts()</div>
+        <div>C. disableAll()</div>
+        <div>D. interruptOff()</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_14')">Show Answer</button>
+      <div id="ans_int_14" class="answer-text">Answer: B. noInterrupts()</div>
+    </div>
+    <div class="question">
+      <b>15. What function enables all interrupts globally?</b>
+      <div class="options">
+        <div>A. enableInterrupts()</div>
+        <div>B. interrupts()</div>
+        <div>C. allInterruptsOn()</div>
+        <div>D. allowInterrupts()</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_15')">Show Answer</button>
+      <div id="ans_int_15" class="answer-text">Answer: B. interrupts()</div>
+    </div>
+    <div class="question">
+      <b>16. Which registers are manipulated during low-level interrupt handling?</b>
+      <div class="options">
+        <div>A. PORTx</div>
+        <div>B. TCCR0</div>
+        <div>C. EIMSK and EICRA</div>
+        <div>D. DDRx</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_16')">Show Answer</button>
+      <div id="ans_int_16" class="answer-text">Answer: C. EIMSK and EICRA</div>
+    </div>
+    <div class="question">
+      <b>17. Which of the following can generate an interrupt on Arduino Uno?</b>
+      <div class="options">
+        <div>A. Timer</div>
+        <div>B. External Pin</div>
+        <div>C. Serial Communication</div>
+        <div>D. All of the above</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_17')">Show Answer</button>
+      <div id="ans_int_17" class="answer-text">Answer: D. All of the above</div>
+    </div>
+    <div class="question">
+      <b>18. Which pin corresponds to interrupt 0 on Arduino Uno?</b>
+      <div class="options">
+        <div>A. Pin 0</div>
+        <div>B. Pin 1</div>
+        <div>C. Pin 2</div>
+        <div>D. Pin 3</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_18')">Show Answer</button>
+      <div id="ans_int_18" class="answer-text">Answer: C. Pin 2</div>
+    </div>
+    <div class="question">
+      <b>19. Which pin corresponds to interrupt 1 on Arduino Uno?</b>
+      <div class="options">
+        <div>A. Pin 3</div>
+        <div>B. Pin 4</div>
+        <div>C. Pin 2</div>
+        <div>D. Pin 1</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_19')">Show Answer</button>
+      <div id="ans_int_19" class="answer-text">Answer: A. Pin 3</div>
+    </div>
+    <div class="question">
+      <b>20. What happens if an interrupt is triggered while another is running?</b>
+      <div class="options">
+        <div>A. Arduino resets</div>
+        <div>B. The second is ignored until ISR ends</div>
+        <div>C. Both run together</div>
+        <div>D. Main program skips</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_20')">Show Answer</button>
+      <div id="ans_int_20" class="answer-text">Answer: B. The second is ignored until ISR ends</div>
+    </div>
+    <div class="question">
+      <b>21. Can ISRs use Serial.print() safely?</b>
+      <div class="options">
+        <div>A. Yes</div>
+        <div>B. No</div>
+        <div>C. Only in loop()</div>
+        <div>D. Only for integers</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_21')">Show Answer</button>
+      <div id="ans_int_21" class="answer-text">Answer: B. No</div>
+    </div>
+    <div class="question">
+      <b>22. How can you debounce mechanical buttons in interrupts?</b>
+      <div class="options">
+        <div>A. Use delay in ISR</div>
+        <div>B. Use hardware debounce</div>
+        <div>C. Use software timing flags</div>
+        <div>D. Both B and C</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_22')">Show Answer</button>
+      <div id="ans_int_22" class="answer-text">Answer: D. Both B and C</div>
+    </div>
+    <div class="question">
+      <b>23. What type of interrupt is triggered by UART receive?</b>
+      <div class="options">
+        <div>A. Timer</div>
+        <div>B. External</div>
+        <div>C. Serial</div>
+        <div>D. Software</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_23')">Show Answer</button>
+      <div id="ans_int_23" class="answer-text">Answer: C. Serial</div>
+    </div>
+    <div class="question">
+      <b>24. Which Arduino IDE version introduced digitalPinToInterrupt(pin)?</b>
+      <div class="options">
+        <div>A. 1.0</div>
+        <div>B. 1.5</div>
+        <div>C. 1.6.2</div>
+        <div>D. 2.0</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_24')">Show Answer</button>
+      <div id="ans_int_24" class="answer-text">Answer: C. 1.6.2</div>
+    </div>
+    <div class="question">
+      <b>25. What is the maximum time recommended inside an ISR?</b>
+      <div class="options">
+        <div>A. 10 ms</div>
+        <div>B. 1 ms</div>
+        <div>C. As short as possible</div>
+        <div>D. No limit</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_25')">Show Answer</button>
+      <div id="ans_int_25" class="answer-text">Answer: C. As short as possible</div>
+    </div>
+    <div class="question">
+      <b>26. Why should you keep ISRs short in Arduino?</b>
+      <div class="options">
+        <div>A. To conserve memory</div>
+        <div>B. To avoid missing other interrupts</div>
+        <div>C. To reduce code size</div>
+        <div>D. To improve display performance</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_26')">Show Answer</button>
+      <div id="ans_int_26" class="answer-text">Answer: B. To avoid missing other interrupts</div>
+    </div>
+    <div class="question">
+      <b>27. Which type of interrupt triggers on both rising and falling edges?</b>
+      <div class="options">
+        <div>A. RISING</div>
+        <div>B. FALLING</div>
+        <div>C. LOW</div>
+        <div>D. CHANGE</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_27')">Show Answer</button>
+      <div id="ans_int_27" class="answer-text">Answer: D. CHANGE</div>
+    </div>
+    <div class="question">
+      <b>28. Which interrupt mode can cause continuous triggering if signal stays low?</b>
+      <div class="options">
+        <div>A. RISING</div>
+        <div>B. CHANGE</div>
+        <div>C. FALLING</div>
+        <div>D. LOW</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_28')">Show Answer</button>
+      <div id="ans_int_28" class="answer-text">Answer: D. LOW</div>
+    </div>
+    <div class="question">
+      <b>29. What is the main advantage of interrupts over polling?</b>
+      <div class="options">
+        <div>A. Simpler code</div>
+        <div>B. More power consumption</div>
+        <div>C. Faster CPU response</div>
+        <div>D. Delay functions are easier</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_29')">Show Answer</button>
+      <div id="ans_int_29" class="answer-text">Answer: C. Faster CPU response</div>
+    </div>
+    <div class="question">
+      <b>30. Can you nest interrupts in Arduino Uno?</b>
+      <div class="options">
+        <div>A. Yes, always</div>
+        <div>B. No</div>
+        <div>C. Only if enabled manually</div>
+        <div>D. Only on pin 13</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_30')">Show Answer</button>
+      <div id="ans_int_30" class="answer-text">Answer: B. No</div>
+    </div>
+    <div class="question">
+      <b>31. Which of these is true about volatile variables?</b>
+      <div class="options">
+        <div>A. They are removed by the compiler</div>
+        <div>B. They are automatically reset</div>
+        <div>C. They prevent compiler from caching values</div>
+        <div>D. They cannot be used in ISRs</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_31')">Show Answer</button>
+      <div id="ans_int_31" class="answer-text">Answer: C. They prevent compiler from caching values</div>
+    </div>
+    <div class="question">
+      <b>32. What does noInterrupts() do in Arduino?</b>
+      <div class="options">
+        <div>A. Prevents attachInterrupt()</div>
+        <div>B. Blocks ISR execution</div>
+        <div>C. Stops delay()</div>
+        <div>D. Enables timers</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_32')">Show Answer</button>
+      <div id="ans_int_32" class="answer-text">Answer: B. Blocks ISR execution</div>
+    </div>
+    <div class="question">
+      <b>33. Which Arduino Uno timers can trigger interrupts?</b>
+      <div class="options">
+        <div>A. Timer0</div>
+        <div>B. Timer1</div>
+        <div>C. Timer2</div>
+        <div>D. All of the above</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_33')">Show Answer</button>
+      <div id="ans_int_33" class="answer-text">Answer: D. All of the above</div>
+    </div>
+    <div class="question">
+      <b>34. Which of the following is a timer interrupt mode?</b>
+      <div class="options">
+        <div>A. OVERFLOW</div>
+        <div>B. RISING</div>
+        <div>C. ECHO</div>
+        <div>D. SPI</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_34')">Show Answer</button>
+      <div id="ans_int_34" class="answer-text">Answer: A. OVERFLOW</div>
+    </div>
+    <div class="question">
+      <b>35. What is a use case of timer interrupts?</b>
+      <div class="options">
+        <div>A. LED blinking</div>
+        <div>B. Sound detection</div>
+        <div>C. Creating precise time delays</div>
+        <div>D. Receiving serial data</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_35')">Show Answer</button>
+      <div id="ans_int_35" class="answer-text">Answer: C. Creating precise time delays</div>
+    </div>
+    <div class="question">
+      <b>36. What is the maximum number of attachable external interrupts in Arduino Uno?</b>
+      <div class="options">
+        <div>A. 1</div>
+        <div>B. 2</div>
+        <div>C. 4</div>
+        <div>D. 6</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_36')">Show Answer</button>
+      <div id="ans_int_36" class="answer-text">Answer: B. 2</div>
+    </div>
+    <div class="question">
+      <b>37. How do you safely share variables between ISR and main code?</b>
+      <div class="options">
+        <div>A. Use long int</div>
+        <div>B. Use analog pins</div>
+        <div>C. Use volatile and disable interrupts briefly in main code</div>
+        <div>D. Use delay()</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_37')">Show Answer</button>
+      <div id="ans_int_37" class="answer-text">Answer: C. Use volatile and disable interrupts briefly in main code</div>
+    </div>
+    <div class="question">
+      <b>38. What is the disadvantage of disabling interrupts?</b>
+      <div class="options">
+        <div>A. Uses more memory</div>
+        <div>B. Arduino stops running</div>
+        <div>C. Interrupts could be missed</div>
+        <div>D. Breaks all loops</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_38')">Show Answer</button>
+      <div id="ans_int_38" class="answer-text">Answer: C. Interrupts could be missed</div>
+    </div>
+    <div class="question">
+      <b>39. Which mode would you use to detect a falling edge on a button press?</b>
+      <div class="options">
+        <div>A. LOW</div>
+        <div>B. RISING</div>
+        <div>C. FALLING</div>
+        <div>D. CHANGE</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_39')">Show Answer</button>
+      <div id="ans_int_39" class="answer-text">Answer: C. FALLING</div>
+    </div>
+    <div class="question">
+      <b>40. Can you use the same ISR for two different pins?</b>
+      <div class="options">
+        <div>A. Yes, by calling same function</div>
+        <div>B. No, function name must differ</div>
+        <div>C. Only on analog pins</div>
+        <div>D. Only on Arduino Mega</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_40')">Show Answer</button>
+      <div id="ans_int_40" class="answer-text">Answer: A. Yes, by calling same function</div>
+    </div>
+    <div class="question">
+      <b>41. In which memory region is an ISR stored?</b>
+      <div class="options">
+        <div>A. EEPROM</div>
+        <div>B. SRAM</div>
+        <div>C. Flash</div>
+        <div>D. Stack</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_41')">Show Answer</button>
+      <div id="ans_int_41" class="answer-text">Answer: C. Flash</div>
+    </div>
+    <div class="question">
+      <b>42. What’s the risk of using a delay inside an ISR?</b>
+      <div class="options">
+        <div>A. Memory leak</div>
+        <div>B. Stack overflow</div>
+        <div>C. Other interrupts are blocked</div>
+        <div>D. It’s safer than loop()</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_42')">Show Answer</button>
+      <div id="ans_int_42" class="answer-text">Answer: C. Other interrupts are blocked</div>
+    </div>
+    <div class="question">
+      <b>43. Why should Serial.print() be avoided in ISRs?</b>
+      <div class="options">
+        <div>A. It uses interrupts internally</div>
+        <div>B. It takes too long</div>
+        <div>C. It may crash</div>
+        <div>D. All of the above</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_43')">Show Answer</button>
+      <div id="ans_int_43" class="answer-text">Answer: D. All of the above</div>
+    </div>
+    <div class="question">
+      <b>44. What is the typical ISR execution time goal?</b>
+      <div class="options">
+        <div>A. <1 second</div>
+        <div>B. <100 ms</div>
+        <div>C. <10 ms</div>
+        <div>D. As short as possible</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_44')">Show Answer</button>
+      <div id="ans_int_44" class="answer-text">Answer: D. As short as possible</div>
+    </div>
+    <div class="question">
+      <b>45. What can happen if ISR takes too long?</b>
+      <div class="options">
+        <div>A. System crash</div>
+        <div>B. Missed interrupts</div>
+        <div>C. Delayed loop()</div>
+        <div>D. All of the above</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_45')">Show Answer</button>
+      <div id="ans_int_45" class="answer-text">Answer: D. All of the above</div>
+    </div>
+    <div class="question">
+      <b>46. What happens if you forget to detachInterrupt()?</b>
+      <div class="options">
+        <div>A. Nothing</div>
+        <div>B. Arduino won’t compile</div>
+        <div>C. ISR will keep triggering</div>
+        <div>D. Memory error</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_46')">Show Answer</button>
+      <div id="ans_int_46" class="answer-text">Answer: C. ISR will keep triggering</div>
+    </div>
+    <div class="question">
+      <b>47. How can you trigger a software interrupt in Arduino?</b>
+      <div class="options">
+        <div>A. analogWrite()</div>
+        <div>B. digitalRead()</div>
+        <div>C. Using flag variable + loop check</div>
+        <div>D. pressReset()</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_47')">Show Answer</button>
+      <div id="ans_int_47" class="answer-text">Answer: C. Using flag variable + loop check</div>
+    </div>
+    <div class="question">
+      <b>48. What is a common use case of external interrupt?</b>
+      <div class="options">
+        <div>A. LED brightness control</div>
+        <div>B. Real-time response to button press</div>
+        <div>C. Color changing</div>
+        <div>D. Tone generation</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_48')">Show Answer</button>
+      <div id="ans_int_48" class="answer-text">Answer: B. Real-time response to button press</div>
+    </div>
+    <div class="question">
+      <b>49. What causes undefined behavior with interrupts?</b>
+      <div class="options">
+        <div>A. Calling Serial inside ISR</div>
+        <div>B. Declaring ISR as int</div>
+        <div>C. Using delay()</div>
+        <div>D. All of the above</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_49')">Show Answer</button>
+      <div id="ans_int_49" class="answer-text">Answer: D. All of the above</div>
+    </div>
+    <div class="question">
+      <b>50. What happens if both interrupt 0 and 1 trigger simultaneously?</b>
+      <div class="options">
+        <div>A. Interrupt 0 is served first</div>
+        <div>B. Interrupt 1 is served first</div>
+        <div>C. Both are ignored</div>
+        <div>D. Arduino resets</div>
+      </div>
+      <button onclick="toggleAnswer('ans_int_50')">Show Answer</button>
+      <div id="ans_int_50" class="answer-text">Answer: A. Interrupt 0 is served first</div>
+    </div>
+
+    <!-- PWM Questions -->
+    <h2>PWM Questions</h2>
+    <div class="question">
+      <b>1. What does PWM stand for?</b>
+      <div class="options">
+        <div>A. Pulse Width Meter</div>
+        <div>B. Power Width Modulation</div>
+        <div>C. Pulse Width Modulation</div>
+        <div>D. Pulse Wave Mode</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_1')">Show Answer</button>
+      <div id="ans_pwm_1" class="answer-text">Answer: C. Pulse Width Modulation</div>
+    </div>
+    <div class="question">
+      <b>2. What is PWM used for in Arduino?</b>
+      <div class="options">
+        <div>A. Reading sensors</div>
+        <div>B. Digital communication</div>
+        <div>C. Simulating analog output</div>
+        <div>D. Measuring resistance</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_2')">Show Answer</button>
+      <div id="ans_pwm_2" class="answer-text">Answer: C. Simulating analog output</div>
+    </div>
+    <div class="question">
+      <b>3. Which Arduino Uno function is used to generate PWM?</b>
+      <div class="options">
+        <div>A. analogRead()</div>
+        <div>B. analogWrite()</div>
+        <div>C. digitalWrite()</div>
+        <div>D. pwmOut()</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_3')">Show Answer</button>
+      <div id="ans_pwm_3" class="answer-text">Answer: B. analogWrite()</div>
+    </div>
+    <div class="question">
+      <b>4. What is the resolution of PWM output in Arduino Uno?</b>
+      <div class="options">
+        <div>A. 4-bit</div>
+        <div>B. 8-bit</div>
+        <div>C. 10-bit</div>
+        <div>D. 16-bit</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_4')">Show Answer</button>
+      <div id="ans_pwm_4" class="answer-text">Answer: B. 8-bit</div>
+    </div>
+    <div class="question">
+      <b>5. What is the PWM value range for analogWrite()?</b>
+      <div class="options">
+        <div>A. 0–1023</div>
+        <div>B. 0–255</div>
+        <div>C. 1–10</div>
+        <div>D. 0–100</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_5')">Show Answer</button>
+      <div id="ans_pwm_5" class="answer-text">Answer: B. 0–255</div>
+    </div>
+    <div class="question">
+      <b>6. What frequency is used for PWM on pins 5 and 6 in Arduino Uno?</b>
+      <div class="options">
+        <div>A. ~490 Hz</div>
+        <div>B. ~980 Hz</div>
+        <div>C. ~100 Hz</div>
+        <div>D. ~50 Hz</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_6')">Show Answer</button>
+      <div id="ans_pwm_6" class="answer-text">Answer: B. ~980 Hz</div>
+    </div>
+    <div class="question">
+      <b>7. What frequency is used for PWM on pins 3, 9, 10, and 11?</b>
+      <div class="options">
+        <div>A. ~100 Hz</div>
+        <div>B. ~490 Hz</div>
+        <div>C. ~2000 Hz</div>
+        <div>D. ~60 Hz</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_7')">Show Answer</button>
+      <div id="ans_pwm_7" class="answer-text">Answer: B. ~490 Hz</div>
+    </div>
+    <div class="question">
+      <b>8. Which pins on Arduino Uno support PWM output?</b>
+      <div class="options">
+        <div>A. 0–7</div>
+        <div>B. 0–13</div>
+        <div>C. 3, 5, 6, 9, 10, 11</div>
+        <div>D. Only A0–A5</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_8')">Show Answer</button>
+      <div id="ans_pwm_8" class="answer-text">Answer: C. 3, 5, 6, 9, 10, 11</div>
+    </div>
+    <div class="question">
+      <b>9. What does a PWM duty cycle of 100% mean?</b>
+      <div class="options">
+        <div>A. Output always HIGH</div>
+        <div>B. Output always LOW</div>
+        <div>C. 50% brightness</div>
+        <div>D. Analog input</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_9')">Show Answer</button>
+      <div id="ans_pwm_9" class="answer-text">Answer: A. Output always HIGH</div>
+    </div>
+    <div class="question">
+      <b>10. What does a PWM duty cycle of 0% mean?</b>
+      <div class="options">
+        <div>A. Output always HIGH</div>
+        <div>B. Output always LOW</div>
+        <div>C. Max speed</div>
+        <div>D. Inverted output</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_10')">Show Answer</button>
+      <div id="ans_pwm_10" class="answer-text">Answer: B. Output always LOW</div>
+    </div>
+    <div class="question">
+      <b>11. How is PWM useful for motor control?</b>
+      <div class="options">
+        <div>A. Changes motor speed</div>
+        <div>B. Changes motor voltage</div>
+        <div>C. Reads motor direction</div>
+        <div>D. Turns motor ON/OFF only</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_11')">Show Answer</button>
+      <div id="ans_pwm_11" class="answer-text">Answer: A. Changes motor speed</div>
+    </div>
+    <div class="question">
+      <b>12. What does the analogWrite(127) command output?</b>
+      <div class="options">
+        <div>A. 0V</div>
+        <div>B. 2.5V</div>
+        <div>C. 5V</div>
+        <div>D. 3.3V</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_12')">Show Answer</button>
+      <div id="ans_pwm_12" class="answer-text">Answer: B. 2.5V</div>
+    </div>
+    <div class="question">
+      <b>13. What is the main advantage of PWM over digital ON/OFF switching?</b>
+      <div class="options">
+        <div>A. Higher voltage</div>
+        <div>B. Reduced power</div>
+        <div>C. Adjustable average voltage</div>
+        <div>D. Inverts signals</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_13')">Show Answer</button>
+      <div id="ans_pwm_13" class="answer-text">Answer: C. Adjustable average voltage</div>
+    </div>
+    <div class="question">
+      <b>14. Which timer controls PWM on pins 5 and 6?</b>
+      <div class="options">
+        <div>A. Timer0</div>
+        <div>B. Timer1</div>
+        <div>C. Timer2</div>
+        <div>D. None</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_14')">Show Answer</button>
+      <div id="ans_pwm_14" class="answer-text">Answer: A. Timer0</div>
+    </div>
+    <div class="question">
+      <b>15. Which timer controls PWM on pins 9 and 10?</b>
+      <div class="options">
+        <div>A. Timer0</div>
+        <div>B. Timer1</div>
+        <div>C. Timer2</div>
+        <div>D. Timer3</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_15')">Show Answer</button>
+      <div id="ans_pwm_15" class="answer-text">Answer: B. Timer1</div>
+    </div>
+    <div class="question">
+      <b>16. Which timer controls PWM on pins 3 and 11?</b>
+      <div class="options">
+        <div>A. Timer0</div>
+        <div>B. Timer1</div>
+        <div>C. Timer2</div>
+        <div>D. Timer3</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_16')">Show Answer</button>
+      <div id="ans_pwm_16" class="answer-text">Answer: C. Timer2</div>
+    </div>
+    <div class="question">
+      <b>17. Can you generate PWM on analog pins like A0–A5?</b>
+      <div class="options">
+        <div>A. Yes</div>
+        <div>B. No</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_17')">Show Answer</button>
+      <div id="ans_pwm_17" class="answer-text">Answer: B. No</div>
+    </div>
+    <div class="question">
+      <b>18. What does duty cycle represent in PWM?</b>
+      <div class="options">
+        <div>A. Output frequency</div>
+        <div>B. Time pin stays LOW</div>
+        <div>C. Ratio of HIGH time to total time</div>
+        <div>D. Pulse count</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_18')">Show Answer</button>
+      <div id="ans_pwm_18" class="answer-text">Answer: C. Ratio of HIGH time to total time</div>
+    </div>
+    <div class="question">
+      <b>19. Can PWM be used to dim LEDs?</b>
+      <div class="options">
+        <div>A. Yes</div>
+        <div>B. No</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_19')">Show Answer</button>
+      <div id="ans_pwm_19" class="answer-text">Answer: A. Yes</div>
+    </div>
+    <div class="question">
+      <b>20. Can PWM output be measured using analogRead()?</b>
+      <div class="options">
+        <div>A. Yes</div>
+        <div>B. No</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_20')">Show Answer</button>
+      <div id="ans_pwm_20" class="answer-text">Answer: B. No</div>
+    </div>
+    <div class="question">
+      <b>21. Which command in Arduino IDE sets PWM output?</b>
+      <div class="options">
+        <div>A. digitalWrite()</div>
+        <div>B. analogWrite()</div>
+        <div>C. pulseOut()</div>
+        <div>D. timerWrite()</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_21')">Show Answer</button>
+      <div id="ans_pwm_21" class="answer-text">Answer: B. analogWrite()</div>
+    </div>
+    <div class="question">
+      <b>22. What is the analogWrite() value for 75% duty cycle?</b>
+      <div class="options">
+        <div>A. 64</div>
+        <div>B. 128</div>
+        <div>C. 192</div>
+        <div>D. 255</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_22')">Show Answer</button>
+      <div id="ans_pwm_22" class="answer-text">Answer: C. 192</div>
+    </div>
+    <div class="question">
+      <b>23. How do you increase PWM resolution in Arduino Uno?</b>
+      <div class="options">
+        <div>A. Use analogRead()</div>
+        <div>B. Use shift register</div>
+        <div>C. Modify timer registers</div>
+        <div>D. Use digitalWrite()</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_23')">Show Answer</button>
+      <div id="ans_pwm_23" class="answer-text">Answer: C. Modify timer registers</div>
+    </div>
+    <div class="question">
+      <b>24. What unit is PWM frequency measured in?</b>
+      <div class="options">
+        <div>A. Volts</div>
+        <div>B. Hertz</div>
+        <div>C. Ohms</div>
+        <div>D. Seconds</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_24')">Show Answer</button>
+      <div id="ans_pwm_24" class="answer-text">Answer: B. Hertz</div>
+    </div>
+    <div class="question">
+      <b>25. Can PWM signal be filtered into a smooth analog voltage?</b>
+      <div class="options">
+        <div>A. No</div>
+        <div>B. Only with Arduino Mega</div>
+        <div>C. Yes, using low-pass filter</div>
+        <div>D. Only at 100% duty</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_25')">Show Answer</button>
+      <div id="ans_pwm_25" class="answer-text">Answer: C. Yes, using low-pass filter</div>
+    </div>
+    <div class="question">
+      <b>26. What does a low-pass filter do to a PWM signal?</b>
+      <div class="options">
+        <div>A. Inverts it</div>
+        <div>B. Converts it to digital</div>
+        <div>C. Converts to analog voltage</div>
+        <div>D. Amplifies it</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_26')">Show Answer</button>
+      <div id="ans_pwm_26" class="answer-text">Answer: C. Converts to analog voltage</div>
+    </div>
+    <div class="question">
+      <b>27. What determines the average voltage of a PWM signal?</b>
+      <div class="options">
+        <div>A. Frequency</div>
+        <div>B. Duty cycle</div>
+        <div>C. Timer</div>
+        <div>D. Pulse width</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_27')">Show Answer</button>
+      <div id="ans_pwm_27" class="answer-text">Answer: B. Duty cycle</div>
+    </div>
+    <div class="question">
+      <b>28. What is the default PWM resolution on Arduino Uno?</b>
+      <div class="options">
+        <div>A. 6-bit</div>
+        <div>B. 8-bit</div>
+        <div>C. 10-bit</div>
+        <div>D. 16-bit</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_28')">Show Answer</button>
+      <div id="ans_pwm_28" class="answer-text">Answer: B. 8-bit</div>
+    </div>
+    <div class="question">
+      <b>29. What is the analog voltage corresponding to analogWrite(255) on a 5V Arduino?</b>
+      <div class="options">
+        <div>A. 3.3V</div>
+        <div>B. 0V</div>
+        <div>C. 2.5V</div>
+        <div>D. 5V</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_29')">Show Answer</button>
+      <div id="ans_pwm_29" class="answer-text">Answer: D. 5V</div>
+    </div>
+    <div class="question">
+      <b>30. What is the effect of increasing PWM frequency too high?</b>
+      <div class="options">
+        <div>A. Smoother analog simulation</div>
+        <div>B. No effect</div>
+        <div>C. Signal may not drive devices properly</div>
+        <div>D. Increases duty cycle</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_30')">Show Answer</button>
+      <div id="ans_pwm_30" class="answer-text">Answer: C. Signal may not drive devices properly</div>
+    </div>
+    <div class="question">
+      <b>31. What is the effect of using a lower PWM frequency?</b>
+      <div class="options">
+        <div>A. More flicker or noise</div>
+        <div>B. Higher resolution</div>
+        <div>C. Better performance</div>
+        <div>D. Less delay</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_31')">Show Answer</button>
+      <div id="ans_pwm_31" class="answer-text">Answer: A. More flicker or noise</div>
+    </div>
+    <div class="question">
+      <b>32. Which application is NOT ideal for PWM?</b>
+      <div class="options">
+        <div>A. LED dimming</div>
+        <div>B. Motor speed control</div>
+        <div>C. Generating analog voltage</div>
+        <div>D. Precise temperature sensing</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_32')">Show Answer</button>
+      <div id="ans_pwm_32" class="answer-text">Answer: D. Precise temperature sensing</div>
+    </div>
+    <div class="question">
+      <b>33. How many PWM outputs does Arduino Uno support by default?</b>
+      <div class="options">
+        <div>A. 3</div>
+        <div>B. 6</div>
+        <div>C. 9</div>
+        <div>D. 13</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_33')">Show Answer</button>
+      <div id="ans_pwm_33" class="answer-text">Answer: B. 6</div>
+    </div>
+    <div class="question">
+      <b>34. What is the waveform shape of a PWM signal?</b>
+      <div class="options">
+        <div>A. Sine wave</div>
+        <div>B. Square wave</div>
+        <div>C. Triangle wave</div>
+        <div>D. DC</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_34')">Show Answer</button>
+      <div id="ans_pwm_34" class="answer-text">Answer: B. Square wave</div>
+    </div>
+    <div class="question">
+      <b>35. What is the period of a 490 Hz PWM signal?</b>
+      <div class="options">
+        <div>A. ~2 ms</div>
+        <div>B. ~1.2 ms</div>
+        <div>C. ~0.49 ms</div>
+        <div>D. ~0.002 ms</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_35')">Show Answer</button>
+      <div id="ans_pwm_35" class="answer-text">Answer: A. ~2 ms</div>
+    </div>
+    <div class="question">
+      <b>36. Which of the following devices cannot be controlled using PWM?</b>
+      <div class="options">
+        <div>A. LED</div>
+        <div>B. DC Motor</div>
+        <div>C. LCD</div>
+        <div>D. Buzzer</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_36')">Show Answer</button>
+      <div id="ans_pwm_36" class="answer-text">Answer: C. LCD</div>
+    </div>
+    <div class="question">
+      <b>37. What is the frequency of tone() function on Arduino compared to PWM?</b>
+      <div class="options">
+        <div>A. Lower</div>
+        <div>B. Higher</div>
+        <div>C. Adjustable</div>
+        <div>D. Equal</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_37')">Show Answer</button>
+      <div id="ans_pwm_37" class="answer-text">Answer: C. Adjustable</div>
+    </div>
+    <div class="question">
+      <b>38. What happens if analogWrite() is used on a non-PWM pin?</b>
+      <div class="options">
+        <div>A. Generates square wave</div>
+        <div>B. Causes error</div>
+        <div>C. Acts as digital HIGH or LOW</div>
+        <div>D. Outputs analog voltage</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_38')">Show Answer</button>
+      <div id="ans_pwm_38" class="answer-text">Answer: C. Acts as digital HIGH or LOW</div>
+    </div>
+    <div class="question">
+      <b>39. What’s the purpose of bitWrite() in PWM programming?</b>
+      <div class="options">
+        <div>A. Reads analog signals</div>
+        <div>B. Manipulates duty cycle</div>
+        <div>C. Modifies specific bits in timer registers</div>
+        <div>D. Generates waveforms</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_39')">Show Answer</button>
+      <div id="ans_pwm_39" class="answer-text">Answer: C. Modifies specific bits in timer registers</div>
+    </div>
+    <div class="question">
+      <b>40. Which of these is true for analogWrite(0)?</b>
+      <div class="options">
+        <div>A. 0% duty cycle</div>
+        <div>B. 50% duty cycle</div>
+        <div>C. 100% duty cycle</div>
+        <div>D. Not allowed</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_40')">Show Answer</button>
+      <div id="ans_pwm_40" class="answer-text">Answer: A. 0% duty cycle</div>
+    </div>
+    <div class="question">
+      <b>41. Can PWM be used for audio signal generation?</b>
+      <div class="options">
+        <div>A. No</div>
+        <div>B. Yes</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_41')">Show Answer</button>
+      <div id="ans_pwm_41" class="answer-text">Answer: B. Yes</div>
+    </div>
+    <div class="question">
+      <b>42. What is the drawback of PWM for precision analog control?</b>
+      <div class="options">
+        <div>A. Needs extra power</div>
+        <div>B. Noisy without filtering</div>
+        <div>C. Fixed voltage</div>
+        <div>D. Inaccurate frequency</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_42')">Show Answer</button>
+      <div id="ans_pwm_42" class="answer-text">Answer: B. Noisy without filtering</div>
+    </div>
+    <div class="question">
+      <b>43. What hardware component can smooth PWM to analog voltage?</b>
+      <div class="options">
+        <div>A. Comparator</div>
+        <div>B. Capacitor and resistor</div>
+        <div>C. Logic gate</div>
+        <div>D. Relay</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_43')">Show Answer</button>
+      <div id="ans_pwm_43" class="answer-text">Answer: B. Capacitor and resistor</div>
+    </div>
+    <div class="question">
+      <b>44. How many timer-based PWM channels does Uno have?</b>
+      <div class="options">
+        <div>A. 2</div>
+        <div>B. 4</div>
+        <div>C. 6</div>
+        <div>D. 8</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_44')">Show Answer</button>
+      <div id="ans_pwm_44" class="answer-text">Answer: C. 6</div>
+    </div>
+    <div class="question">
+      <b>45. What is one major reason to avoid PWM on pins 5 and 6 for LED fading?</b>
+      <div class="options">
+        <div>A. Higher frequency causes flicker</div>
+        <div>B. Timer0 used by delay() may interfere</div>
+        <div>C. They are input only</div>
+        <div>D. Output is unstable</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_45')">Show Answer</button>
+      <div id="ans_pwm_45" class="answer-text">Answer: B. Timer0 used by delay() may interfere</div>
+    </div>
+    <div class="question">
+      <b>46. What does a 50% PWM duty cycle mean?</b>
+      <div class="options">
+        <div>A. Signal is always ON</div>
+        <div>B. Signal is ON half the time</div>
+        <div>C. Signal is OFF</div>
+        <div>D. Signal toggles randomly</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_46')">Show Answer</button>
+      <div id="ans_pwm_46" class="answer-text">Answer: B. Signal is ON half the time</div>
+    </div>
+    <div class="question">
+      <b>47. What’s the output of analogWrite(0) in volts (5V logic)?</b>
+      <div class="options">
+        <div>A. 2.5V</div>
+        <div>B. 0V</div>
+        <div>C. 5V</div>
+        <div>D. 1.2V</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_47')">Show Answer</button>
+      <div id="ans_pwm_47" class="answer-text">Answer: B. 0V</div>
+    </div>
+    <div class="question">
+      <b>48. Which of these is NOT a timer in Arduino Uno?</b>
+      <div class="options">
+        <div>A. Timer0</div>
+        <div>B. Timer1</div>
+        <div>C. Timer2</div>
+        <div>D. Timer3</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_48')">Show Answer</button>
+      <div id="ans_pwm_48" class="answer-text">Answer: D. Timer3</div>
+    </div>
+    <div class="question">
+      <b>49. What happens to PWM output when digitalWrite() is used on a PWM pin?</b>
+      <div class="options">
+        <div>A. PWM continues</div>
+        <div>B. Pin switches to digital mode</div>
+        <div>C. Duty cycle increases</div>
+        <div>D. Frequency doubles</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_49')">Show Answer</button>
+      <div id="ans_pwm_49" class="answer-text">Answer: B. Pin switches to digital mode</div>
+    </div>
+    <div class="question">
+      <b>50. Which is best for smooth dimming effect on an LED?</b>
+      <div class="options">
+        <div>A. digitalWrite(HIGH)</div>
+        <div>B. analogRead()</div>
+        <div>C. analogWrite() with incrementing values</div>
+        <div>D. Serial.print()</div>
+      </div>
+      <button onclick="toggleAnswer('ans_pwm_50')">Show Answer</button>
+      <div id="ans_pwm_50" class="answer-text">Answer: C. analogWrite() with incrementing values</div>
+    </div>
+
+    <!-- Arduino Uno General Questions -->
+    <h2>Arduino Uno General Questions</h2>
+    <div class="question">
+      <b>1. What is the microcontroller used in Arduino Uno?</b>
+      <div class="options">
+        <div>A. ATmega328P</div>
+        <div>B. ATmega168</div>
+        <div>C. ATmega2560</div>
+        <div>D. ATmega32U4</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_1')">Show Answer</button>
+      <div id="ans_uno_1" class="answer-text">Answer: A. ATmega328P</div>
+    </div>
+    <div class="question">
+      <b>2. What is the operating voltage of Arduino Uno?</b>
+      <div class="options">
+        <div>A. 3.3V</div>
+        <div>B. 5V</div>
+        <div>C. 9V</div>
+        <div>D. 12V</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_2')">Show Answer</button>
+      <div id="ans_uno_2" class="answer-text">Answer: B. 5V</div>
+    </div>
+    <div class="question">
+      <b>3. How many digital I/O pins does Arduino Uno have?</b>
+      <div class="options">
+        <div>A. 10</div>
+        <div>B. 14</div>
+        <div>C. 20</div>
+        <div>D. 28</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_3')">Show Answer</button>
+      <div id="ans_uno_3" class="answer-text">Answer: B. 14</div>
+    </div>
+    <div class="question">
+      <b>4. How many analog input pins does Arduino Uno have?</b>
+      <div class="options">
+        <div>A. 4</div>
+        <div>B. 6</div>
+        <div>C. 8</div>
+        <div>D. 10</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_4')">Show Answer</button>
+      <div id="ans_uno_4" class="answer-text">Answer: B. 6</div>
+    </div>
+    <div class="question">
+      <b>5. What is the clock speed of Arduino Uno?</b>
+      <div class="options">
+        <div>A. 8 MHz</div>
+        <div>B. 16 MHz</div>
+        <div>C. 20 MHz</div>
+        <div>D. 32 MHz</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_5')">Show Answer</button>
+      <div id="ans_uno_5" class="answer-text">Answer: B. 16 MHz</div>
+    </div>
+    <div class="question">
+      <b>6. What is the maximum current per I/O pin on Arduino Uno?</b>
+      <div class="options">
+        <div>A. 20 mA</div>
+        <div>B. 40 mA</div>
+        <div>C. 50 mA</div>
+        <div>D. 100 mA</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_6')">Show Answer</button>
+      <div id="ans_uno_6" class="answer-text">Answer: A. 20 mA</div>
+    </div>
+    <div class="question">
+      <b>7. Which pin provides 3.3V output on Arduino Uno?</b>
+      <div class="options">
+        <div>A. Vin</div>
+        <div>B. 5V</div>
+        <div>C. 3.3V</div>
+        <div>D. AREF</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_7')">Show Answer</button>
+      <div id="ans_uno_7" class="answer-text">Answer: C. 3.3V</div>
+    </div>
+    <div class="question">
+      <b>8. What is the purpose of the AREF pin?</b>
       <div class="options">
         <div>A. Power supply</div>
-        <div>B. Ground connection</div>
+        <div>B. Analog reference voltage</div>
+        <div>C. Ground connection</div>
+        <div>D. PWM output</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_8')">Show Answer</button>
+      <div id="ans_uno_8" class="answer-text">Answer: B. Analog reference voltage</div>
+    </div>
+    <div class="question">
+      <b>9. What is the flash memory size of Arduino Uno?</b>
+      <div class="options">
+        <div>A. 16 KB</div>
+        <div>B. 32 KB</div>
+        <div>C. 64 KB</div>
+        <div>D. 128 KB</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_9')">Show Answer</button>
+      <div id="ans_uno_9" class="answer-text">Answer: B. 32 KB</div>
+    </div>
+    <div class="question">
+      <b>10. How much SRAM does Arduino Uno have?</b>
+      <div class="options">
+        <div>A. 1 KB</div>
+        <div>B. 2 KB</div>
+        <div>C. 4 KB</div>
+        <div>D. 8 KB</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_10')">Show Answer</button>
+      <div id="ans_uno_10" class="answer-text">Answer: B. 2 KB</div>
+    </div>
+    <div class="question">
+      <b>11. What is the EEPROM size of Arduino Uno?</b>
+      <div class="options">
+        <div>A. 512 bytes</div>
+        <div>B. 1 KB</div>
+        <div>C. 2 KB</div>
+        <div>D. 4 KB</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_11')">Show Answer</button>
+      <div id="ans_uno_11" class="answer-text">Answer: B. 1 KB</div>
+    </div>
+    <div class="question">
+      <b>12. Which communication protocol is NOT supported by Arduino Uno?</b>
+      <div class="options">
+        <div>A. UART</div>
+        <div>B. I2C</div>
+        <div>C. SPI</div>
+        <div>D. CAN</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_12')">Show Answer</button>
+      <div id="ans_uno_12" class="answer-text">Answer: D. CAN</div>
+    </div>
+    <div class="question">
+      <b>13. What is the recommended input voltage for Arduino Uno?</b>
+      <div class="options">
+        <div>A. 3–5V</div>
+        <div>B. 7–12V</div>
+        <div>C. 12–15V</div>
+        <div>D. 15–20V</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_13')">Show Answer</button>
+      <div id="ans_uno_13" class="answer-text">Answer: B. 7–12V</div>
+    </div>
+    <div class="question">
+      <b>14. Which pin is used for SPI MOSI on Arduino Uno?</b>
+      <div class="options">
+        <div>A. Pin 10</div>
+        <div>B. Pin 11</div>
+        <div>C. Pin 12</div>
+        <div>D. Pin 13</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_14')">Show Answer</button>
+      <div id="ans_uno_14" class="answer-text">Answer: B. Pin 11</div>
+    </div>
+    <div class="question">
+      <b>15. Which pin is used for SPI MISO on Arduino Uno?</b>
+      <div class="options">
+        <div>A. Pin 10</div>
+        <div>B. Pin 11</div>
+        <div>C. Pin 12</div>
+        <div>D. Pin 13</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_15')">Show Answer</button>
+      <div id="ans_uno_15" class="answer-text">Answer: C. Pin 12</div>
+    </div>
+    <div class="question">
+      <b>16. Which pin is used for SPI SCK on Arduino Uno?</b>
+      <div class="options">
+        <div>A. Pin 10</div>
+        <div>B. Pin 11</div>
+        <div>C. Pin 12</div>
+        <div>D. Pin 13</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_16')">Show Answer</button>
+      <div id="ans_uno_16" class="answer-text">Answer: D. Pin 13</div>
+    </div>
+    <div class="question">
+      <b>17. What is the purpose of the Reset pin?</b>
+      <div class="options">
+        <div>A. Power supply</div>
+        <div>B. Restart the microcontroller</div>
         <div>C. Analog input</div>
         <div>D. PWM output</div>
       </div>
-      <button onclick="toggleAnswer('ans95')">Hiện đáp án</button>
-      <div id="ans95" class="answer-text">Đáp án: B. Ground connection</div>
+      <button onclick="toggleAnswer('ans_uno_17')">Show Answer</button>
+      <div id="ans_uno_17" class="answer-text">Answer: B. Restart the microcontroller</div>
     </div>
-
     <div class="question">
-      <b>96. What is the typical power consumption of LM35?</b>
+      <b>18. Which pins are used for I2C communication on Arduino Uno?</b>
       <div class="options">
-        <div>A. 60 µA</div>
-        <div>B. 600 µA</div>
-        <div>C. 6 mA</div>
-        <div>D. 60 mA</div>
+        <div>A. Pins 2 and 3</div>
+        <div>B. Pins A4 and A5</div>
+        <div>C. Pins 10 and 11</div>
+        <div>D. Pins 12 and 13</div>
       </div>
-      <button onclick="toggleAnswer('ans96')">Hiện đáp án</button>
-      <div id="ans96" class="answer-text">Đáp án: A. 60 µA</div>
+      <button onclick="toggleAnswer('ans_uno_18')">Show Answer</button>
+      <div id="ans_uno_18" class="answer-text">Answer: B. Pins A4 and A5</div>
     </div>
-
     <div class="question">
-      <b>97. What does digitalRead() return?</b>
+      <b>19. What is the resolution of analogRead() on Arduino Uno?</b>
       <div class="options">
-        <div>A. 0 or 1</div>
-        <div>B. 0 to 1023</div>
-        <div>C. Voltage value</div>
-        <div>D. PWM signal</div>
+        <div>A. 8-bit</div>
+        <div>B. 10-bit</div>
+        <div>C. 12-bit</div>
+        <div>D. 16-bit</div>
       </div>
-      <button onclick="toggleAnswer('ans97')">Hiện đáp án</button>
-      <div id="ans97" class="answer-text">Đáp án: A. 0 or A1</div>
+      <button onclick="toggleAnswer('ans_uno_19')">Show Answer</button>
+      <div id="ans_uno_19" class="answer-text">Answer: B. 10-bit</div>
     </div>
-
     <div class="question">
-      <b>98. What is the typical beam angle of the SRF05?</b>
+      <b>20. What is the range of values returned by analogRead()?</b>
       <div class="options">
-        <div>A. 15°</div>
-        <div>B. 30°</div>
-        <div>C. 45°</div>
-        <div>D. 60°</div>
+        <div>A. 0–255</div>
+        <div>B. 0–1023</div>
+        <div>C. 0–100</div>
+        <div>D. 0–5000</div>
       </div>
-      <button onclick="toggleAnswer('ans98')">Hiện đáp án</button>
-      <div id="ans98" class="answer-text">Đáp án: B. 30°</div>
+      <button onclick="toggleAnswer('ans_uno_20')">Show Answer</button>
+      <div id="ans_uno_20" class="answer-text">Answer: B. 0–1023</div>
     </div>
-
     <div class="question">
-      <b>99. What is the purpose of the Wire library in Arduino?</b>
+      <b>21. What is the purpose of the Vin pin?</b>
       <div class="options">
-        <div>A. Serial communication</div>
-        <div>B. I2C communication</div>
-        <div>C. SPI communication</div>
-        <div>D. PWM control</div>
+        <div>A. Provides 3.3V</div>
+        <div>B. External power input</div>
+        <div>C. Analog reference</div>
+        <div>D. Ground</div>
       </div>
-      <button onclick="toggleAnswer('ans99')">Hiện đáp án</button>
-      <div id="ans99" class="answer-text">Đáp án: B. I2C communication</div>
+      <button onclick="toggleAnswer('ans_uno_21')">Show Answer</button>
+      <div id="ans_uno_21" class="answer-text">Answer: B. External power input</div>
     </div>
-
     <div class="question">
-      <b>100. What is the typical contrast adjustment pin for LCD1602?</b>
+      <b>22. What is the maximum current output of the 5V pin?</b>
       <div class="options">
-        <div>A. V0</div>
-        <div>B. V1</div>
-        <div>C. V2</div>
-        <div>D. V3</div>
+        <div>A. 200 mA</div>
+        <div>B. 500 mA</div>
+        <div>C. 800 mA</div>
+        <div>D. 1 A</div>
       </div>
-      <button onclick="toggleAnswer('ans100')">Hiện đáp án</button>
-      <div id="ans100" class="answer-text">Đáp án: A. V0</div>
+      <button onclick="toggleAnswer('ans_uno_22')">Show Answer</button>
+      <div id="ans_uno_22" class="answer-text">Answer: B. 500 mA</div>
+    </div>
+    <div class="question">
+      <b>23. What is the maximum current output of the 3.3V pin?</b>
+      <div class="options">
+        <div>A. 50 mA</div>
+        <div>B. 100 mA</div>
+        <div>C. 150 mA</div>
+        <div>D. 200 mA</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_23')">Show Answer</button>
+      <div id="ans_uno_23" class="answer-text">Answer: A. 50 mA</div>
+    </div>
+    <div class="question">
+      <b>24. Which pin is connected to the onboard LED?</b>
+      <div class="options">
+        <div>A. Pin 10</div>
+        <div>B. Pin 11</div>
+        <div>C. Pin 12</div>
+        <div>D. Pin 13</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_24')">Show Answer</button>
+      <div id="ans_uno_24" class="answer-text">Answer: D. Pin 13</div>
+    </div>
+    <div class="question">
+      <b>25. What is the default bootloader used in Arduino Uno?</b>
+      <div class="options">
+        <div>A. Optiboot</div>
+        <div>B. LUFA</div>
+        <div>C. AVR-GCC</div>
+        <div>D. STK500</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_25')">Show Answer</button>
+      <div id="ans_uno_25" class="answer-text">Answer: A. Optiboot</div>
+    </div>
+    <div class="question">
+      <b>26. What is the purpose of the ICSP header?</b>
+      <div class="options">
+        <div>A. Power supply</div>
+        <div>B. In-Circuit Serial Programming</div>
+        <div>C. Analog input</div>
+        <div>D. USB connection</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_26')">Show Answer</button>
+      <div id="ans_uno_26" class="answer-text">Answer: B. In-Circuit Serial Programming</div>
+    </div>
+    <div class="question">
+      <b>27. Which USB chip is used in Arduino Uno R3?</b>
+      <div class="options">
+        <div>A. FT232R</div>
+        <div>B. ATmega16U2</div>
+        <div>C. CH340</div>
+        <div>D. CP2102</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_27')">Show Answer</button>
+      <div id="ans_uno_27" class="answer-text">Answer: B. ATmega16U2</div>
+    </div>
+    <div class="question">
+      <b>28. What is the default baud rate for Serial communication?</b>
+      <div class="options">
+        <div>A. 9600</div>
+        <div>B. 19200</div>
+        <div>C. 38400</div>
+        <div>D. 115200</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_28')">Show Answer</button>
+      <div id="ans_uno_28" class="answer-text">Answer: A. 9600</div>
+    </div>
+    <div class="question">
+      <b>29. Which library is used for I2C communication?</b>
+      <div class="options">
+        <div>A. SPI.h</div>
+        <div>B. Wire.h</div>
+        <div>C. Serial.h</div>
+        <div>D. I2C.h</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_29')">Show Answer</button>
+      <div id="ans_uno_29" class="answer-text">Answer: B. Wire.h</div>
+    </div>
+    <div class="question">
+      <b>30. Which library is used for SPI communication?</b>
+      <div class="options">
+        <div>A. SPI.h</div>
+        <div>B. Wire.h</div>
+        <div>C. Serial.h</div>
+        <div>D. I2C.h</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_30')">Show Answer</button>
+      <div id="ans_uno_30" class="answer-text">Answer: A. SPI.h</div>
+    </div>
+    <div class="question">
+      <b>31. What is the purpose of the pinMode() function?</b>
+      <div class="options">
+        <div>A. Reads digital input</div>
+        <div>B. Sets pin as input or output</div>
+        <div>C. Generates PWM</div>
+        <div>D. Reads analog input</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_31')">Show Answer</button>
+      <div id="ans_uno_31" class="answer-text">Answer: B. Sets pin as input or output</div>
+    </div>
+    <div class="question">
+      <b>32. What is the maximum voltage that can be applied to an analog input pin?</b>
+      <div class="options">
+        <div>A. 3.3V</div>
+        <div>B. 5V</div>
+        <div>C. 9V</div>
+        <div>D. 12V</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_32')">Show Answer</button>
+      <div id="ans_uno_32" class="answer-text">Answer: B. 5V</div>
+    </div>
+    <div class="question">
+      <b>33. What happens if you exceed the maximum current on an I/O pin?</b>
+      <div class="options">
+        <div>A. Pin becomes analog</div>
+        <div>B. Microcontroller may get damaged</div>
+        <div>C. Pin outputs 5V</div>
+        <div>D. No effect</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_33')">Show Answer</button>
+      <div id="ans_uno_33" class="answer-text">Answer: B. Microcontroller may get damaged</div>
+    </div>
+    <div class="question">
+      <b>34. Which pins can be used for UART communication?</b>
+      <div class="options">
+        <div>A. Pins 0 and 1</div>
+        <div>B. Pins 2 and 3</div>
+        <div>C. Pins A0 and A1</div>
+        <div>D. Pins 10 and 11</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_34')">Show Answer</button>
+      <div id="ans_uno_34" class="answer-text">Answer: A. Pins 0 and 1</div>
+    </div>
+    <div class="question">
+      <b>35. What is the purpose of the Serial.begin() function?</b>
+      <div class="options">
+        <div>A. Starts I2C communication</div>
+        <div>B. Initializes serial communication</div>
+        <div>C. Sets PWM frequency</div>
+        <div>D. Reads analog input</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_35')">Show Answer</button>
+      <div id="ans_uno_35" class="answer-text">Answer: B. Initializes serial communication</div>
+    </div>
+    <div class="question">
+      <b>36. What is the function of digitalRead()?</b>
+      <div class="options">
+        <div>A. Sets pin HIGH or LOW</div>
+        <div>B. Reads digital input</div>
+        <div>C. Generates PWM</div>
+        <div>D. Reads analog input</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_36')">Show Answer</button>
+      <div id="ans_uno_36" class="answer-text">Answer: B. Reads digital input</div>
+    </div>
+    <div class="question">
+      <b>37. What is the function of digitalWrite()?</b>
+      <div class="options">
+        <div>A. Reads digital input</div>
+        <div>B. Sets pin HIGH or LOW</div>
+        <div>C. Generates PWM</div>
+        <div>D. Reads analog input</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_37')">Show Answer</button>
+      <div id="ans_uno_37" class="answer-text">Answer: B. Sets pin HIGH or LOW</div>
+    </div>
+    <div class="question">
+      <b>38. What is the default state of digital pins at startup?</b>
+      <div class="options">
+        <div>A. HIGH</div>
+        <div>B. LOW</div>
+        <div>C. Input</div>
+        <div>D. Output</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_38')">Show Answer</button>
+      <div id="ans_uno_38" class="answer-text">Answer: C. Input</div>
+    </div>
+    <div class="question">
+      <b>39. What is the purpose of the delay() function?</b>
+      <div class="options">
+        <div>A. Reads digital input</div>
+        <div>B. Pauses program execution</div>
+        <div>C. Generates PWM</div>
+        <div>D. Initializes serial communication</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_39')">Show Answer</button>
+      <div id="ans_uno_39" class="answer-text">Answer: B. Pauses program execution</div>
+    </div>
+    <div class="question">
+      <b>40. What is the unit of time used in delay()?</b>
+      <div class="options">
+        <div>A. Seconds</div>
+        <div>B. Microseconds</div>
+        <div>C. Milliseconds</div>
+        <div>D. Minutes</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_40')">Show Answer</button>
+      <div id="ans_uno_40" class="answer-text">Answer: C. Milliseconds</div>
+    </div>
+    <div class="question">
+      <b>41. What function is used to pause in microseconds?</b>
+      <div class="options">
+        <div>A. delay()</div>
+        <div>B. delayMicroseconds()</div>
+        <div>C. pause()</div>
+        <div>D. wait()</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_41')">Show Answer</button>
+      <div id="ans_uno_41" class="answer-text">Answer: B. delayMicroseconds()</div>
+    </div>
+    <div class="question">
+      <b>42. What is the maximum number of timers in Arduino Uno?</b>
+      <div class="options">
+        <div>A. 2</div>
+        <div>B. 3</div>
+        <div>C. 4</div>
+        <div>D. 5</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_42')">Show Answer</button>
+      <div id="ans_uno_42" class="answer-text">Answer: B. 3</div>
+    </div>
+    <div class="question">
+      <b>43. Which function reads the time since Arduino started?</b>
+      <div class="options">
+        <div>A. time()</div>
+        <div>B. millis()</div>
+        <div>C. micros()</div>
+        <div>D. delay()</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_43')">Show Answer</button>
+      <div id="ans_uno_43" class="answer-text">Answer: B. millis()</div>
+    </div>
+    <div class="question">
+      <b>44. What is the resolution of micros() function?</b>
+      <div class="options">
+        <div>A. 1 millisecond</div>
+        <div>B. 4 microseconds</div>
+        <div>C. 1 second</div>
+        <div>D. 10 milliseconds</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_44')">Show Answer</button>
+      <div id="ans_uno_44" class="answer-text">Answer: B. 4 microseconds</div>
+    </div>
+    <div class="question">
+      <b>45. What happens when millis() overflows?</b>
+      <div class="options">
+        <div>A. Arduino resets</div>
+        <div>B. Returns to 0</div>
+        <div>C. Stops counting</div>
+        <div>D. Causes error</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_45')">Show Answer</button>
+      <div id="ans_uno_45" class="answer-text">Answer: B. Returns to 0</div>
+    </div>
+    <div class="question">
+      <b>46. After how many days does millis() overflow?</b>
+      <div class="options">
+        <div>A. ~50 days</div>
+        <div>B. ~30 days</div>
+        <div>C. ~10 days</div>
+        <div>D. ~100 days</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_46')">Show Answer</button>
+      <div id="ans_uno_46" class="answer-text">Answer: A. ~50 days</div>
+    </div>
+    <div class="question">
+      <b>47. What is the purpose of the tone() function?</b>
+      <div class="options">
+        <div>A. Reads analog input</div>
+        <div>B. Generates square wave for sound</div>
+        <div>C. Sets PWM duty cycle</div>
+        <div>D. Initializes I2C</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_47')">Show Answer</button>
+      <div id="ans_uno_47" class="answer-text">Answer: B. Generates square wave for sound</div>
+    </div>
+    <div class="question">
+      <b>48. Which pins are used for analogWrite()?</b>
+      <div class="options">
+        <div>A. A0–A5</div>
+        <div>B. 3, 5, 6, 9, 10, 11</div>
+        <div>C. 0–13</div>
+        <div>D. 2 and 3</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_48')">Show Answer</button>
+      <div id="ans_uno_48" class="answer-text">Answer: B. 3, 5, 6, 9, 10, 11</div>
+    </div>
+    <div class="question">
+      <b>49. What is the purpose of the random() function?</b>
+      <div class="options">
+        <div>A. Generates random numbers</div>
+        <div>B. Reads random analog input</div>
+        <div>C. Sets random PWM</div>
+        <div>D. Initializes serial</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_49')">Show Answer</button>
+      <div id="ans_uno_49" class="answer-text">Answer: A. Generates random numbers</div>
+    </div>
+    <div class="question">
+      <b>50. What is the main advantage of Arduino Uno for prototyping?</b>
+      <div class="options">
+        <div>A. High processing power</div>
+        <div>B. Easy-to-use platform</div>
+        <div>C. Low cost and wide community support</div>
+        <div>D. Built-in Wi-Fi</div>
+      </div>
+      <button onclick="toggleAnswer('ans_uno_50')">Show Answer</button>
+      <div id="ans_uno_50" class="answer-text">Answer: C. Low cost and wide community support</div>
     </div>
 
+  </body>
+</html>
   </body>
 </html>
